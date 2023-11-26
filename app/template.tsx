@@ -33,10 +33,10 @@ export default function Template({
         style={{
           transform: `translateY(${scrollProgress}%)`
         }}
-        className={`
+        className="
         fixed top-0 right-0 bottom-0 w-1 z-50 bg-primary rounded-lg
         transition-all duration-700
-        `}
+        "
       />
       <div className="h-[2000px]" />
     </>
