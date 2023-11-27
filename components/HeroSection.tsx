@@ -9,7 +9,7 @@ import Socials from "@/components/Socials";
 const HeroSection = () => {
   return (
     <section className="
-      relative bg-[#fef9f5] dark:bg-transparent w-full h-[84vh]
+      relative bg-[#fef5f5] dark:bg-transparent w-full h-[84vh]
       flex justify-center items-center
       "
     >
@@ -42,13 +42,13 @@ const HeroSection = () => {
               "
             >
               <span className="hidden md:block w-5 h-[2px] bg-primary rounded-lg" />
-              Software Developer
+              Full Stack Developer
             </div>
             <h1 className="text-big text-center md:text-left">
               Hi there, I&rsquo;m Phot Koseekrainiramon
             </h1>
-            <p className="mt-3 text-center md:text-left">
-              Brief description about myself and my journey
+            <p className="my-3 text-center md:text-left text-muted-foreground font-light">
+              A passionate developer on a mission to bring ideas to life through code
             </p>
           </div>
 
@@ -57,11 +57,11 @@ const HeroSection = () => {
             flex md:hidden justify-center items-center
             gap-x-5 mt-1
             "
-            iconsStyles="text-[22px]"
+            iconsStyles="text-[22px] hover:text-primary"
           />
 
           <div className="
-            flex flex-col gap-y-2 md:flex-row gap-x-5 lg:gap-x-7 mt-5
+            flex flex-col gap-y-2 md:flex-row gap-x-5 lg:gap-x-7 mt-7
             w-full max-w-[150px]
             "
           >

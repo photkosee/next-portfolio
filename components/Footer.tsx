@@ -7,7 +7,7 @@ const Footer = () => {
         <Socials
           containerStyles="flex gap-x-7 mx-auto items-center"
           iconsStyles="
-          dark:text-white/70 text-foreground
+          dark:text-white/70 text-foreground text-white
           hover:text-primary dark:hover:text-primary text-[20px]
           "
         />
