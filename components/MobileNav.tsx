@@ -1,7 +1,6 @@
 const MobileNav = () => {
   return (
     <div>
-      Mobile
     </div>
   );
 };

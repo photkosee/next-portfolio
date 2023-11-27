@@ -5,11 +5,23 @@ import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
 const links = [
-  { path: "/", name: "home" },
-  { path: "/projects", name: "my projects" },
-  { path: "https://photkosee.github.io/hugo-blog/", name: "my blog" },
-  { path: "/contact", name: "contact" },
-]
+  {
+    path: "/",
+    name: "home"
+  },
+  {
+    path: "/projects",
+    name: "my projects"
+  },
+  {
+    path: "https://photkosee.github.io/hugo-blog/",
+    name: "my blog"
+  },
+  {
+    path: "/contact",
+    name: "contact"
+  },
+];
 
 const Nav = ({
   containerStyles,

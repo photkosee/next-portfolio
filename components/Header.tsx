@@ -39,7 +39,7 @@ const Header = () => {
               containerStyles="hidden md:flex items-center gap-x-8"
               linkStyles="relative hover:text-primary transition-all"
               underlineStyles="
-              absolute left-0 top-full h-1 bg-primary w-full rounded-lg
+              absolute left-0 top-full h-[2px] bg-primary w-full rounded-lg
               "
             />
             <ModeToggle />
@@ -50,7 +50,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      
     </header>
   );
 };

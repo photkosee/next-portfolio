@@ -22,7 +22,7 @@ export default function Template({
         animate="enter"
         transition={{
           type: "linear",
-          delay: 0.1,
+          delay: 0.2,
           duration: 0.4,
         }}
       >
