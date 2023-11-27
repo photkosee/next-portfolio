@@ -2,23 +2,30 @@ import { TbAlignJustified } from "react-icons/tb";
 
 import { Button } from "@/components/ui/button";
 import Nav from "@/components/Nav";
+import Socials from "@/components/Socials";
+import WavyPattern from "@/components/WavyPattern";
 import {
   Sheet,
   SheetContent,
   SheetFooter,
   SheetTrigger
 } from "@/components/ui/sheet";
-import Socials from "./Socials";
 
 const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="outline">
-          <TbAlignJustified />
+          <TbAlignJustified className="cursor-pointer" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="flex flex-col justify-around">
+      <SheetContent className="
+        p-0 m-0 h-full flex flex-col justify-around
+        bg-[#fef5f5] dark:bg-transparent
+        "
+      >
+        <WavyPattern />
+
         <Nav
           containerStyles="flex flex-col justify-center items-center gap-5"
           linkStyles="relative hover:text-primary transition-all"
@@ -29,7 +36,7 @@ const MobileNav = () => {
 
         <SheetFooter>
           <Socials
-            containerStyles="w-full flex justify-center items-center gap-5"
+            containerStyles="w-full flex justify-center items-center gap-7"
             iconsStyles="text-[22px] hover:text-primary"
           />
         </SheetFooter>

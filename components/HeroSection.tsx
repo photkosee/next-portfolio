@@ -5,6 +5,8 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 
 import { Button } from "@/components/ui/button";
 import Socials from "@/components/Socials";
+import MouseDown from "@/components/MouseDown";
+import WavyPattern from "@/components/WavyPattern";
 
 const HeroSection = () => {
   return (
@@ -13,21 +15,7 @@ const HeroSection = () => {
       flex justify-center items-center
       "
     >
-      <svg className="
-        absolute bottom-0 w-full h-auto dark:hidden
-        "
-        id="wavy"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="-300 0 950 270"
-      >
-        <path
-          d="M-314,267 C105,364 400,100 812,279"
-          fill="none"
-          stroke="white"
-          strokeWidth="120"
-          strokeLinecap="round"
-        />
-      </svg>
+      <WavyPattern />
 
       <div className="
         container w-full flex flex-col md:flex-row-reverse -mt-12 z-10
@@ -45,7 +33,7 @@ const HeroSection = () => {
               Full Stack Developer
             </div>
             <h1 className="text-big text-center md:text-left">
-              Hi there, I&rsquo;m Phot Koseekrainiramon
+              Hi there, my name is Phot
             </h1>
             <p className="my-3 text-center md:text-left text-muted-foreground font-light">
               A passionate developer on a mission to bring ideas to life through code
@@ -55,13 +43,13 @@ const HeroSection = () => {
           <Socials
             containerStyles="
             flex md:hidden justify-center items-center
-            gap-x-5 mt-1
+            gap-x-7 mt-1
             "
             iconsStyles="text-[22px] hover:text-primary"
           />
 
           <div className="
-            flex flex-col gap-y-2 md:flex-row gap-x-5 lg:gap-x-7 mt-7
+            flex flex-col gap-y-3 md:flex-row gap-x-5 lg:gap-x-7 mt-7
             w-full max-w-[150px]
             "
           >
@@ -88,19 +76,7 @@ const HeroSection = () => {
         />
       </div>
 
-      <div className="absolute bottom-2">
-        <div className="
-          border-[2px] border-solid border-primary h-6 w-4 m-auto
-          rounded-lg relative
-          "
-        >
-          <div className="
-            bg-primary rounded-full w-[3px] h-[6px] absolute
-            top-[5px] left-[5px] animate-bounce
-            "
-          />
-        </div>
-      </div>
+      <MouseDown />
     </section>
   );
 };
