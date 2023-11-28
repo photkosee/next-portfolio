@@ -18,24 +18,38 @@ const HeroSection = () => {
       <WavyPattern />
 
       <div className="
-        container w-full flex flex-col md:flex-row-reverse -mt-12 z-10
+        container flex flex-col md:flex-row-reverse -mt-12 z-10
         justify-center items-center gap-x-10 gap-y-3
         "
       >
-        <div className="flex flex-col max-w-[380px] items-center md:items-start">
+        <div className="flex flex-col max-w-[380px] items-start">
           <div>
             <div className="
               text-[10px] md:text-sm uppercase font-semibold mb-2 text-primary
-              tracking-[3px] flex items-center gap-x-2 justify-center md:justify-start
+              tracking-[3px] flex items-center gap-x-2 justify-start
               "
             >
               <span className="hidden md:block w-5 h-[2px] bg-primary rounded-lg" />
               Full Stack Developer
             </div>
-            <h1 className="text-big text-center md:text-left">
-              Hi there, my name is Phot
+
+            <h1 className="
+              text-big text-left flex flex-col
+              items-start
+              "
+            >
+              Hi there,
+              <div className="flex gap-x-2 items-center">
+                my name is
+                <div className="text-primary">
+                  Phot
+                </div>
+              </div>
             </h1>
-            <p className="my-3 text-center md:text-left text-muted-foreground font-light">
+            <p className="
+              my-3 text-left text-muted-foreground font-light text-sm md:text-md max-w-xs
+              "
+            >
               A passionate developer on a mission to bring ideas to life through code
             </p>
           </div>
@@ -43,19 +57,15 @@ const HeroSection = () => {
           <Socials
             containerStyles="
             flex md:hidden justify-center items-center
-            gap-x-7 mt-1
+            gap-x-7
             "
-            iconsStyles="text-[22px] hover:text-primary"
+            iconsStyles="text-[21px] hover:text-primary"
           />
 
-          <div className="
-            flex flex-col gap-y-3 md:flex-row gap-x-5 lg:gap-x-7 mt-7
-            w-full max-w-[150px]
-            "
-          >
+          <div className="flex lex-row gap-x-2 sm:gap-x-3 mt-4">
             <Link href="/contact" passHref>
-              <Button className="rounded-full gap-x-2 w-full">
-                Contact me
+              <Button className="rounded-full gap-x-2">
+                Contact Me
                 <RiMailSendLine size={18} />
               </Button>
             </Link>

@@ -1,7 +1,7 @@
 const CircleDoodle = () => {
   return (
     <svg className="
-      absolute -left-5 -z-10 w-44 -rotate-12
+      absolute -left-6 md:-left-5 -z-10 w-40 md:w-44 -rotate-12
       "
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 900 450"

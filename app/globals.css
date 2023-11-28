@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .text-big {
-  @apply text-4xl md:text-5xl xl:text-[50px] xl:leading-[57px] tracking-[-2px] font-bold;
+  @apply text-[35px] leading-[37px] sm:text-5xl xl:text-[50px] xl:leading-[57px] tracking-[-2px] font-bold;
 }
 
 @layer base {

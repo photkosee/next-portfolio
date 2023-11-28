@@ -6,7 +6,10 @@ const MouseDown = () => {
   const scrollProgress = useScrollProgress();
 
   return (
-    <div className={`absolute bottom-2 ${scrollProgress > 1 && "hidden"}`}>
+    <div className={`
+      absolute bottom-2 ${scrollProgress > 5 && "hidden"}
+      `}
+    >
       <div className="
         border-[2px] border-solid border-primary h-6 w-4 m-auto
         rounded-lg relative
