@@ -1,67 +1,73 @@
 "use client";
 
 import { Variants, motion } from "framer-motion";
+import { GraduationCap, Laugh, MailIcon, User2 } from "lucide-react";
 
 import CircleDoodle from "@/components/CircleDoodle";
 import QualificationTab from "@/components/QualificationTab";
 
-const fromLeft: Variants = {
-  hidden: { opacity: 0 },
-  enter: { opacity: 1 },
-  offscreen: {
-    x: -300
+const infoDatas = [
+  {
+    icon: <User2 size={18} />,
+    description: "My name is Phot Koseekrainiramon",
   },
-  onscreen: {
-    x: 0,
-    transition: {
-      type: "spring",
-      bounce: 0.1,
-      duration: 1,
-    }
+  {
+    icon: <Laugh size={18} />,
+    description: "People also call me Pete/Peach",
   },
-};
-
-const fromRight: Variants = {
-  hidden: { opacity: 0 },
-  enter: { opacity: 1 },
-  offscreen: {
-    x: 300
+  {
+    icon: <MailIcon size={18} />,
+    description: "kosee.phot@gmail.com",
   },
-  onscreen: {
-    x: 0,
-    transition: {
-      type: "spring",
-      bounce: 0.1,
-      duration: 1,
-    }
+  {
+    icon: <GraduationCap size={18} />,
+    description: "Bachelor in Computer Engineering",
   },
-};
+];
 
 const AboutSection = () => {
   return (
     <section className="w-full h-[84vh]">
       <motion.div className="
-        container mx-auto flex flex-col-reverse md:flex-row w-full h-full
-        justify-center gap-y-12 md:justify-around items-center
+        container mx-auto flex flex-col w-full h-full lg:flex-row lg:justify-around
+        gap-y-3 items-center lg:items-start pt-48 md:pt-[230px] lg:pt-24
         "
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8 }}
       >
-        <motion.div
-        >
-          <div className="flex-1">
-            <QualificationTab />
-          </div>
-        </motion.div>
+        <div className="flex flex-col gap-y-10 items-center lg:mt-24">
+          <motion.div className="
+            relative w-max flex items-center justify-between
+            gap-x-3
+            "
+          >
+            <CircleDoodle />
+            <div className="font-bold text-2xl md:text-3xl">
+              About me
+            </div>
+          </motion.div>
 
-        <motion.div className="
-          font-bold relative w-max flex items-center justify-between
-          gap-x-3 text-2xl md:text-3xl before:
-          "
-        >
-          <CircleDoodle />
-          About me
+          <div>
+            {infoDatas.map((info, index) => (
+              <div className="
+                flex items-center gap-x-4
+                "
+                key={index}
+              >
+                <div className="text-primary">
+                  {info.icon}
+                </div>
+                <div className="text-sm lg:text-[18px] md:leading-[23px]">
+                  {info.description}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <motion.div className="h-full max-w-[340px]">
+          <QualificationTab />
         </motion.div>
       </motion.div>
     </section>

@@ -53,10 +53,10 @@ const projects = [
 const ProjectSection = () => {
   return (
     <section className="relative mt-28">
-      <div className="container mx-auto flex flex-col gap-7">
+      <div className="container mx-auto flex flex-col gap-7 relative h-[84vh]">
         <div className="
-          max-w-[330px] mx-auto xl:mx-0 xl:h-[84vh]
-          flex flex-col xl:justify-center
+          max-w-[330px] xl:max-w-[440px] mx-auto h-full lg:mx-0
+          flex flex-col lg:justify-center lg:pl-10 xl:pl-28
           "
         >
           <div className="
@@ -69,7 +69,7 @@ const ProjectSection = () => {
           </div>
 
           <p className="
-            my-2 xl:my-3 text-left text-muted-foreground font-light
+            my-2 lg:my-5 text-left text-muted-foreground font-light
             text-sm md:text-md max-w-xs
             "
           >
@@ -79,30 +79,46 @@ const ProjectSection = () => {
 
           <Link className="w-full" href="/projects" passHref>
             <Button className="rounded-full w-full">
-              All Projects
+              View All Projects
             </Button>
           </Link>
         </div>
 
-        <div className="xl:max-w-[900px] xl:absolute right-0 top-20">
+        <div className="lg:max-w-[600px] xl:max-w-[750px] lg:absolute right-0 top-0 flex items-center h-full">
           <Swiper className="
-            h-[430px] bg-pink-100
+            h-[480px]
             "
             style={{
               "--swiper-pagination-color": "#fe5e70",
             }}
             slidesPerView={1}
             breakpoints={{
-              640: {
+              720: {
+                slidesPerView: 1.5,
+              },
+              920: {
                 slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 1.5,
               },
             }}
             spaceBetween={30}
             modules={[Pagination]}
-            pagination={{ clickable: true }}
+            pagination={{
+              clickable: true,
+              dynamicBullets: true,
+            }}
           >
-            {projects.slice(0.4).map((project, index) => (
-              <SwiperSlide key={index}>
+            {projects.slice(0, 3).map((project, index) => (
+              <SwiperSlide
+                style={{
+                  display: "flex !important",
+                  justifyContent: "center",
+                  alignItems: "start",
+                }}
+                key={index}
+              >
                 <ProjectCard
                   name={project.name}
                   image={project.image}
