@@ -1,33 +1,15 @@
 "use client";
 
 import { Variants, motion } from "framer-motion";
-import { GraduationCap, Laugh, MailIcon, User2 } from "lucide-react";
 
 import CircleDoodle from "@/components/CircleDoodle";
 import QualificationTab from "@/components/QualificationTab";
-
-const infoDatas = [
-  {
-    icon: <User2 size={18} />,
-    description: "My name is Phot Koseekrainiramon",
-  },
-  {
-    icon: <Laugh size={18} />,
-    description: "People also call me Pete/Peach",
-  },
-  {
-    icon: <MailIcon size={18} />,
-    description: "kosee.phot@gmail.com",
-  },
-  {
-    icon: <GraduationCap size={18} />,
-    description: "Bachelor in Computer Engineering",
-  },
-];
+import WavyPattern from "@/components/WavyPattern";
+import { infoDatas } from "@/components/storage";
 
 const AboutSection = () => {
   return (
-    <section className="w-full h-[84vh]">
+    <section className="w-full h-[970px] lg:h-[720px] relative">
       <motion.div className="
         container mx-auto flex flex-col w-full h-full lg:flex-row lg:justify-around
         gap-y-3 items-center lg:items-start pt-48 md:pt-[230px] lg:pt-24
@@ -44,7 +26,7 @@ const AboutSection = () => {
           >
             <CircleDoodle />
             <div className="font-bold text-2xl md:text-3xl">
-              About me
+              About Me
             </div>
           </motion.div>
 
@@ -66,10 +48,12 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <motion.div className="h-full max-w-[340px]">
+        <motion.div className="h-full max-w-[340px] z-10">
           <QualificationTab />
         </motion.div>
       </motion.div>
+
+      <WavyPattern color="#fef5f5" />
     </section>
   );
 };

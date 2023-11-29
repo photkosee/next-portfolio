@@ -1,5 +1,6 @@
 import { Briefcase, Layers, School } from "lucide-react";
 
+import { experiences, educations, stacks } from "@/components/storage";
 import {
   Tabs,
   TabsContent,
@@ -7,62 +8,14 @@ import {
   TabsTrigger
 } from "@/components/ui/tabs";
 
-const educations = [
-  {
-    school: "The University of New South Wales",
-    stream: "Bachelor of Computer Engineering",
-    years: "2022 - 2024",
-  },
-  {
-    school: "Thammasat University",
-    stream: "Bachelor of Electrical Engineering",
-    years: "2019 - 2021",
-  },
-];
-
-const experiences = [
-  {
-    company: "Cloud Natician",
-    role: "Software Engineer",
-    years: "2023 - Present",
-  },
-  {
-    company: "UNSW Computer Sceience and Engineering",
-    role: "Casual Academic",
-    years: "2023 - 2023",
-  },
-];
-
-const stacks = [
-  {
-    skill: "Frontend",
-    tools: "React, HTML, CSS, JavaScript, TypeScript, Bootstrap, MUI, Tailwind CSS, Next.js",
-  },
-  {
-    skill: "Backend",
-    tools: "Node.js, Python, Java, C, Express, Flask, Django",
-  },
-  {
-    skill: "Database",
-    tools: "PostgreSQL, MySQL",
-  },
-  {
-    skill: "Others",
-    tools: "Wireshark, GitLab, GitHub",
-  },
-  {
-    skill: "Learning",
-    tools: "Go, Docker, Kubernetes, Shadcn ui",
-  },
-];
-
 const QualificationTab = () => {
   return (
     <Tabs defaultValue="educations">
       <TabsList className="
-        grid sm:grid-cols-3 p-1 gap-1 sm:gap-11 lg:gap-2
+        grid sm:grid-cols-3 py-0 gap-1 sm:gap-2
         text-muted-foreground rounded-full dark:sm:bg-secondary
-        border-none sm:border bg-white dark:bg-transparent
+        border-none bg-transparent dark:bg-transparent
+        sm:border-solid sm:border
         "
       >
         <TabsTrigger className="
@@ -84,7 +37,7 @@ const QualificationTab = () => {
         </TabsTrigger>
 
         <TabsTrigger className="
-          w-36 sm:w-28 rounded-full data-[state=active]:bg-primary
+          w-36 sm:w-[105px] rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white
           "
           value="skills"
@@ -95,12 +48,12 @@ const QualificationTab = () => {
       
       <div className="text-lg mt-20 sm:mt-0">
         <TabsContent value="experiences">
-        <div className="
+          <div className="
             flex items-center gap-x-3 text-primary
-            justify-center lg:justify-start
+            justify-center lg:justify-start mb-5 sm:my-5
             "
           >
-            <h3 className="h3 my-5">
+            <h3 className="h3">
               My Experiences
             </h3>
             <Briefcase size={25} />
@@ -135,10 +88,10 @@ const QualificationTab = () => {
         <TabsContent value="educations">
           <div className="
             flex items-center gap-x-3 text-primary
-            justify-center lg:justify-start
+            justify-center lg:justify-start mb-5 sm:my-5
             "
           >
-            <h3 className="h3 my-5">
+            <h3 className="h3">
               My Education
             </h3>
             <School size={27} />
@@ -173,10 +126,10 @@ const QualificationTab = () => {
         <TabsContent value="skills">
           <div className="
             flex items-center gap-x-3 text-primary
-            justify-center lg:justify-start
+            justify-center lg:justify-start mb-5 sm:my-5
             "
           >
-            <h3 className="h3 my-5">
+            <h3 className="h3">
               My Stacks
             </h3>
             <Layers size={27} />
@@ -185,7 +138,7 @@ const QualificationTab = () => {
           <div>
             {stacks.map((stack, index) => (
               <div className="flex gap-x-7 group" key={index}>
-                <div className="h-[50px] w-[1px] bg-border relative ml-3">
+                <div className="h-[50px] w-[1px] bg-border relative ml-3 mt-1">
                   <div className="
                     w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px]
                     group-hover:translate-y-[40px] translate-all duration-500

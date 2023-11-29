@@ -9,53 +9,15 @@ import { Pagination } from "swiper/modules";
 
 import ArrowDoodle from "@/components/ArrowDoodle";
 import ProjectCard from "@/components/ProjectCard";
+import { projects } from "@/components/storage";
 import { Button } from "@/components/ui/button";
-
-const projects = [
-  {
-    image: "/next.svg",
-    category: "frontend",
-    name: "Website",
-    description:
-      "this is a website building with love and to improve my skill",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/next.svg",
-    category: "frontend",
-    name: "Website",
-    description:
-      "this is a website building with love and to improve my skill",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/next.svg",
-    category: "frontend",
-    name: "Website",
-    description:
-      "this is a website building with love and to improve my skill",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/next.svg",
-    category: "frontend",
-    name: "Website",
-    description:
-      "this is a website building with love and to improve my skill",
-    link: "/",
-    github: "/",
-  },
-];
 
 const ProjectSection = () => {
   return (
     <section className="relative mt-28">
       <div className="container mx-auto flex flex-col gap-7 relative h-[84vh]">
         <div className="
-          max-w-[330px] xl:max-w-[440px] mx-auto h-full lg:mx-0
+          max-w-[330px] xl:max-w-[440px] mx-auto md:h-full lg:mx-0
           flex flex-col lg:justify-center lg:pl-10 xl:pl-28
           "
         >
@@ -132,6 +94,23 @@ const ProjectSection = () => {
           </Swiper>
         </div>
       </div>
+
+      <svg className="
+        absolute top-24 left-[70px] xl:left-[220px] -z-10 rotate-90 dark:hidden
+        hidden lg:block
+        "
+        width="400"
+        height="400"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M50 200
+           C 50 50, 150 0, 300 50
+           S 400 250, 300 250
+           Q 250 250, 200 150
+           C 150 50, 50 100, 50 200"
+          fill="#fef5f5"
+        />
+      </svg>
     </section>
   );
 };

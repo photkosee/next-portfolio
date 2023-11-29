@@ -38,7 +38,6 @@ export default function Template({
         transition-all duration-700
         "
       />
-      <div className="h-[2000px]" />
     </>
   );
 };

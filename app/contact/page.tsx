@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
-    <div>
+    <main className="min-h-screen">
       Contact
-    </div>
+    </main>
   );
 };
 

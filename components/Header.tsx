@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className={`
-      ${path === "/" && !top && "bg-[#fef5f5]"}
+      ${!top && path !== "/contact" && "bg-[#fef5f5]"}
       ${top
         ? "bg-white shadow-lg dark:bg-accent"
         : "py-2 dark:bg-transparent"
