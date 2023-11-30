@@ -11,7 +11,6 @@ const Contact = () => {
         lg:flex-row lg:justify-around
         "
       >
-        <AnimateBg />
         <div className="w-full max-w-[470px] flex flex-col gap-7">
           <div className="w-full flex flex-col items-center xl:items-start">
             <div className="text-big text-primary">
