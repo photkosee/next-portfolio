@@ -34,7 +34,7 @@ const ProjectCard = ({
           />
 
           <div className="
-            bg-black opacity-0 group-hover:opacity-30 absolute inset-0 rounded-t-sm
+            bg-black opacity-0 group-hover:opacity-50 absolute inset-0 rounded-t-sm
             scale-0 group-hover:scale-100 transition-all duration-100 z-10
             "
           />
@@ -80,8 +80,12 @@ const ProjectCard = ({
       </div>
 
       <div className="absolute top-2 right-2">
-        <div className="text-[27px] text-primary">
-          {stack}
+        <div className="flex flex-col gap-2 items-center">
+          {stack.map(((e, index) => (
+            <div key={index} className="text-[23px] text-primary">
+              {e}
+            </div>
+          )))}
         </div>
       </div>
 

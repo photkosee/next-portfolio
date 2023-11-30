@@ -1,5 +1,18 @@
 import { GraduationCap, Laugh, MailIcon, User2 } from "lucide-react";
-import { SiNextdotjs, SiVite, SiDjango  } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+import { TbBrandCypress } from "react-icons/tb";
+import { DiCss3, DiHtml5  } from "react-icons/di";
+import {
+  SiNextdotjs,
+  SiVite,
+  SiDjango,
+  SiTailwindcss,
+  SiMui,
+  SiWireshark,
+  SiGradle,
+  SiExpress,
+  SiJest
+} from "react-icons/si";
 import {
   FaCopyright,
   FaJava,
@@ -7,7 +20,7 @@ import {
   FaPython,
   FaReact
 } from "react-icons/fa";
-import { RiJavascriptFill } from "react-icons/ri";
+import { RiBootstrapFill, RiJavascriptFill } from "react-icons/ri";
 import { FaGolang } from "react-icons/fa6";
 
 export const educations = [
@@ -51,7 +64,7 @@ export const stacks = [
   },
   {
     skill: "Others",
-    tools: "Wireshark, Jest, Cypress, GitLab, GitHub",
+    tools: "Wireshark, Jest, Cypress, Gradle, GitLab, GitHub",
   },
   {
     skill: "Learning",
@@ -87,7 +100,12 @@ export const projects = [
       "A site hosting a series of online assessments designed to measure cognitive and emotional traits with Next.js, TypeScript, and Tailwind CSS",
     link: "",
     github: "https://github.com/photkosee/next-pymetrics-games",
-    stack: <SiNextdotjs />,
+    stack: [
+      <SiNextdotjs key={0} />,
+      <FaReact key={1} />,
+      <BiLogoTypescript key={2} />,
+      <SiTailwindcss key={3} />,
+    ],
     date: "Developing",
   },
   {
@@ -98,7 +116,12 @@ export const projects = [
       "A website showcasing personal projects with Next.js, TypeScript, Tailwind CSS, and Shadcn UI",
     link: "https://photkosee.github.io/next-portfolio/",
     github: "https://github.com/photkosee/next-portfolio",
-    stack: <SiNextdotjs />,
+    stack: [
+      <SiNextdotjs key={0} />,
+      <FaReact key={1} />,
+      <BiLogoTypescript key={2} />,
+      <SiTailwindcss key={3} />,
+    ],
     date: "Dec 2023",
   },
   {
@@ -109,7 +132,13 @@ export const projects = [
       "A property renting service website with React JS, Tailwind CSS, and MUI. Component testing with React Testing Library, and UI Testing with Cypress",
     link: "",
     github: "https://github.com/photkosee/react-airbrb",
-    stack: <FaReact />,
+    stack: [
+      <FaReact key={0} />,
+      <RiJavascriptFill key={1} />,
+      <SiTailwindcss key={2} />,
+      <SiMui size={18} key={3} />,
+      <TbBrandCypress key={4} />,
+    ],
     date: "Nov 2023",
   },
   {
@@ -120,7 +149,12 @@ export const projects = [
       "A Pymetrics Towers Game with Vite, Tailwind CSS, and react-beautiful-dnd",
     link: "https://photkosee.github.io/react-pymetrics-towers/",
     github: "https://github.com/photkosee/react-pymetrics-towers",
-    stack: <SiVite />,
+    stack: [
+      <SiVite key={0} />,
+      <FaReact key={1} />,
+      <BiLogoTypescript key={2} />,
+      <SiTailwindcss key={3} />,
+    ],
     date: "Nov 2023",
   },
   {
@@ -131,7 +165,7 @@ export const projects = [
       "A simple network monitoring in Go",
     link: "",
     github: "https://github.com/photkosee/network-analyzer",
-    stack: <FaGolang />,
+    stack: [<FaGolang key={1} />],
     date: "Nov 2023",
   },
   {
@@ -142,7 +176,12 @@ export const projects = [
       "A messaging platform with Vanilla JS, and Bootstrap",
     link: "",
     github: "https://github.com/photkosee/vanilla-slackr",
-    stack: <RiJavascriptFill />,
+    stack: [
+      <RiJavascriptFill key={0} />,
+      <DiCss3 key={1} />,
+      <DiHtml5 key={2} />,
+      <RiBootstrapFill key={3} />,
+    ],
     date: "Oct 2023",
   },
   {
@@ -153,7 +192,11 @@ export const projects = [
       "Single day project building a profile website with Vite for CSESoc Training Program Application",
     link: "https://photkosee.github.io/cse-trainee/",
     github: "https://github.com/photkosee/cse-trainee",
-    stack: <SiVite />,
+    stack: [
+      <SiVite key={0} />,
+      <FaReact key={1} />,
+      <RiJavascriptFill key={2} />,
+    ],
     date: "Sep 2023",
   },
   {
@@ -164,7 +207,10 @@ export const projects = [
       "A homemade DNS resolver without supported libraries in Python, using Wireshark to help debuging",
     link: "",
     github: "https://github.com/photkosee/dns-resolver",
-    stack: <FaPython />,
+    stack: [
+      <FaPython key={0} />,
+      <SiWireshark size={18} key={1} />,
+    ],
     date: "Jul 2023",
   },
   {
@@ -175,7 +221,11 @@ export const projects = [
       "A website showcasing personal projects with React",
     link: "https://photkosee.github.io/profile-react/",
     github: "https://github.com/photkosee/profile-react",
-    stack: <FaReact />,
+    stack: [
+      <FaReact key={0} />,
+      <RiJavascriptFill key={1} />,
+      <DiCss3 key={2} />,
+    ],
     date: "Jul 2023",
   },
   {
@@ -186,7 +236,7 @@ export const projects = [
       "A car dealer website with Django",
     link: "",
     github: "https://github.com/photkosee/car-dealer",
-    stack: <SiDjango />,
+    stack: [<SiDjango key={0} />],
     date: "Jul 2023",
   },
   {
@@ -197,7 +247,7 @@ export const projects = [
       "Implementing virtual memory translation in C",
     link: "",
     github: "https://github.com/photkosee/vm-fault",
-    stack: <FaCopyright />,
+    stack: [<FaCopyright key={0} />],
     date: "Apr 2023",
   },
   {
@@ -208,7 +258,7 @@ export const projects = [
       "Implementationing common system calls in C",
     link: "",
     github: "https://github.com/photkosee/file-management",
-    stack: <FaCopyright />,
+    stack: [<FaCopyright key={0} />],
     date: "Mar 2023",
   },
   {
@@ -216,10 +266,13 @@ export const projects = [
     category: "backend",
     name: "Tributary",
     description:
-      "A Java API building event-driven systems",
+      "A Java API building event-driven systems. Testing with Gradle",
     link: "",
     github: "https://github.com/photkosee/tributary",
-    stack: <FaJava />,
+    stack: [
+      <FaJava key={0} />,
+      <SiGradle key={1} />
+    ],
     date: "Nov 2022",
   },
   {
@@ -227,10 +280,13 @@ export const projects = [
     category: "backend",
     name: "Dungeon Mania",
     description:
-      "A 2D adventure game in Java applying OOP principles",
+      "A 2D adventure game in Java applying OOP principles. Testing with Gradle",
     link: "",
     github: "https://github.com/photkosee/dungeon-mania",
-    stack: <FaJava />,
+    stack: [
+      <FaJava key={0} />,
+      <SiGradle key={1} />
+    ],
     date: "Oct 2022",
   },
   {
@@ -238,10 +294,13 @@ export const projects = [
     category: "backend",
     name: "Back to Blackout",
     description:
-      "A demo of satellite orbit and communication in Java applying OOP principles",
+      "A demo of satellite orbit and communication in Java applying OOP principles. Testing with Gradle",
     link: "",
     github: "https://github.com/photkosee/back-to-blackout",
-    stack: <FaJava />,
+    stack: [
+      <FaJava key={0} />,
+      <SiGradle key={1} />
+    ],
     date: "Sep 2022",
   },
   {
@@ -252,7 +311,12 @@ export const projects = [
       "A messaging platform with Express and TypeScript. Testing with Jest",
     link: "",
     github: "https://github.com/photkosee/unsw-treats",
-    stack: <FaNodeJs />,
+    stack: [
+      <FaNodeJs key={0} />,
+      <BiLogoTypescript key={1} />,
+      <SiExpress size={19} key={2} />,
+      <SiJest size={21} key={3} />,
+    ],
     date: "Jul 2022",
   },
 ];

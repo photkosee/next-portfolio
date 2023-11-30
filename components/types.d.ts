@@ -7,6 +7,6 @@ export interface Project {
   description: string
   link?: string
   github: string
-  stack: ReactComponentElement
+  stack: ReactComponentElement[]
   date: string
 }
