@@ -1,5 +1,5 @@
 # Portfolio Website 2nd Edition
-> A website showcasing personal projects and experiences
+> A website showcasing personal projects and experiences, visit the site [here](https://photkosee.github.io/next-portfolio/)
 
 ## Background
 Over the past few months, I have embarked on the journey of crafting my first portfolio website using React JS, opting to forgo the use of any CSS or UI library. As I strive for continuous improvement, the time has come to elevate my digital presence. In alignment with the technology stack employed during my ongoing software engineering internship, I have chosen Next.js as the foundation for this enhanced iteration.
