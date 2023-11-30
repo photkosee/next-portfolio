@@ -96,7 +96,7 @@ export const projects = [
     name: "Portfolio Website 2nd Edition",
     description:
       "A website showcasing personal projects with Next.js, TypeScript, Tailwind CSS, and Shadcn UI",
-    link: "",
+    link: "https://photkosee.github.io/next-portfolio/",
     github: "https://github.com/photkosee/next-portfolio",
     stack: <SiNextdotjs />,
     date: "Dec 2023",

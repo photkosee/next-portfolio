@@ -17,8 +17,8 @@ const ProjectSection = () => {
     <section className="mt-28">
       <div className="container mx-auto flex flex-col gap-7 relative h-[84vh]">
         <div className="
-          max-w-[330px] xl:max-w-[480px] mx-auto md:h-full lg:mx-0
-          flex flex-col lg:justify-center lg:pl-10 xl:pl-28
+          max-w-[350px] xl:max-w-[480px] mx-auto md:h-full lg:mx-0
+          flex flex-col justify-center lg:pl-10 xl:pl-28
           "
         >
           <div className="
@@ -50,7 +50,7 @@ const ProjectSection = () => {
 
         <div className="
           lg:w-[630px] xl:w-[750px] lg:absolute right-5 top-0
-          flex items-center h-full
+          flex items-center h-full max-h-[450px] lg:max-h-full
           "
         >
           <Swiper
