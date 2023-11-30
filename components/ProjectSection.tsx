@@ -39,14 +39,20 @@ const ProjectSection = () => {
             through diverse projects
           </p>
 
-          <Link className="w-full" href="/projects" passHref>
-            <Button className="rounded-full w-full">
-              View All Projects
-            </Button>
-          </Link>
+          <div className="w-full flex justify-center">
+            <Link className="max-w-[170px]" href="/projects" passHref>
+              <Button className="rounded-full max-w-[170px]">
+                View All Projects
+              </Button>
+            </Link>
+          </div>
         </div>
 
-        <div className="lg:max-w-[600px] xl:max-w-[750px] lg:absolute right-0 top-0 flex items-center h-full">
+        <div className="
+          lg:max-w-[600px] xl:max-w-[750px] lg:absolute right-0 top-0
+          flex items-center h-full
+          "
+        >
           <Swiper className="
             h-[480px]
             "
@@ -96,8 +102,8 @@ const ProjectSection = () => {
       </div>
 
       <svg className="
-        absolute top-24 left-[70px] xl:left-[220px] -z-10 rotate-90 dark:hidden
-        hidden lg:block
+        absolute top-24 left-[70px] xl:left-[220px] -z-10 rotate-90
+        dark:hidden hidden lg:block
         "
         width="400"
         height="400"
