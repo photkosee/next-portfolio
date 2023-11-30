@@ -22,7 +22,7 @@ const Contact = () => {
             <div className="text-big text-primary">
               Let&rsquo;s have a chat.
             </div>
-            <div className="flex items-center gap-x-2">
+            <div className="flex items-center gap-1">
               <div className="text-primary">
                 <AtSign size={18} />
               </div>

@@ -47,7 +47,8 @@ const HeroSection = () => {
               </div>
             </h1>
             <p className="
-              my-3 text-left text-muted-foreground font-light text-sm md:text-md max-w-xs
+              my-3 text-left text-muted-foreground font-light
+              text-sm md:text-[16px] md:leading-[24px] max-w-xs
               "
             >
               A passionate developer on a mission to bring ideas to life through code

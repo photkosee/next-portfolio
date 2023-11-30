@@ -11,7 +11,7 @@
 }
 
 .h4 {
-  @apply text-[23px] font-semibold;
+  @apply text-[20px] md:text-[23px] leading-[21px] md:leading-[24px] font-semibold;
 }
 
 .subtitle {
@@ -19,7 +19,13 @@
 }
 
 .text-big {
-  @apply text-[35px] leading-[37px] sm:text-5xl xl:text-[50px] xl:leading-[57px] tracking-[-2px] font-bold;
+  @apply text-[35px] leading-[37px] sm:text-5xl xl:text-[50px]
+    xl:leading-[57px] tracking-[-2px] font-bold;
+}
+
+.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  @apply bg-primary;
 }
 
 @layer base {

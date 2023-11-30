@@ -14,7 +14,7 @@ const Header = () => {
   useEffect(() => {
     // Whether the current scroll position is at the top of the page
     const scrollYPosition = () =>
-      window.scrollY > 50 ? setTop(true) : setTop(false);
+      window.scrollY > 0 ? setTop(true) : setTop(false);
 
     window.addEventListener("scroll", scrollYPosition);
 
