@@ -80,7 +80,7 @@ export const infoDatas = [
 
 export const projects = [
   {
-    image: "/pym-cover.png",
+    image: "./pym-cover.png",
     category: "frontend",
     name: "Pymetrics Games Site",
     description:
@@ -91,7 +91,7 @@ export const projects = [
     date: "Developing",
   },
   {
-    image: "/portfolio2-cover.png",
+    image: "./portfolio2-cover.png",
     category: "frontend",
     name: "Portfolio Website 2nd Edition",
     description:
@@ -102,7 +102,7 @@ export const projects = [
     date: "Dec 2023",
   },
   {
-    image: "/airbrb-cover.png",
+    image: "./airbrb-cover.png",
     category: "frontend",
     name: "AirBrB",
     description:
@@ -113,7 +113,7 @@ export const projects = [
     date: "Nov 2023",
   },
   {
-    image: "/towers-cover.png",
+    image: "./towers-cover.png",
     category: "frontend",
     name: "Pymetrics Tower Game",
     description:
@@ -135,7 +135,7 @@ export const projects = [
     date: "Nov 2023",
   },
   {
-    image: "/slackr-cover.png",
+    image: "./slackr-cover.png",
     category: "frontend",
     name: "Slackr",
     description:
@@ -146,7 +146,7 @@ export const projects = [
     date: "Oct 2023",
   },
   {
-    image: "/cse-trainee-cover.png",
+    image: "./cse-trainee-cover.png",
     category: "frontend",
     name: "CSE Trainee Application",
     description:
@@ -168,7 +168,7 @@ export const projects = [
     date: "Jul 2023",
   },
   {
-    image: "/portfolio1-cover.png",
+    image: "./portfolio1-cover.png",
     category: "frontend",
     name: "Portfolio Website 1st Edition",
     description:
