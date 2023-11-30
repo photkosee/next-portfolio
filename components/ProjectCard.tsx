@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 import { Calendar, GithubIcon, Link2Icon } from "lucide-react";
 
@@ -24,9 +23,9 @@ const ProjectCard = ({
           dark:bg-secondary/40 bg-[#fef5f5] overflow-hidden
           "
         >
-          <Image
+          <img
             className="absolute bottom-0 shadow-xl h-auto"
-            src={image ? image : "/project-cover.png"}
+            src={image ? image : "./project-cover.png"}
             width={200}
             height={150}
             alt="project's mockup"

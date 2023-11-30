@@ -1,9 +1,6 @@
-"use client";
-
 import { AtSign } from "lucide-react";
-import Lottie from "lottie-react";
 
-import animationData from "@/components/bg-animation.json";
+import AnimateBg from "@/components/AnimateBg";
 import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
@@ -14,9 +11,7 @@ const Contact = () => {
         lg:flex-row lg:justify-around
         "
       >
-        <div className="max-w-[400px] xl:max-w-[470px]">
-          <Lottie animationData={animationData} className="hidden lg:block" />
-        </div>
+        <AnimateBg />
         <div className="w-full max-w-[470px] flex flex-col gap-7">
           <div className="w-full flex flex-col items-center xl:items-start">
             <div className="text-big text-primary">
