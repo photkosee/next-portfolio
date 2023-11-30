@@ -71,7 +71,7 @@ const ProjectSection = () => {
               dynamicBullets: true,
             }}
           >
-            {projects.slice(0, 3).map((project, index) => (
+            {projects.slice(0, 4).map((project, index) => (
               <SwiperSlide
                 style={{
                   display: "flex",
