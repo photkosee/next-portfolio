@@ -7,7 +7,7 @@ const MouseDown = () => {
 
   return (
     <div className={`
-      absolute bottom-2 ${scrollProgress > 5 && "hidden"}
+      absolute bottom-5 ${scrollProgress > 5 && "hidden"}
       `}
     >
       <div className="

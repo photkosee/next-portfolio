@@ -12,7 +12,7 @@ const AboutSection = () => {
     <section className="w-full h-[970px] lg:h-[720px] relative">
       <motion.div className="
         container mx-auto flex flex-col w-full h-full lg:flex-row lg:justify-around
-        gap-y-3 items-center lg:items-start pt-48 md:pt-[230px] lg:pt-24
+        gap-y-6 items-center lg:items-start pt-48 md:pt-[230px] lg:pt-24
         "
         initial="offscreen"
         whileInView="onscreen"
