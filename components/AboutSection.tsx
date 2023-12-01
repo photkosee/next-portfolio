@@ -13,7 +13,8 @@ const AboutSection = () => {
     <section className="w-full h-[970px] lg:h-[720px] relative">
       <motion.div className="
         container mx-auto flex flex-col w-full h-full lg:flex-row lg:justify-around
-        gap-y-6 items-center lg:items-start pt-48 md:pt-[230px] lg:pt-24 overflow-hidden
+        gap-y-6 items-center lg:items-start pt-48 md:pt-[230px] lg:pt-24
+        max-w-screen overflow-hidden
         "
         initial="offscreen"
         whileInView="onscreen"
