@@ -1,11 +1,12 @@
 "use client";
 
-import { Variants, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import CircleDoodle from "@/components/CircleDoodle";
 import QualificationTab from "@/components/QualificationTab";
 import WavyPattern from "@/components/WavyPattern";
 import { infoDatas } from "@/components/storage";
+import { fadeIn } from "@/components/variants";
 
 const AboutSection = () => {
   return (
@@ -16,10 +17,13 @@ const AboutSection = () => {
         "
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.6 }}
       >
-        <div className="flex flex-col gap-y-10 items-center lg:mt-24">
-          <motion.div className="
+        <motion.div
+          className="flex flex-col gap-y-10 items-center lg:mt-24"
+          variants={fadeIn("left")}
+        >
+          <div className="
             relative w-max flex items-center justify-between
             gap-x-3
             "
@@ -28,7 +32,7 @@ const AboutSection = () => {
             <div className="font-bold text-2xl md:text-3xl">
               About Me
             </div>
-          </motion.div>
+          </div>
 
           <div>
             {infoDatas.map((info, index) => (
@@ -46,9 +50,12 @@ const AboutSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
-        <motion.div className="h-full max-w-[340px] z-10">
+        <motion.div
+          className="h-full max-w-[340px] z-10"
+          variants={fadeIn("right")}
+        >
           <QualificationTab />
         </motion.div>
       </motion.div>

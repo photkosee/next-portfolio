@@ -1,6 +1,6 @@
 import { GraduationCap, Laugh, MailIcon, User2 } from "lucide-react";
 import { BiLogoTypescript } from "react-icons/bi";
-import { TbBrandCypress } from "react-icons/tb";
+import { TbBrandCypress, TbBrandFramerMotion } from "react-icons/tb";
 import { DiCss3, DiHtml5  } from "react-icons/di";
 import {
   SiNextdotjs,
@@ -121,6 +121,7 @@ export const projects = [
       <FaReact key={1} />,
       <BiLogoTypescript key={2} />,
       <SiTailwindcss key={3} />,
+      <TbBrandFramerMotion key={4} />,
     ],
     date: "Dec 2023",
   },

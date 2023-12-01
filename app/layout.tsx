@@ -11,7 +11,7 @@ const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Phot's Portfolio",
-  description: "A website showcasing Phot's projects",
+  description: "A website showcasing personal projects of Phot Koseekrainiramon",
 };
 
 export default function RootLayout({

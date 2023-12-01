@@ -6,20 +6,29 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import { motion } from "framer-motion";
 
 import ArrowDoodle from "@/components/ArrowDoodle";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/components/storage";
 import { Button } from "@/components/ui/button";
+import { fadeIn } from "@/components/variants";
 
 const ProjectSection = () => {
   return (
     <section className="mt-28">
-      <div className="container mx-auto flex flex-col gap-7 relative h-[84vh]">
-        <div className="
+      <motion.div className="
+        container mx-auto flex flex-col gap-7 relative h-[84vh]
+        "
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.6 }}
+      >
+        <motion.div className="
           max-w-[350px] xl:max-w-[480px] mx-auto h-1/2 lg:h-full lg:mx-0
           flex flex-col justify-end lg:justify-center lg:pl-10 xl:pl-28
           "
+          variants={fadeIn("left")}
         >
           <div className="
             font-bold relative w-full flex items-center justify-center
@@ -46,12 +55,13 @@ const ProjectSection = () => {
               </Button>
             </Link>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="
+        <motion.div className="
           lg:w-[630px] xl:w-[750px] lg:absolute right-5 top-0
           flex items-center h-full max-h-[450px] lg:max-h-full
           "
+          variants={fadeIn("right")}
         >
           <Swiper
             className="w-full h-[400px] sm:h-[430px]"
@@ -93,8 +103,8 @@ const ProjectSection = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

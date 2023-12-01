@@ -5,10 +5,10 @@ import AnimateBg from "@/components/AnimateBg";
 
 const Contact = () => {
   return (
-    <main className="min-h-screen pt-12">
+    <main className="min-h-screen pt-10">
       <div className="
         container mx-auto flex flex-col items-center justify-center
-        lg:flex-row lg:justify-around h-full
+        lg:flex-row lg:justify-around h-full my-4
         "
       >
         <div className="w-full max-w-[470px] flex flex-col gap-7">
