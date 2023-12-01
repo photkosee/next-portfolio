@@ -1,7 +1,6 @@
 import { GraduationCap, Laugh, MailIcon, User2 } from "lucide-react";
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { TbBrandCypress, TbBrandFramerMotion } from "react-icons/tb";
-import { DiCss3, DiHtml5  } from "react-icons/di";
 import {
   SiNextdotjs,
   SiVite,
@@ -11,17 +10,23 @@ import {
   SiWireshark,
   SiGradle,
   SiExpress,
-  SiJest
+  SiJest,
+  SiMysql,
+  SiKubernetes,
 } from "react-icons/si";
 import {
   FaCopyright,
+  FaCss3Alt,
+  FaDocker,
+  FaGithub,
+  FaHtml5,
   FaJava,
   FaNodeJs,
   FaPython,
   FaReact
 } from "react-icons/fa";
 import { RiBootstrapFill, RiJavascriptFill } from "react-icons/ri";
-import { FaGolang } from "react-icons/fa6";
+import { FaGitlab, FaGolang } from "react-icons/fa6";
 
 export const educations = [
   {
@@ -52,23 +57,56 @@ export const experiences = [
 export const stacks = [
   {
     skill: "Frontend",
-    tools: "React, HTML, CSS, JavaScript, TypeScript, Bootstrap, MUI, Tailwind CSS, Next.js",
+    tools: [
+      <FaReact key={0} size={22} />,
+      <FaHtml5 key={1} />,
+      <FaCss3Alt key={2} />,
+      <RiJavascriptFill key={3} size={25} />,
+      <BiLogoTypescript key={4} size={25} />,
+      <RiBootstrapFill key={5} />,
+      <SiMui key={6} size={21} />,
+      <SiTailwindcss key={7} />,
+      <SiVite key={8} size={21} />,
+      <SiNextdotjs key={9} />,
+    ],
   },
   {
     skill: "Backend",
-    tools: "Node.js, Python, Java, C, Express, Flask, Django",
+    tools: [
+      <FaNodeJs key={0} size={22} />,
+      <BiLogoTypescript key={1} size={25} />,
+      <FaPython key={2} />,
+      <FaJava key={3} />,
+      <FaCopyright key={4} size={21} />,
+      <SiDjango key={5} size={21} />,
+      <SiExpress key={6} size={22} />,
+    ],
   },
   {
     skill: "Database",
-    tools: "PostgreSQL, MySQL",
+    tools: [
+      <BiLogoPostgresql key={0} />,
+      <SiMysql key={1} size={27} />,
+    ],
   },
   {
     skill: "Others",
-    tools: "Wireshark, Jest, Cypress, Gradle, GitLab, GitHub",
+    tools: [
+      <SiWireshark key={0} size={20} />,
+      <SiJest key={1} size={22} />,
+      <TbBrandCypress key={2} />,
+      <SiGradle key={3} />,
+      <FaGitlab key={4} size={21} />,
+      <FaGithub key={5} size={22} />,
+    ],
   },
   {
     skill: "Learning",
-    tools: "Go, Docker, Kubernetes",
+    tools: [
+      <FaGolang key={0} size={25} />,
+      <FaDocker key={1} />,
+      <SiKubernetes key={2} size={21} />,
+    ],
   },
 ];
 
@@ -181,8 +219,8 @@ export const projects = [
     github: "https://github.com/photkosee/vanilla-slackr",
     stack: [
       <RiJavascriptFill key={0} />,
-      <DiCss3 key={1} />,
-      <DiHtml5 key={2} />,
+      <FaCss3Alt key={1} />,
+      <FaHtml5 key={2} />,
       <RiBootstrapFill key={3} />,
     ],
     date: "Oct 2023",
@@ -227,7 +265,7 @@ export const projects = [
     stack: [
       <FaReact key={0} />,
       <RiJavascriptFill key={1} />,
-      <DiCss3 key={2} />,
+      <FaCss3Alt key={2} />,
     ],
     date: "Jul 2023",
   },

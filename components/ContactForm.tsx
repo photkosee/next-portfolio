@@ -24,10 +24,23 @@ const ContactForm = () => {
     message: message,
   };
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    setLoading(true);
-    e.preventDefault();
+  const validateInput = () => {
+    const urlRegexs = [
+      /(https?:\/\/[^\s]+)/gm,
+      /(http?:\/\/[^\s]+)/gm,
+    ];
 
+    // Validating data to prevent web attacks (url injection)
+    for (const urlRegex of urlRegexs) {
+      if (urlRegex.test(name)) return false;
+      if (urlRegex.test(email)) return false;
+      if (urlRegex.test(message)) return false
+    }
+
+    return true;
+  };
+
+  const sendApi = () => {
     emailjs.send(
       "service_plhvm9r",
       "template_irwtfji",
@@ -36,7 +49,8 @@ const ContactForm = () => {
     )
       .then((response) => {
         toast({
-          description: "Your message has been sent. I'll get back to you soon.",
+          description:
+            "Your message has been sent.I'll get back to you soon.",
         });
         setName("");
         setEmail("");
@@ -49,7 +63,23 @@ const ContactForm = () => {
         });
         setLoading(false);
       });
-  }
+  };
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    setLoading(true);
+    e.preventDefault();
+
+    if (!validateInput()) {
+      toast({
+        title: "Uh oh! Something went wrong.",
+        description: "You are not allowed to embed a link in your message.",
+      });
+      setLoading(false);
+      return
+    } else {
+      sendApi();
+    }
+  };
 
   return (
     <form className="flex flex-col gap-3 z-10" onSubmit={sendEmail}>

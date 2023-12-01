@@ -149,8 +149,16 @@ const QualificationTab = () => {
                   <div className="font-semibold text-lg leading-none mb-2">
                     {stack.skill}
                   </div>
-                  <div className="text-sm leading-none text-muted-foreground mb-7">
-                    {stack.tools}
+                  <div className="
+                    text-sm leading-none text-muted-foreground mb-7 max-w-[300px]
+                    flex flex-wrap items-center gap-x-2 gap-y-1
+                    "
+                  >
+                    {stack.tools.map((tool, index) => (
+                      <div key={index} className="text-primary text-[23px]">
+                        {tool}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
