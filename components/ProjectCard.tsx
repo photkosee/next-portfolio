@@ -82,7 +82,7 @@ const ProjectCard = ({
       <div className="absolute top-2 right-2">
         <div className="flex flex-col gap-2 items-center">
           {stack.map(((e, index) => (
-            <div key={index} className="text-[23px] text-primary">
+            <div key={index} className="text-[23px] text-black dark:text-white">
               {e}
             </div>
           )))}

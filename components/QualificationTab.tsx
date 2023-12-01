@@ -49,7 +49,7 @@ const QualificationTab = () => {
       <div className="text-lg mt-20 sm:mt-0">
         <TabsContent value="experiences">
           <div className="
-            flex items-center gap-x-3 text-primary
+            flex items-center gap-x-3 dark:text-white
             justify-center lg:justify-start mb-5 sm:my-5
             "
           >
@@ -87,7 +87,7 @@ const QualificationTab = () => {
 
         <TabsContent value="educations">
           <div className="
-            flex items-center gap-x-3 text-primary
+            flex items-center gap-x-3 dark:text-white
             justify-center lg:justify-start mb-5 sm:my-5
             "
           >
@@ -125,7 +125,7 @@ const QualificationTab = () => {
 
         <TabsContent value="skills">
           <div className="
-            flex items-center gap-x-3 text-primary
+            flex items-center gap-x-3 dark:text-white
             justify-center lg:justify-start mb-5 sm:my-5
             "
           >
@@ -155,7 +155,7 @@ const QualificationTab = () => {
                     "
                   >
                     {stack.tools.map((tool, index) => (
-                      <div key={index} className="text-primary text-[23px]">
+                      <div key={index} className="text-[23px] text-black dark:text-white">
                         {tool}
                       </div>
                     ))}

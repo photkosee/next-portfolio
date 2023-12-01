@@ -13,7 +13,7 @@ const Contact = () => {
       >
         <div className="w-full max-w-[470px] flex flex-col gap-7">
           <div className="w-full flex flex-col items-center xl:items-start">
-            <div className="text-big text-primary">
+            <div className="text-big">
               Let&rsquo;s have a chat.
             </div>
             <div className="flex items-center gap-1">

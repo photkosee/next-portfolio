@@ -18,7 +18,7 @@ const ProjectSection = () => {
   return (
     <section className="mt-28">
       <motion.div className="
-        container mx-auto flex flex-col gap-7 relative h-[84vh]
+        container mx-auto flex flex-col gap-7 relative min-h-[84vh]
         max-w-screen overflow-x-hidden
         "
         initial="offscreen"
@@ -26,7 +26,7 @@ const ProjectSection = () => {
         viewport={{ once: true, amount: 0.6 }}
       >
         <motion.div className="
-          max-w-[350px] xl:max-w-[480px] mx-auto h-1/2 lg:h-full lg:mx-0
+          max-w-[350px] xl:max-w-[480px] mx-auto h-1/2 lg:h-[84vh] lg:mx-0
           flex flex-col justify-end lg:justify-center lg:pl-10 xl:pl-28
           "
           variants={fadeIn("left")}
