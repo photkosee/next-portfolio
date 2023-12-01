@@ -166,7 +166,9 @@ export const projects = [
       "A simple network monitoring in Go",
     link: "",
     github: "https://github.com/photkosee/network-analyzer",
-    stack: [<FaGolang key={1} />],
+    stack: [
+      <FaGolang key={1} />,
+    ],
     date: "Nov 2023",
   },
   {
@@ -237,7 +239,9 @@ export const projects = [
       "A car dealer website with Django",
     link: "",
     github: "https://github.com/photkosee/car-dealer",
-    stack: [<SiDjango key={0} />],
+    stack: [
+      <SiDjango key={0} />,
+    ],
     date: "Jul 2023",
   },
   {
@@ -248,7 +252,9 @@ export const projects = [
       "Implementing virtual memory translation in C",
     link: "",
     github: "https://github.com/photkosee/vm-fault",
-    stack: [<FaCopyright key={0} />],
+    stack: [
+      <FaCopyright key={0} />,
+    ],
     date: "Apr 2023",
   },
   {
@@ -259,7 +265,9 @@ export const projects = [
       "Implementationing common system calls in C",
     link: "",
     github: "https://github.com/photkosee/file-management",
-    stack: [<FaCopyright key={0} />],
+    stack: [
+      <FaCopyright key={0} />,
+    ],
     date: "Mar 2023",
   },
   {
@@ -267,7 +275,7 @@ export const projects = [
     category: "backend",
     name: "Tributary",
     description:
-      "A Java API building event-driven systems. Testing with Gradle",
+      "A Java API building event-driven systems, applying OOP principles with a UML diagram. Testing with Gradle",
     link: "",
     github: "https://github.com/photkosee/tributary",
     stack: [
@@ -281,7 +289,7 @@ export const projects = [
     category: "backend",
     name: "Dungeon Mania",
     description:
-      "A 2D adventure game in Java applying OOP principles. Testing with Gradle",
+      "A 2D adventure game in Java, applying OOP principles with a UML diagram. Testing with Gradle",
     link: "",
     github: "https://github.com/photkosee/dungeon-mania",
     stack: [
@@ -295,7 +303,7 @@ export const projects = [
     category: "backend",
     name: "Back to Blackout",
     description:
-      "A demo of satellite orbit and communication in Java applying OOP principles. Testing with Gradle",
+      "A demo of satellite orbit and communication in Java, applying OOP principles with a UML diagram. Testing with Gradle",
     link: "",
     github: "https://github.com/photkosee/back-to-blackout",
     stack: [
