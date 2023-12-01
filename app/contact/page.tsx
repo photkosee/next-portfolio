@@ -8,7 +8,7 @@ const Contact = () => {
     <main className="min-h-screen pt-12">
       <div className="
         container mx-auto flex flex-col items-center justify-center
-        lg:flex-row lg:justify-around
+        lg:flex-row lg:justify-around h-full
         "
       >
         <div className="w-full max-w-[470px] flex flex-col gap-7">

@@ -6,9 +6,17 @@ import animationData from "@/components/bg-animation.json";
 
 const AnimateBg = () => {
   return (
-    <div className="max-w-[400px] xl:max-w-[470px]">
-      <Lottie animationData={animationData} className="hidden lg:block" />
-    </div>
+    <>
+      {typeof animationData !== "undefined" &&
+        <div className="max-w-[400px] xl:max-w-[470px]">
+          <Lottie
+            className="hidden lg:block"
+            animationData={animationData}
+            loop
+          />
+        </div>
+      }
+    </>
   );
 };
 

@@ -23,6 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="./logo.png" />
+        <meta name="google-site-verification" content="inHe6DFRHkKFZOiScpDCFdl4QbQoEq6LAb8wloKmkH0" />
       </head>
 
       <body className={inter.className}>
