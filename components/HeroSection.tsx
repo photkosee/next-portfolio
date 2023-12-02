@@ -11,7 +11,7 @@ import WavyPattern from "@/components/WavyPattern";
 const HeroSection = () => {
   return (
     <section className="
-      relative bg-[#fef5f5] dark:bg-transparent w-full h-[90vh]
+      relative bg-[#fef5f5] dark:bg-transparent w-full h-[86vh]
       flex justify-center items-center
       "
     >
