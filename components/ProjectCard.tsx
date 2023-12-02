@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Calendar, GithubIcon, Link2Icon } from "lucide-react";
+import { SiUml } from "react-icons/si";
 
 import { Project } from "@/components/types";
 import { Card, CardHeader } from "@/components/ui/card";
@@ -15,7 +16,10 @@ const ProjectCard = ({
   github,
   stack,
   date,
+  uml,
 }: Project) => {
+  console.log(uml)
+
   return (
     <Card className="w-[300px] sm:max-w-[370px] relative group">
       <CardHeader className="p-0">
@@ -54,17 +58,31 @@ const ProjectCard = ({
               </Link>
             }
 
+            {uml &&
               <Link className="
                 bg-secondary w-[50px] h-[50px] rounded-full
                 flex justify-center items-center
                 scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100
-                transition-all duration-300 z-10
+                transition-all duration-400 z-10
                 "
-                href={github}
+                href={uml}
                 target="_blank"
               >
-                <GithubIcon className="text-white" />
+                <SiUml className="text-white" />
               </Link>
+            }
+
+            <Link className="
+              bg-secondary w-[50px] h-[50px] rounded-full
+              flex justify-center items-center
+              scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100
+              transition-all duration-300 z-10
+              "
+              href={github}
+              target="_blank"
+            >
+              <GithubIcon className="text-white" />
+            </Link>
           </div>
         </div>
       </CardHeader>
@@ -81,9 +99,13 @@ const ProjectCard = ({
 
       <div className="absolute top-2 right-2">
         <div className="flex flex-col gap-2 items-center">
-          {stack.map(((e, index) => (
-            <div key={index} className="text-[23px] text-primary sm:text-black sm:dark:text-white">
-              {e}
+          {stack.map(((icon, index) => (
+            <div key={index} className="
+              text-[23px] text-primary sm:text-muted-foreground
+              sm:dark:text-muted-foreground
+              "
+            >
+              {icon}
             </div>
           )))}
         </div>

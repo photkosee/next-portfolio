@@ -100,6 +100,7 @@ const ProjectSection = () => {
                   github={project.github}
                   stack={project.stack}
                   date={project.date}
+                  uml={project.uml}
                 />
               </SwiperSlide>
             ))}

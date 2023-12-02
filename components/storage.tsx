@@ -27,6 +27,7 @@ import {
 } from "react-icons/fa";
 import { RiBootstrapFill, RiJavascriptFill } from "react-icons/ri";
 import { FaGitlab, FaGolang } from "react-icons/fa6";
+import { Project } from "./types";
 
 export const educations = [
   {
@@ -131,7 +132,6 @@ export const projects = [
     name: "Pymetrics Games Site",
     description:
       "A site hosting a series of online assessments designed to measure cognitive and emotional traits with Next.js, TypeScript, and Tailwind CSS",
-    link: "",
     github: "https://github.com/photkosee/next-pymetrics-games",
     stack: [
       <SiNextdotjs key={0} />,
@@ -164,7 +164,6 @@ export const projects = [
     name: "AirBrB",
     description:
       "A property renting service website with React JS, Tailwind CSS, and MUI. Component testing with React Testing Library, and UI Testing with Cypress",
-    link: "",
     github: "https://github.com/photkosee/react-airbrb",
     stack: [
       <FaReact key={0} />,
@@ -192,12 +191,10 @@ export const projects = [
     date: "Nov 2023",
   },
   {
-    image: "",
     category: "others",
     name: "Network Analyzer",
     description:
       "A simple network monitoring in Go",
-    link: "",
     github: "https://github.com/photkosee/network-analyzer",
     stack: [
       <FaGolang key={1} />,
@@ -210,7 +207,6 @@ export const projects = [
     name: "Slackr",
     description:
       "A messaging platform with Vanilla JS, and Bootstrap",
-    link: "",
     github: "https://github.com/photkosee/vanilla-slackr",
     stack: [
       <RiJavascriptFill key={0} />,
@@ -236,12 +232,10 @@ export const projects = [
     date: "Sep 2023",
   },
   {
-    image: "",
     category: "others",
     name: "DNS Resolver",
     description:
       "A homemade DNS resolver without supported libraries in Python, using Wireshark to help debuging",
-    link: "",
     github: "https://github.com/photkosee/dns-resolver",
     stack: [
       <FaPython key={0} />,
@@ -265,12 +259,10 @@ export const projects = [
     date: "Jul 2023",
   },
   {
-    image: "",
     category: "fullstack",
     name: "Car Dealer Website",
     description:
       "A car dealer website with Django",
-    link: "",
     github: "https://github.com/photkosee/car-dealer",
     stack: [
       <SiDjango key={0} />,
@@ -278,12 +270,10 @@ export const projects = [
     date: "Jul 2023",
   },
   {
-    image: "",
     category: "others",
     name: "Virtual Memory",
     description:
       "Implementing virtual memory translation in C",
-    link: "",
     github: "https://github.com/photkosee/vm-fault",
     stack: [
       <FaCopyright key={0} />,
@@ -291,12 +281,10 @@ export const projects = [
     date: "Apr 2023",
   },
   {
-    image: "",
     category: "others",
     name: "System Calls",
     description:
       "Implementationing common system calls in C",
-    link: "",
     github: "https://github.com/photkosee/file-management",
     stack: [
       <FaCopyright key={0} />,
@@ -304,54 +292,49 @@ export const projects = [
     date: "Mar 2023",
   },
   {
-    image: "",
     category: "backend",
     name: "Tributary",
     description:
       "A Java API building event-driven systems, applying OOP principles with a UML diagram. Testing with Gradle",
-    link: "",
     github: "https://github.com/photkosee/tributary",
     stack: [
       <FaJava key={0} />,
       <SiGradle key={1} />
     ],
+    uml: "https://drive.google.com/file/d/1RplnTzt38UexT7zDhYWakjefp2hCob3S/view",
     date: "Nov 2022",
   },
   {
-    image: "",
     category: "backend",
     name: "Dungeon Mania",
     description:
       "A 2D adventure game in Java, applying OOP principles with a UML diagram. Testing with Gradle",
-    link: "",
     github: "https://github.com/photkosee/dungeon-mania",
     stack: [
       <FaJava key={0} />,
       <SiGradle key={1} />
     ],
+    uml: "https://drive.google.com/file/d/1uJqEFKwZRKXHGMQgYjq-tQ8MB0pi_Rb3/view",
     date: "Oct 2022",
   },
   {
-    image: "",
     category: "backend",
     name: "Back to Blackout",
     description:
       "A demo of satellite orbit and communication in Java, applying OOP principles with a UML diagram. Testing with Gradle",
-    link: "",
     github: "https://github.com/photkosee/back-to-blackout",
     stack: [
       <FaJava key={0} />,
       <SiGradle key={1} />
     ],
+    uml: "https://drive.google.com/file/d/1mV0JWhQIZe4L92LekX2HKLVFP1bh0QYj/view",
     date: "Sep 2022",
   },
   {
-    image: "",
     category: "backend",
     name: "UNSW Treats",
     description:
       "A messaging platform with Express and TypeScript. Testing with Jest",
-    link: "",
     github: "https://github.com/photkosee/unsw-treats",
     stack: [
       <FaNodeJs key={0} />,

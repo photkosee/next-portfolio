@@ -8,5 +8,6 @@ export interface Project {
   link?: string
   github: string
   stack: ReactComponentElement[]
+  uml?: string
   date: string
-}
+};

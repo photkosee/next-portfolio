@@ -24,7 +24,7 @@ const QualificationTab = () => {
           "
           value="experiences"
         >
-          Experiences
+          Experience
         </TabsTrigger>
 
         <TabsTrigger className="
@@ -33,7 +33,7 @@ const QualificationTab = () => {
           "
           value="educations"
         >
-          Educations
+          Education
         </TabsTrigger>
 
         <TabsTrigger className="
@@ -54,7 +54,7 @@ const QualificationTab = () => {
             "
           >
             <h3 className="h3">
-              My Experiences
+              My Experience
             </h3>
             <Briefcase size={25} />
           </div>
@@ -150,14 +150,13 @@ const QualificationTab = () => {
                     {stack.skill}
                   </div>
                   <div className="
-                    text-sm leading-none text-muted-foreground mb-7
-                    flex flex-wrap items-center gap-x-2 gap-y-1
+                    mb-7 flex flex-wrap items-center gap-x-2 gap-y-1
                     "
                   >
                     {stack.tools.map((tool, index) => (
                       <div
                         key={index}
-                        className="text-[23px] text-black dark:text-white"
+                        className="text-[23px] text-muted-foreground"
                       >
                         {tool}
                       </div>
