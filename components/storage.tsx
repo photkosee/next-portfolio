@@ -80,13 +80,8 @@ export const stacks = [
       <FaCopyright key={4} size={21} />,
       <SiDjango key={5} size={21} />,
       <SiExpress key={6} size={22} />,
-    ],
-  },
-  {
-    skill: "Database",
-    tools: [
-      <BiLogoPostgresql key={0} />,
-      <SiMysql key={1} size={27} />,
+      <BiLogoPostgresql key={7} />,
+      <SiMysql key={8} size={27} />,
     ],
   },
   {

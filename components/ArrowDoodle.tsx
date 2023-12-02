@@ -1,7 +1,8 @@
 const ArrowDoodle = () => {
   return (
     <svg className="
-      absolute w-20 sm:w-28 -left-7 md:-left-14 lg:-left-16 xl:-left-14 -z-10
+      absolute w-20 sm:w-28 -left-7 md:-left-14 lg:-left-16 xl:-left-14
+      -z-10 hidden sm:block
       "
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 500 500"

@@ -69,10 +69,10 @@ const ProjectCard = ({
         </div>
       </CardHeader>
 
-      <div className="h-[180px] px-5 py-3 flex flex-col gap-3">
+      <div className="h-[180px] px-5 py-2 sm:py-3 flex flex-col gap-1 xs:gap-3">
         <h4 className="h4">{name}</h4>
         <p className="
-          text-muted-foreground text-[15px] leading-[17px]
+          text-muted-foreground text-[12px] sm:text-[15px] leading-[17px]
           "
         >
           {description}
@@ -82,7 +82,7 @@ const ProjectCard = ({
       <div className="absolute top-2 right-2">
         <div className="flex flex-col gap-2 items-center">
           {stack.map(((e, index) => (
-            <div key={index} className="text-[23px] text-black dark:text-white">
+            <div key={index} className="text-[23px] text-primary sm:text-black sm:dark:text-white">
               {e}
             </div>
           )))}

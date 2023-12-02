@@ -11,7 +11,7 @@ import WavyPattern from "@/components/WavyPattern";
 const HeroSection = () => {
   return (
     <section className="
-      relative bg-[#fef5f5] dark:bg-transparent w-full h-[84vh]
+      relative bg-[#fef5f5] dark:bg-transparent w-full h-[90vh]
       flex justify-center items-center
       "
     >
@@ -48,7 +48,7 @@ const HeroSection = () => {
             </h1>
             <p className="
               my-3 text-left text-muted-foreground font-light
-              text-sm md:text-[16px] md:leading-[24px] max-w-xs
+              text-sm md:text-[16px] md:leading-[24px]
               "
             >
               A passionate developer on a mission to bring ideas to life through code
@@ -71,10 +71,16 @@ const HeroSection = () => {
               </Button>
             </Link>
 
-            <Button className="rounded-full gap-x-1" variant="secondary">
-              Resume
-              <IoDocumentTextOutline size={19} />
-            </Button>
+            <Link
+              href="https://drive.google.com/file/d/1uWHf6d2l4dzpXoTHBB2bLEyUznn6rV7M/view?usp=sharing"
+              target="_blank"
+              passHref
+            >
+              <Button className="rounded-full gap-x-1" variant="secondary">
+                Resume
+                <IoDocumentTextOutline size={19} />
+              </Button>
+            </Link>
           </div>
         </div>
 

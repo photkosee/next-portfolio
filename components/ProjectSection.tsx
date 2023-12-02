@@ -18,7 +18,7 @@ const ProjectSection = () => {
   return (
     <section className="mt-28">
       <motion.div className="
-        container mx-auto flex flex-col gap-7 relative min-h-[84vh]
+        container mx-auto flex flex-col gap-7 relative
         max-w-screen overflow-x-hidden
         "
         initial="offscreen"
