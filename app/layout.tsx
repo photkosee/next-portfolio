@@ -10,7 +10,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Phot's Portfolio",
+  title: "Phot Koseekrainiramon | Portfolio",
   description: "A website showcasing personal projects of Phot Koseekrainiramon",
 };
 

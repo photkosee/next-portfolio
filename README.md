@@ -2,14 +2,13 @@
 > A website showcasing personal projects and experiences deployed on github page, you can now visit the site [here](https://photkosee.github.io/next-portfolio/)
 
 ## Background
-Over the past few months, I have embarked on the journey of crafting my first portfolio website using React JS, opting to forgo the use of any CSS or UI library. As I strive for continuous improvement, the time has come to elevate my digital presence. In alignment with the technology stack employed during my ongoing software engineering internship, I have chosen Next.js as the foundation for this enhanced iteration.
+In the past few months, I've been diving into creating my first portfolio website using React JS, skipping the use of CSS or UI libraries. Now, it's time to amp up my online presence. Following the tech stack from my ongoing software engineering gig, I've picked Next.js and Tailwind CSS as the base for this upgraded version.
 
-I am excited to implement a dark mode, a feature I have not explored previously. Leveraging the capabilities of Shadcn UI, the implementation promises to be a seamless and enriching experience.
+I'm stoked about adding a dark mode, a feature I haven't played with before. Using Shadcn UI should make the implementation smooth and enjoyable.
 
-In a deliberate effort to deepen my proficiency, I have opted for the integration of TypeScript into the project, thereby enhancing both the clarity and maintainability of the codebase. This decision reflects my commitment to embracing versatile and robust technologies as I continue to hone my skills in the ever-evolving field of web development.
+To boost my skills, I've thrown TypeScript into the mix, aiming to make the codebase clearer and more maintainable. It's all about embracing versatile and sturdy tech in the ever-changing world of web development.
 
-
-Exploring a contact section with EmailJS for email functionality on a static site turned out to be simpler than expected with EmailJS. Additionally, integrating the Framer Motion library effortlessly enhanced animations without excess code. This journey was a delightful learning experience with new libraries.
+Adding a contact section with EmailJS for email stuff on a static site turned out to be a breeze. And tossing in the Framer Motion library effortlessly spiced up the animations without going overboard on code. This journey was a blast, exploring new libraries and learning along the way.
 
 ## Getting Started
 

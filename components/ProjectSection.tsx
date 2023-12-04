@@ -41,7 +41,7 @@ const ProjectSection = () => {
           </div>
 
           <p className="
-            my-2 lg:my-5 text-left text-muted-foreground font-light
+            my-2 lg:my-5 text-center text-muted-foreground font-light
             text-sm md:text-[16px] md:leading-[24px]
             "
           >

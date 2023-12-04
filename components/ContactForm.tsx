@@ -49,8 +49,9 @@ const ContactForm = () => {
     )
       .then((response) => {
         toast({
+          title: "Your message has been sent.",
           description:
-            "Your message has been sent.I'll get back to you soon.",
+            "I'll get back to you soon.",
         });
         setName("");
         setEmail("");

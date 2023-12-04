@@ -1,17 +1,38 @@
+"use client";
+
+import Image from "next/image";
+
 import { AtSign } from "lucide-react";
+import { motion } from "framer-motion";
 
 import ContactForm from "@/components/ContactForm";
 import AnimateBg from "@/components/AnimateBg";
+import { fadeIn } from "@/components/variants";
 
 const Contact = () => {
   return (
     <main className="min-h-screen pt-10">
-      <div className="
+      <motion.div className="
         container mx-auto flex flex-col items-center justify-center
         lg:flex-row lg:justify-around h-full my-4
+        max-w-screen overflow-x-hidden
         "
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.6 }}
       >
-        <div className="w-full max-w-[470px] flex flex-col gap-7">
+        <motion.div className="hidden lg:block" variants={fadeIn("left")}>
+          <Image
+            src="./contact-cover.png"
+            width={200}
+            height={200}
+            alt="contact's mockup"
+          />
+        </motion.div>
+
+        <motion.div className="w-full max-w-[470px] flex flex-col gap-7"
+          variants={fadeIn("right")}
+        >
           <div className="w-full flex flex-col items-center xl:items-start">
             <div className="text-big">
               Let&rsquo;s have a chat.
@@ -26,8 +47,8 @@ const Contact = () => {
             </div>
           </div>
           <ContactForm />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </main>
   );
 };
