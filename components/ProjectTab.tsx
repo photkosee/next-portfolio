@@ -95,6 +95,7 @@ const ProjectTab = () => {
               github={project.github}
               stack={project.stack}
               date={project.date}
+              uml={project.uml}
             />
           </TabsContent>
         ))}

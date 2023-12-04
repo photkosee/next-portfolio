@@ -18,8 +18,6 @@ const ProjectCard = ({
   date,
   uml,
 }: Project) => {
-  console.log(uml)
-
   return (
     <Card className="w-[300px] sm:max-w-[370px] relative group">
       <CardHeader className="p-0">
@@ -68,7 +66,7 @@ const ProjectCard = ({
                 href={uml}
                 target="_blank"
               >
-                <SiUml className="text-white" />
+                <SiUml className="text-white text-[22px]" />
               </Link>
             }
 
