@@ -13,6 +13,7 @@ import {
   SiJest,
   SiMysql,
   SiKubernetes,
+  SiNextui,
 } from "react-icons/si";
 import {
   FaCopyright,
@@ -27,7 +28,6 @@ import {
 } from "react-icons/fa";
 import { RiBootstrapFill, RiJavascriptFill } from "react-icons/ri";
 import { FaGitlab, FaGolang } from "react-icons/fa6";
-import { Project } from "./types";
 
 export const educations = [
   {
@@ -154,7 +154,24 @@ export const projects = [
       <FaReact key={1} />,
       <BiLogoTypescript key={2} />,
       <SiTailwindcss key={3} />,
-      <TbBrandFramerMotion key={4} />,
+      <TbBrandFramerMotion key={4}  />,
+    ],
+    date: "Dec 2023",
+  },
+  {
+    image: "./towers-cover.png",
+    category: "frontend",
+    name: "Pymetrics Tower Game",
+    description:
+      "A Pymetrics Towers Game with Vite, Tailwind CSS, NextUI, and React Beautiful DnD",
+    link: "https://photkosee.github.io/react-pymetrics-towers/",
+    github: "https://github.com/photkosee/react-pymetrics-towers",
+    stack: [
+      <SiVite key={0} />,
+      <FaReact key={1} />,
+      <BiLogoTypescript key={2} />,
+      <SiTailwindcss key={3} />,
+      <SiNextui size={20} key={4} />,
     ],
     date: "Dec 2023",
   },
@@ -171,22 +188,6 @@ export const projects = [
       <SiTailwindcss key={2} />,
       <SiMui size={18} key={3} />,
       <TbBrandCypress key={4} />,
-    ],
-    date: "Nov 2023",
-  },
-  {
-    image: "./towers-cover.png",
-    category: "frontend",
-    name: "Pymetrics Tower Game",
-    description:
-      "A Pymetrics Towers Game with Vite, Tailwind CSS, and react-beautiful-dnd",
-    link: "https://photkosee.github.io/react-pymetrics-towers/",
-    github: "https://github.com/photkosee/react-pymetrics-towers",
-    stack: [
-      <SiVite key={0} />,
-      <FaReact key={1} />,
-      <BiLogoTypescript key={2} />,
-      <SiTailwindcss key={3} />,
     ],
     date: "Nov 2023",
   },

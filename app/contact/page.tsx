@@ -27,6 +27,7 @@ const Contact = () => {
             width={200}
             height={200}
             alt="contact's mockup"
+            priority
           />
         </motion.div>
 
