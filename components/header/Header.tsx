@@ -30,7 +30,7 @@ const Header = () => {
       } sticky top-0 z-30 transition-all
       `}
     >
-      <div className="container mx-auto">
+      <div className="container">
         <div className="flex justify-between md:justify-end items-center gap-x-6">
           <Nav
             containerStyles="hidden md:flex items-center gap-x-8"

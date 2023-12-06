@@ -6,7 +6,7 @@ import WavyPattern from "@/components/background/WavyPattern";
 const Projects = () => {
   return (
     <main className="min-h-screen pt-12 relative">
-      <div className="container mx-auto h-full flex flex-col relative">
+      <div className="container h-full flex flex-col relative">
         <div className="w-full flex gap-4 items-center justify-center">
           <h2 className="text-big">
             My Projects

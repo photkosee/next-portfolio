@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <main className="min-h-screen pt-10">
       <motion.div className="
-        container mx-auto flex flex-col items-center justify-center
+        container flex flex-col items-center justify-center
         lg:flex-row lg:justify-around h-full my-4
         max-w-screen overflow-x-hidden
         "

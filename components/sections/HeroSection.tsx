@@ -57,8 +57,7 @@ const HeroSection = () => {
 
           <Socials
             containerStyles="
-            flex md:hidden justify-center items-center
-            gap-x-5
+            flex md:hidden justify-center items-center gap-x-5
             "
             iconsStyles="text-[21px] hover:text-primary"
           />
