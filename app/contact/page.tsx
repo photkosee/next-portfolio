@@ -11,7 +11,7 @@ import { fadeIn } from "@/components/variants";
 
 const Contact = () => {
   return (
-    <main className="min-h-screen pt-10">
+    <main className="min-h-screen flex items-center pt-10">
       <motion.div className="
         container flex flex-col items-center justify-center
         lg:flex-row lg:justify-around h-full my-4
@@ -23,7 +23,7 @@ const Contact = () => {
       >
         <motion.div className="hidden lg:block" variants={fadeIn("left")}>
           <Image
-            src="./contact-cover.png"
+            src="./images/contact-cover.png"
             width={200}
             height={200}
             alt="contact's mockup"
