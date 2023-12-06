@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import ThemeProvider from "@/components/ThemeProvider";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
+import ThemeProvider from "@/components/header/ThemeProvider";
 import { Toaster } from "@/components/ui/toaster"
 
 const inter = Nunito({ subsets: ["latin"] });

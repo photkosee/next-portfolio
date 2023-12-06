@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 import { projects } from "@/components/storage";
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCard from "@/components/cards/ProjectCard";
 import {
   Tabs,
   TabsContent,

@@ -4,9 +4,9 @@ import { RiMailSendLine } from "react-icons/ri";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 import { Button } from "@/components/ui/button";
-import Socials from "@/components/Socials";
-import MouseDown from "@/components/MouseDown";
-import WavyPattern from "@/components/WavyPattern";
+import Socials from "@/components/header/Socials";
+import MouseDown from "@/components/background/MouseDown";
+import WavyPattern from "@/components/background/WavyPattern";
 
 const HeroSection = () => {
   return (

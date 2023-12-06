@@ -1,7 +1,7 @@
 import { Presentation } from "lucide-react";
 
-import ProjectTab from "@/components/ProjectTab";
-import WavyPattern from "@/components/WavyPattern";
+import ProjectTab from "@/components/sections/ProjectTab";
+import WavyPattern from "@/components/background/WavyPattern";
 
 const Projects = () => {
   return (

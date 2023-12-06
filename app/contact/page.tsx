@@ -5,8 +5,8 @@ import Image from "next/image";
 import { AtSign } from "lucide-react";
 import { motion } from "framer-motion";
 
-import ContactForm from "@/components/ContactForm";
-import AnimateBg from "@/components/AnimateBg";
+import ContactForm from "@/components/forms/ContactForm";
+import AnimateBg from "@/components/background/AnimateBg";
 import { fadeIn } from "@/components/variants";
 
 const Contact = () => {

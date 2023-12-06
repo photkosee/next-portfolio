@@ -135,7 +135,6 @@ export const projects = [
     github: "https://github.com/photkosee/next-pymetrics-games",
     stack: [
       <SiNextdotjs key={0} />,
-      <FaReact key={1} />,
       <BiLogoTypescript key={2} />,
       <SiTailwindcss key={3} />,
     ],
@@ -151,7 +150,6 @@ export const projects = [
     github: "https://github.com/photkosee/next-portfolio",
     stack: [
       <SiNextdotjs key={0} />,
-      <FaReact key={1} />,
       <BiLogoTypescript key={2} />,
       <SiTailwindcss key={3} />,
       <TbBrandFramerMotion key={4}  />,

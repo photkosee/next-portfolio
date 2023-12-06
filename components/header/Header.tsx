@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
-import ModeToggle from "@/components/ModeToggle";
-import Nav from "@/components/Nav";
-import MobileNav from "@/components/MobileNav";
+import ModeToggle from "@/components/header/ModeToggle";
+import Nav from "@/components/header/Nav";
+import MobileNav from "@/components/header/MobileNav";
 
 const Header = () => {
   const [top, setTop] = useState<boolean>(false);

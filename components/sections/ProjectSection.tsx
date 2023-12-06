@@ -8,8 +8,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
 
-import ArrowDoodle from "@/components/ArrowDoodle";
-import ProjectCard from "@/components/ProjectCard";
+import ArrowDoodle from "@/components/background/ArrowDoodle";
+import ProjectCard from "@/components/cards/ProjectCard";
 import { projects } from "@/components/storage";
 import { Button } from "@/components/ui/button";
 import { fadeIn } from "@/components/variants";

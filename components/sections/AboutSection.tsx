@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 
-import CircleDoodle from "@/components/CircleDoodle";
-import QualificationTab from "@/components/QualificationTab";
-import WavyPattern from "@/components/WavyPattern";
+import CircleDoodle from "@/components/background/CircleDoodle";
+import QualificationTab from "@/components/sections/QualificationTab";
+import WavyPattern from "@/components/background/WavyPattern";
 import { infoDatas } from "@/components/storage";
 import { fadeIn } from "@/components/variants";
 

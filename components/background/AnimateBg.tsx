@@ -2,7 +2,7 @@
 
 import Lottie from "lottie-react";
 
-import animationData from "@/components/bg-animation.json";
+import animationData from "@/components/background/bg-animation.json";
 
 const AnimateBg = () => {
   return (

@@ -1,9 +1,9 @@
 import { TbAlignJustified } from "react-icons/tb";
 
 import { Button } from "@/components/ui/button";
-import Nav from "@/components/Nav";
-import Socials from "@/components/Socials";
-import WavyPattern from "@/components/WavyPattern";
+import Nav from "@/components/header/Nav";
+import Socials from "@/components/header/Socials";
+import WavyPattern from "@/components/background/WavyPattern";
 import {
   Sheet,
   SheetContent,
