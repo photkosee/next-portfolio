@@ -5,25 +5,28 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import ThemeProvider from "@/components/header/ThemeProvider";
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Phot Koseekrainiramon | Portfolio",
-  description: "A website showcasing personal projects of Phot Koseekrainiramon",
+  description:
+    "A website showcasing personal projects of Phot Koseekrainiramon",
 };
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="./logo.png" />
-        <meta name="google-site-verification" content="inHe6DFRHkKFZOiScpDCFdl4QbQoEq6LAb8wloKmkH0" />
+        <meta
+          name="google-site-verification"
+          content="inHe6DFRHkKFZOiScpDCFdl4QbQoEq6LAb8wloKmkH0"
+        />
       </head>
 
       <body className={inter.className}>
@@ -41,4 +44,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-};
+}
