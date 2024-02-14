@@ -17,7 +17,8 @@ import { fadeIn } from "@/components/variants";
 const ProjectSection = () => {
   return (
     <section className="mt-28">
-      <motion.div className="
+      <motion.div
+        className="
         container flex flex-col gap-7 relative
         max-w-screen overflow-x-hidden
         "
@@ -25,13 +26,15 @@ const ProjectSection = () => {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.6 }}
       >
-        <motion.div className="
+        <motion.div
+          className="
           max-w-[350px] xl:max-w-[480px] mx-auto h-1/2 lg:h-[84vh] lg:mx-0
           flex flex-col justify-end lg:justify-center lg:pl-10 xl:pl-28
           "
           variants={fadeIn("left")}
         >
-          <div className="
+          <div
+            className="
             font-bold relative w-full flex items-center justify-center
             text-2xl md:text-3xl
             "
@@ -40,13 +43,14 @@ const ProjectSection = () => {
             Recent Projects
           </div>
 
-          <p className="
+          <p
+            className="
             my-2 lg:my-5 text-center text-muted-foreground font-light
             text-sm md:text-[16px] md:leading-[24px]
             "
           >
-            Exploring new ventures and mastering existing skills
-            through diverse projects
+            Exploring new ventures and mastering existing skills through diverse
+            projects
           </p>
 
           <div className="w-full flex justify-center">
@@ -58,8 +62,9 @@ const ProjectSection = () => {
           </div>
         </motion.div>
 
-        <motion.div className="
-          lg:w-[630px] xl:w-[750px] lg:absolute right-5 top-0
+        <motion.div
+          className="
+          lg:w-[600px] xl:w-[750px] lg:absolute right-5 top-0
           flex items-center h-full max-h-[450px] lg:max-h-full
           "
           variants={fadeIn("right")}
