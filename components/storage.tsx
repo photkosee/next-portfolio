@@ -24,7 +24,7 @@ import {
   FaJava,
   FaNodeJs,
   FaPython,
-  FaReact
+  FaReact,
 } from "react-icons/fa";
 import { RiBootstrapFill, RiJavascriptFill } from "react-icons/ri";
 import { FaGitlab, FaGolang } from "react-icons/fa6";
@@ -46,7 +46,7 @@ export const experiences = [
   {
     company: "Cloud Natician",
     role: "Software Engineer",
-    years: "Sep 2023 - Present",
+    years: "Sep 2023 - Feb 2024",
   },
   {
     company: "UNSW Computer Sceience and Engineering",
@@ -127,16 +127,17 @@ export const infoDatas = [
 
 export const projects = [
   {
-    image: "./images/pym-cover.png",
+    image: "./images/blackpeach-cover.png",
     category: "frontend",
-    name: "Pymetrics Games Site",
+    name: "BlackPeach",
     description:
-      "A site hosting a series of online assessments designed to measure cognitive and emotional traits with Next.js, TypeScript, and Tailwind CSS",
-    github: "https://github.com/photkosee/next-pymetrics-games",
+      "A full stack E-Commerce platform showcasing music and accessories of a girl group",
+    github: "blackpeach.vercel.app",
     stack: [
       <SiNextdotjs key={0} />,
       <BiLogoTypescript key={2} />,
       <SiTailwindcss key={3} />,
+      <SiNextui size={20} key={4} />,
     ],
     date: "Developing",
   },
@@ -152,7 +153,7 @@ export const projects = [
       <SiNextdotjs key={0} />,
       <BiLogoTypescript key={2} />,
       <SiTailwindcss key={3} />,
-      <TbBrandFramerMotion key={4}  />,
+      <TbBrandFramerMotion key={4} />,
     ],
     date: "Dec 2023",
   },
@@ -192,20 +193,16 @@ export const projects = [
   {
     category: "others",
     name: "Network Analyzer",
-    description:
-      "A simple network monitoring in Go",
+    description: "A simple network monitoring in Go",
     github: "https://github.com/photkosee/network-analyzer",
-    stack: [
-      <FaGolang key={1} />,
-    ],
+    stack: [<FaGolang key={1} />],
     date: "Nov 2023",
   },
   {
     image: "./images/slackr-cover.png",
     category: "frontend",
     name: "Slackr",
-    description:
-      "A messaging platform with Vanilla JS, and Bootstrap",
+    description: "A messaging platform with Vanilla JS, and Bootstrap",
     github: "https://github.com/photkosee/vanilla-slackr",
     stack: [
       <RiJavascriptFill key={0} />,
@@ -236,18 +233,14 @@ export const projects = [
     description:
       "A homemade DNS resolver without supported libraries in Python, using Wireshark to help debuging",
     github: "https://github.com/photkosee/dns-resolver",
-    stack: [
-      <FaPython key={0} />,
-      <SiWireshark size={18} key={1} />,
-    ],
+    stack: [<FaPython key={0} />, <SiWireshark size={18} key={1} />],
     date: "Jul 2023",
   },
   {
     image: "./images/portfolio1-cover.png",
     category: "frontend",
     name: "Portfolio Website 1st Edition",
-    description:
-      "A website showcasing personal projects with React",
+    description: "A website showcasing personal projects with React",
     link: "https://photkosee.github.io/profile-react/",
     github: "https://github.com/photkosee/profile-react",
     stack: [
@@ -260,34 +253,25 @@ export const projects = [
   {
     category: "fullstack",
     name: "Car Dealer Website",
-    description:
-      "A car dealer website with Django",
+    description: "A car dealer website with Django",
     github: "https://github.com/photkosee/car-dealer",
-    stack: [
-      <SiDjango key={0} />,
-    ],
+    stack: [<SiDjango key={0} />],
     date: "Jul 2023",
   },
   {
     category: "others",
     name: "Virtual Memory",
-    description:
-      "Implementing virtual memory translation in C",
+    description: "Implementing virtual memory translation in C",
     github: "https://github.com/photkosee/vm-fault",
-    stack: [
-      <FaCopyright key={0} />,
-    ],
+    stack: [<FaCopyright key={0} />],
     date: "Apr 2023",
   },
   {
     category: "others",
     name: "System Calls",
-    description:
-      "Implementationing common system calls in C",
+    description: "Implementationing common system calls in C",
     github: "https://github.com/photkosee/file-management",
-    stack: [
-      <FaCopyright key={0} />,
-    ],
+    stack: [<FaCopyright key={0} />],
     date: "Mar 2023",
   },
   {
@@ -296,10 +280,7 @@ export const projects = [
     description:
       "A Java API building event-driven systems, applying OOP principles with a UML diagram. Testing with Gradle",
     github: "https://github.com/photkosee/tributary",
-    stack: [
-      <FaJava key={0} />,
-      <SiGradle key={1} />
-    ],
+    stack: [<FaJava key={0} />, <SiGradle key={1} />],
     uml: "https://drive.google.com/file/d/1RplnTzt38UexT7zDhYWakjefp2hCob3S/view",
     date: "Nov 2022",
   },
@@ -309,10 +290,7 @@ export const projects = [
     description:
       "A 2D adventure game in Java, applying OOP principles with a UML diagram. Testing with Gradle",
     github: "https://github.com/photkosee/dungeon-mania",
-    stack: [
-      <FaJava key={0} />,
-      <SiGradle key={1} />
-    ],
+    stack: [<FaJava key={0} />, <SiGradle key={1} />],
     uml: "https://drive.google.com/file/d/1uJqEFKwZRKXHGMQgYjq-tQ8MB0pi_Rb3/view",
     date: "Oct 2022",
   },
@@ -322,10 +300,7 @@ export const projects = [
     description:
       "A demo of satellite orbit and communication in Java, applying OOP principles with a UML diagram. Testing with Gradle",
     github: "https://github.com/photkosee/back-to-blackout",
-    stack: [
-      <FaJava key={0} />,
-      <SiGradle key={1} />
-    ],
+    stack: [<FaJava key={0} />, <SiGradle key={1} />],
     uml: "https://drive.google.com/file/d/1mV0JWhQIZe4L92LekX2HKLVFP1bh0QYj/view",
     date: "Sep 2022",
   },
