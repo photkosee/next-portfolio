@@ -132,7 +132,8 @@ export const projects = [
     name: "BlackPeach",
     description:
       "A full stack E-Commerce platform showcasing music and accessories of a girl group",
-    github: "blackpeach.vercel.app",
+    link: "https://github.com/photkosee/blackpeach",
+    github: "https://github.com/photkosee/next-portfolio",
     stack: [
       <SiNextdotjs key={0} />,
       <BiLogoTypescript key={2} />,
