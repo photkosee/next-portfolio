@@ -59,15 +59,12 @@ const QualificationTab = () => {
 
           <div>
             {experiences.map((experience, index) => (
-              <div className="flex gap-x-7 group" key={index}>
-                <div className="h-[70px] w-[1px] bg-border relative ml-3 mt-1">
-                  <div
-                    className="
-                    w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px]
-                    group-hover:translate-y-[65px] translate-all duration-500
-                    "
-                  />
-                </div>
+              <div className="flex gap-x-5 group" key={index}>
+                <img
+                  src={experience.logo}
+                  alt={experience.company}
+                  className="w-[55px] h-[55px] mt-2 object-scale-down"
+                />
                 <div className="flex flex-col">
                   <div className="text-base font-medium">
                     {experience.years}
@@ -101,7 +98,7 @@ const QualificationTab = () => {
                 <img
                   src={education.logo}
                   alt={education.school}
-                  className="w-[55px] h-[55px] mt-2"
+                  className="w-[55px] h-[55px] mt-2 object-scale-down"
                 />
                 <div className="flex flex-col">
                   <div className="text-base font-medium">{education.years}</div>

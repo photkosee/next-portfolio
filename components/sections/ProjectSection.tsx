@@ -5,7 +5,7 @@ import Link from "next/link";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
 
 import ArrowDoodle from "@/components/background/ArrowDoodle";
@@ -72,6 +72,11 @@ const ProjectSection = () => {
           <Swiper
             className="w-full h-[400px] sm:h-[430px]"
             slidesPerView={1}
+            autoplay={{
+              delay: 5000,
+              stopOnLastSlide: false,
+              disableOnInteraction: true,
+            }}
             breakpoints={{
               600: {
                 slidesPerView: 1.5,
@@ -81,7 +86,7 @@ const ProjectSection = () => {
               },
             }}
             spaceBetween={30}
-            modules={[Pagination]}
+            modules={[Autoplay, Pagination]}
             pagination={{
               clickable: true,
               dynamicBullets: true,

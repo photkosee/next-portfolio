@@ -49,11 +49,13 @@ export const experiences = [
     company: "Cloud Natician",
     role: "Software Engineer",
     years: "Sep 2023 - Feb 2024",
+    logo: "./images/cloudnc.png",
   },
   {
     company: "UNSW Computer Sceience and Engineering",
     role: "Casual Academic",
     years: "May 2023 - Sep 2023",
+    logo: "./images/unsw-cse.png",
   },
 ];
 

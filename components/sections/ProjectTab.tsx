@@ -4,32 +4,27 @@ import { useState } from "react";
 
 import { projects } from "@/components/storage";
 import ProjectCard from "@/components/cards/ProjectCard";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger
-} from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const ProjectTab = () => {
   const [category, setCategory] = useState<string>("all");
 
   const filteredProjects = projects.filter((project) => {
-    return category === "all"
-      ? project
-      : category === project.category;
+    return category === "all" ? project : category === project.category;
   });
 
   return (
     <Tabs defaultValue={category}>
-      <TabsList className="
+      <TabsList
+        className="
         grid sm:grid-cols-5 py-0 gap-1 mx-auto
         text-muted-foreground rounded-full dark:sm:bg-secondary
         border-none bg-transparent sm:bg-white dark:bg-transparent
         sm:border-solid sm:border max-w-md
         "
       >
-        <TabsTrigger className="
+        <TabsTrigger
+          className="
           w-36 sm:w-full rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white 
           "
@@ -39,7 +34,8 @@ const ProjectTab = () => {
           All
         </TabsTrigger>
 
-        <TabsTrigger className="
+        <TabsTrigger
+          className="
           w-36 sm:w-full rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white
           "
@@ -49,7 +45,8 @@ const ProjectTab = () => {
           Frontend
         </TabsTrigger>
 
-        <TabsTrigger className="
+        <TabsTrigger
+          className="
           w-36 sm:w-full rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white
           "
@@ -59,7 +56,8 @@ const ProjectTab = () => {
           Backend
         </TabsTrigger>
 
-        <TabsTrigger className="
+        <TabsTrigger
+          className="
           w-36 sm:w-full rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white
           "
@@ -69,7 +67,8 @@ const ProjectTab = () => {
           Full Stack
         </TabsTrigger>
 
-        <TabsTrigger className="
+        <TabsTrigger
+          className="
           w-36 sm:w-full rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white
           "
@@ -79,13 +78,18 @@ const ProjectTab = () => {
           Others
         </TabsTrigger>
       </TabsList>
-      
-      <div className="
+
+      <div
+        className="
         grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-36 sm:mt-3
         "
       >
         {filteredProjects.map((project, index) => (
-          <TabsContent value={category} key={index} className="flex justify-center">
+          <TabsContent
+            value={category}
+            key={index}
+            className="flex justify-center"
+          >
             <ProjectCard
               image={project.image}
               category={project.category}
