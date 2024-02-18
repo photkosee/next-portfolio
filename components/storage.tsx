@@ -127,6 +127,10 @@ export const infoDatas = [
     icon: <GraduationCap size={18} />,
     description: "Bachelor in Computer Engineering",
   },
+  {
+    icon: <GraduationCap size={18} />,
+    description: "Bachelor in Electrical Engineering",
+  },
 ];
 
 export const projects = [
