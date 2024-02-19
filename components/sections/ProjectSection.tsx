@@ -24,7 +24,7 @@ const ProjectSection = () => {
         "
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         <motion.div
           className="
@@ -111,6 +111,7 @@ const ProjectSection = () => {
                   stack={project.stack}
                   date={project.date}
                   uml={project.uml}
+                  index={index}
                 />
               </SwiperSlide>
             ))}

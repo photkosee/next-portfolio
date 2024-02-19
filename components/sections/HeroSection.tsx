@@ -1,12 +1,19 @@
+"use client";
+
 import Link from "next/link";
 
+import { motion } from "framer-motion";
 import { RiMailSendLine } from "react-icons/ri";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 import { Button } from "@/components/ui/button";
 import Socials from "@/components/header/Socials";
-import MouseDown from "@/components/background/MouseDown";
 import WavyPattern from "@/components/background/WavyPattern";
+
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
 
 const HeroSection = () => {
   return (
@@ -18,7 +25,16 @@ const HeroSection = () => {
     >
       <WavyPattern />
 
-      <div
+      <motion.div
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        transition={{
+          delay: 0.2,
+          ease: "easeInOut",
+          duration: 0.4,
+        }}
+        viewport={{ amount: 0 }}
         className="
         container flex flex-col md:flex-row-reverse -mt-12 z-10
         justify-center items-center gap-x-10 gap-y-3
@@ -94,9 +110,7 @@ const HeroSection = () => {
           "
           iconsStyles="text-[27px] hover:text-primary"
         />
-      </div>
-
-      <MouseDown />
+      </motion.div>
     </section>
   );
 };

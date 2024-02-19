@@ -100,6 +100,7 @@ const ProjectTab = () => {
               stack={project.stack}
               date={project.date}
               uml={project.uml}
+              index={index}
             />
           </TabsContent>
         ))}
