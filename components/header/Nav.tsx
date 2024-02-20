@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 const links = [
   {
     path: "/",
-    name: "home"
+    name: "home",
   },
   {
     path: "/projects",
-    name: "my projects"
+    name: "projects",
   },
   {
     path: "https://photkosee.github.io/hugo-blog/",
-    name: "my blog"
+    name: "blog",
   },
   {
     path: "/contact",
-    name: "contact"
+    name: "contact",
   },
 ];
 
@@ -27,20 +27,22 @@ const Nav = ({
   containerStyles,
   linkStyles,
   underlineStyles,
-} : {
-  containerStyles: string
-  linkStyles: string
-  underlineStyles: string
+}: {
+  containerStyles: string;
+  linkStyles: string;
+  underlineStyles: string;
 }) => {
   const path = usePathname();
 
   return (
-    <nav className={`
+    <nav
+      className={`
       ${containerStyles}
       `}
     >
       {links.map((link, index) => (
-        <Link className={`
+        <Link
+          className={`
           capitalize ${linkStyles} flex
           `}
           href={link.path}
@@ -48,15 +50,16 @@ const Nav = ({
           target={link.name === "my blog" ? "_blank" : ""}
         >
           {link.path === path && (
-            <motion.span className={`${underlineStyles}`}
+            <motion.span
+              className={`${underlineStyles}`}
               initial={{
-                y: "-100%"
+                y: "-100%",
               }}
               animate={{
-                y: 0
+                y: 0,
               }}
               transition={{
-                type: "tween"
+                type: "tween",
               }}
               layoutId="underline"
             />
