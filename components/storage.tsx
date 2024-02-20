@@ -149,6 +149,7 @@ export const projects = [
       <SiNextui size={20} key={4} />,
     ],
     date: "Developing",
+    show: true,
   },
   {
     image: "./images/portfolio2-cover.png",
@@ -165,6 +166,7 @@ export const projects = [
       <TbBrandFramerMotion key={4} />,
     ],
     date: "Dec 2023",
+    show: true,
   },
   {
     image: "./images/towers-cover.png",
@@ -182,6 +184,7 @@ export const projects = [
       <SiNextui size={20} key={4} />,
     ],
     date: "Dec 2023",
+    show: true,
   },
   {
     image: "./images/airbrb-cover.png",
@@ -198,6 +201,7 @@ export const projects = [
       <TbBrandCypress key={4} />,
     ],
     date: "Nov 2023",
+    show: true,
   },
   {
     category: "others",
@@ -206,6 +210,7 @@ export const projects = [
     github: "https://github.com/photkosee/network-analyzer",
     stack: [<FaGolang key={1} />],
     date: "Nov 2023",
+    show: true,
   },
   {
     image: "./images/slackr-cover.png",

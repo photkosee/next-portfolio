@@ -64,7 +64,7 @@ const ProjectSection = () => {
 
         <motion.div
           className="
-          lg:w-[600px] xl:w-[750px] lg:absolute right-5 top-0
+          lg:w-[630px] xl:w-[750px] lg:absolute right-5 top-0
           flex items-center h-full max-h-[450px] lg:max-h-full
           "
           variants={fadeIn("right")}
@@ -73,7 +73,7 @@ const ProjectSection = () => {
             className="w-full h-[400px] sm:h-[430px]"
             slidesPerView={1}
             autoplay={{
-              delay: 5000,
+              delay: 5500,
               stopOnLastSlide: false,
               disableOnInteraction: true,
             }}
@@ -92,29 +92,31 @@ const ProjectSection = () => {
               dynamicBullets: true,
             }}
           >
-            {projects.slice(0, 4).map((project, index) => (
-              <SwiperSlide
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "start",
-                }}
-                key={index}
-              >
-                <ProjectCard
-                  name={project.name}
-                  image={project.image}
-                  category={project.category}
-                  description={project.description}
-                  link={project.link}
-                  github={project.github}
-                  stack={project.stack}
-                  date={project.date}
-                  uml={project.uml}
-                  index={index}
-                />
-              </SwiperSlide>
-            ))}
+            {projects
+              .filter((product) => product.show)
+              .map((project, index) => (
+                <SwiperSlide
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "start",
+                  }}
+                  key={index}
+                >
+                  <ProjectCard
+                    name={project.name}
+                    image={project.image}
+                    category={project.category}
+                    description={project.description}
+                    link={project.link}
+                    github={project.github}
+                    stack={project.stack}
+                    date={project.date}
+                    uml={project.uml}
+                    index={index}
+                  />
+                </SwiperSlide>
+              ))}
           </Swiper>
         </motion.div>
       </motion.div>
