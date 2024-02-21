@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const links = [
   {
-    path: "/",
+    path: "/home",
     name: "home",
   },
   {
@@ -73,7 +73,7 @@ const Nav = ({
               !checkPing(link.path) && "hidden"
             } absolute -right-3 inline-flex rounded-full h-2 w-2 bg-primary`}
           />
-          {link.path === path && (
+          {(link.path === path || (link.path === "/home" && path === "/")) && (
             <motion.span
               className={`${underlineStyles}`}
               initial={{
