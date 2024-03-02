@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Outfit } from "next/font/google";
 
 import "./globals.css";
 import Header from "@/components/header/Header";
@@ -7,7 +7,7 @@ import Footer from "@/components/footer/Footer";
 import ThemeProvider from "@/components/header/ThemeProvider";
 import { Toaster } from "@/components/ui/toaster";
 
-const inter = Nunito({ subsets: ["latin"] });
+const inter = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Phot Koseekrainiramon | Portfolio",

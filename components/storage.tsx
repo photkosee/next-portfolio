@@ -14,6 +14,7 @@ import {
   SiMysql,
   SiKubernetes,
   SiNextui,
+  SiRedux,
 } from "react-icons/si";
 import {
   FaCopyright,
@@ -73,6 +74,7 @@ export const stacks = [
       <SiTailwindcss key={7} />,
       <SiVite key={8} size={21} />,
       <SiNextdotjs key={9} />,
+      <SiRedux key={10} />,
     ],
   },
   {
@@ -139,16 +141,17 @@ export const projects = [
     category: "frontend",
     name: "BlackPeach",
     description:
-      "A full stack E-Commerce platform showcasing music and accessories of a girl group",
+      "An E-commerce platform showcasing music and accessories of a K-pop group",
     link: "https://blackpeach.vercel.app/",
     github: "https://github.com/photkosee/blackpeach",
     stack: [
       <SiNextdotjs key={0} />,
       <BiLogoTypescript key={2} />,
       <SiTailwindcss key={3} />,
-      <SiNextui size={20} key={4} />,
+      <SiNextui size={18} key={4} />,
+      <SiRedux key={5} size={18} />,
     ],
-    date: "Developing",
+    date: "Mar 2024",
     show: true,
   },
   {
@@ -181,7 +184,7 @@ export const projects = [
       <FaReact key={1} />,
       <BiLogoTypescript key={2} />,
       <SiTailwindcss key={3} />,
-      <SiNextui size={20} key={4} />,
+      <SiNextui size={18} key={4} />,
     ],
     date: "Dec 2023",
     show: true,

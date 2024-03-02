@@ -17,7 +17,7 @@ const links = [
   },
   {
     path: "https://photkosee.github.io/hugo-blog/",
-    name: "blog",
+    name: "blogs",
   },
   {
     path: "/contact",
@@ -61,7 +61,7 @@ const Nav = ({
           `}
           href={link.path}
           key={index}
-          target={link.name === "blog" ? "_blank" : ""}
+          target={link.name === "blogs" ? "_blank" : ""}
         >
           <span
             className={`${
