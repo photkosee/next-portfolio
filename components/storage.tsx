@@ -141,7 +141,7 @@ export const projects = [
     category: "frontend",
     name: "XO is Unbeatable",
     description:
-      "A mini-project of tac-tac-toe game against an AI (Minimax Algorithm)",
+      "A mini-project of tic-tac-toe game against an AI (Minimax Algorithm)",
     link: "https://photkosee.github.io/xo-is-unbeatable/",
     github: "https://github.com/photkosee/xo-is-unbeatable",
     stack: [
