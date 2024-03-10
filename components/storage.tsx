@@ -142,7 +142,7 @@ export const projects = [
     name: "XO is Unbeatable",
     description:
       "A mini-project of tac-tac-toe game against an AI (Minimax Algorithm)",
-    link: "https://blackpeach.vercel.app/",
+    link: "https://photkosee.github.io/xo-is-unbeatable/",
     github: "https://github.com/photkosee/xo-is-unbeatable",
     stack: [
       <SiVite key={0} />,
