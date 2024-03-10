@@ -137,6 +137,24 @@ export const infoDatas = [
 
 export const projects = [
   {
+    image: "./images/xo-cover.png",
+    category: "frontend",
+    name: "XO is Unbeatable",
+    description:
+      "A mini-project of tac-tac-toe game against an AI (Minimax Algorithm)",
+    link: "https://blackpeach.vercel.app/",
+    github: "https://github.com/photkosee/xo-is-unbeatable",
+    stack: [
+      <SiVite key={0} />,
+      <FaReact key={1} />,
+      <BiLogoTypescript key={2} />,
+      <SiTailwindcss key={3} />,
+      <SiNextui size={18} key={4} />,
+    ],
+    date: "Mar 2024",
+    show: true,
+  },
+  {
     image: "./images/blackpeach-cover.png",
     category: "frontend",
     name: "BlackPeach",
@@ -151,7 +169,7 @@ export const projects = [
       <SiNextui size={18} key={4} />,
       <SiRedux key={5} size={18} />,
     ],
-    date: "Mar 2024",
+    date: "Feb 2024",
     show: true,
   },
   {
