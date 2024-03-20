@@ -27,10 +27,8 @@ const Header = () => {
       className={`
       ${!top && path !== "/contact" && "bg-[#fef5f5]"}
       ${
-        top
-          ? "bg-white shadow-lg dark:bg-accent py-1"
-          : "py-2 dark:bg-transparent"
-      } sticky top-0 z-30 transition-all
+        top ? "bg-white shadow-lg dark:bg-accent" : "dark:bg-transparent"
+      } sticky py-2 top-0 z-30 transition-all
       `}
     >
       <div className="container">
