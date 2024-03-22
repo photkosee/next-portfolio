@@ -1,7 +1,8 @@
 const ArrowDoodle = () => {
   return (
-    <svg className="
-      absolute w-20 sm:w-28 -left-7 md:-left-14 lg:-left-16 xl:-left-14
+    <svg
+      className="
+      absolute w-20 sm:w-28 -left-1 md:-left-5 xl:-left-3
       -z-10 hidden sm:block
       "
       xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +10,8 @@ const ArrowDoodle = () => {
       fill="#fe5e70"
     >
       <g>
-        <path d="
+        <path
+          d="
           M375.95 245.71c-6.18-13.07-22.21-14.92-33.93-21.16-29.11-11.27-58.17-22.62-86.21-36.42-5.15-2.8-4.05
           4.74-2.59 7.39 4.87 15.91 21.97 19.24 35.18 25.8 13.69 6.2 27.69 11.61 41.74
           16.9-12.73.12-25.61-1.49-38.19-2.47-51.09-6.41-102.94-16.8-149.65-39.09a155.28 155.28 0 0

@@ -286,14 +286,6 @@ export const projects = [
     date: "Jul 2023",
   },
   {
-    category: "fullstack",
-    name: "Car Dealer Website",
-    description: "A car dealer website with Django",
-    github: "https://github.com/photkosee/car-dealer",
-    stack: [<SiDjango key={0} />],
-    date: "Jul 2023",
-  },
-  {
     category: "others",
     name: "Virtual Memory",
     description: "Implementing virtual memory translation in C",
@@ -321,6 +313,7 @@ export const projects = [
   },
   {
     category: "backend",
+    image: "./images/dungeonmania-cover.png",
     name: "Dungeon Mania",
     description:
       "A 2D adventure game in Java, applying OOP principles with a UML diagram. Testing with Gradle",
@@ -331,6 +324,7 @@ export const projects = [
   },
   {
     category: "backend",
+    image: "./images/backtoblackout-cover.png",
     name: "Back to Blackout",
     description:
       "A demo of satellite orbit and communication in Java, applying OOP principles with a UML diagram. Testing with Gradle",

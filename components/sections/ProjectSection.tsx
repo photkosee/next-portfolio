@@ -19,8 +19,8 @@ const ProjectSection = () => {
     <section className="mt-28">
       <motion.div
         className="
-        container flex flex-col gap-7 relative
-        max-w-screen overflow-x-hidden
+        w-full mx-auto flex flex-col lg:flex-row gap-y-7 gap-x-3 relative
+        overflow-x-hidden max-w-7xl lg:pl-8 xl:pl-20 lg:items-center
         "
         initial="offscreen"
         whileInView="onscreen"
@@ -28,8 +28,8 @@ const ProjectSection = () => {
       >
         <motion.div
           className="
-          max-w-[350px] xl:max-w-[480px] mx-auto h-1/2 lg:h-[84vh] lg:mx-0
-          flex flex-col justify-end lg:justify-center lg:pl-10 xl:pl-28
+          max-w-[330px] mx-auto h-1/2 lg:h-[84vh] lg:mx-0
+          flex flex-col justify-center
           "
           variants={fadeIn("left")}
         >
@@ -40,7 +40,7 @@ const ProjectSection = () => {
             "
           >
             <ArrowDoodle />
-            Recent Projects
+            My Projects
           </div>
 
           <p
@@ -64,8 +64,8 @@ const ProjectSection = () => {
 
         <motion.div
           className="
-          lg:w-[630px] xl:w-[750px] lg:absolute right-5 top-0
-          flex items-center h-full max-h-[450px] lg:max-h-full
+          max-w-[650px] w-full xl:max-w-[750px]
+          flex items-center h-full max-h-[450px] lg:max-h-full mx-auto
           "
           variants={fadeIn("right")}
         >
@@ -78,9 +78,6 @@ const ProjectSection = () => {
               disableOnInteraction: true,
             }}
             breakpoints={{
-              600: {
-                slidesPerView: 1.5,
-              },
               700: {
                 slidesPerView: 2,
               },
