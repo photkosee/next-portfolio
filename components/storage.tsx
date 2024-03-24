@@ -137,6 +137,24 @@ export const infoDatas = [
 
 export const projects = [
   {
+    image: "./images/chillflix-cover.png",
+    category: "frontend",
+    name: "Chillflix",
+    description:
+      "An anime recommender website. More details and reflections in the README (GitHub).",
+    link: "https://chillflix-phot.vercel.app//",
+    github: "https://github.com/photkosee/chillflix",
+    stack: [
+      <SiNextdotjs key={0} />,
+      <BiLogoTypescript key={2} />,
+      <SiTailwindcss key={3} />,
+      <SiNextui size={18} key={4} />,
+      <SiRedux key={5} size={18} />,
+    ],
+    date: "Mar 2024",
+    show: true,
+  },
+  {
     image: "./images/xo-cover.png",
     category: "frontend",
     name: "XO is Unbeatable",
@@ -222,7 +240,6 @@ export const projects = [
       <TbBrandCypress key={4} />,
     ],
     date: "Nov 2023",
-    show: true,
   },
   {
     category: "others",
@@ -231,7 +248,6 @@ export const projects = [
     github: "https://github.com/photkosee/network-analyzer",
     stack: [<FaGolang key={1} />],
     date: "Nov 2023",
-    show: true,
   },
   {
     image: "./images/slackr-cover.png",
