@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
+import { GithubIcon, Link2Icon } from "lucide-react";
 
 import ArrowDoodle from "@/components/background/ArrowDoodle";
 import ProjectCard from "@/components/cards/ProjectCard";
@@ -45,12 +46,22 @@ const ProjectSection = () => {
 
           <p
             className="
-            my-2 lg:my-5 text-center text-muted-foreground font-light
-            text-sm md:text-[16px] md:leading-[24px]
+            my-2 lg:my-5 text-start text-muted-foreground font-light
+            text-sm md:text-[16px] md:leading-[24px] flex flex-col gap-y-2
             "
           >
-            Exploring new ventures and mastering existing skills through diverse
-            projects
+            <p>While hovering over a project card:</p>
+            <div className="flex items-center gap-x-2">
+              <Link2Icon className="text-black dark:text-white" />
+              links to live demo of the project
+            </div>
+            <div className="flex items-center gap-x-2">
+              <GithubIcon className="text-black dark:text-white" />
+              <div>
+                <p>links to source code</p>
+                <p>& more details about the project</p>
+              </div>
+            </div>
           </p>
 
           <div className="w-full flex justify-center">
@@ -73,7 +84,7 @@ const ProjectSection = () => {
             className="w-full h-[400px] sm:h-[430px]"
             slidesPerView={1}
             autoplay={{
-              delay: 5500,
+              delay: 7000,
               stopOnLastSlide: false,
               disableOnInteraction: true,
             }}

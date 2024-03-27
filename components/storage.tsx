@@ -139,9 +139,9 @@ export const projects = [
   {
     image: "./images/chillflix-cover.png",
     category: "frontend",
-    name: "Chillflix",
+    name: "ChillFlix - Anime Recommender",
     description:
-      "An anime recommender website. More details and reflections in the README (GitHub).",
+      "Looking for an anime to watch but not sure what to watch? ChillFlix!",
     link: "https://chillflix-phot.vercel.app//",
     github: "https://github.com/photkosee/chillflix",
     stack: [
@@ -159,7 +159,7 @@ export const projects = [
     category: "frontend",
     name: "XO is Unbeatable",
     description:
-      "A mini-project of tic-tac-toe game against an AI (Minimax Algorithm)",
+      "How good are you in Tic Tac Toe? Try beating my AI (Minimax Algorithm)!",
     link: "https://photkosee.github.io/xo-is-unbeatable/",
     github: "https://github.com/photkosee/xo-is-unbeatable",
     stack: [
@@ -175,9 +175,9 @@ export const projects = [
   {
     image: "./images/blackpeach-cover.png",
     category: "frontend",
-    name: "BlackPeach",
+    name: "BlackPeach | SHOP",
     description:
-      "An E-commerce platform showcasing music and accessories of a K-pop group",
+      "Looking for some old albums and clothes of a K-POP band? Try BlackPeach!",
     link: "https://blackpeach.vercel.app/",
     github: "https://github.com/photkosee/blackpeach",
     stack: [
@@ -195,7 +195,7 @@ export const projects = [
     category: "frontend",
     name: "Portfolio Website 2nd Edition",
     description:
-      "A website showcasing personal projects with Next.js, TypeScript, Tailwind CSS, and Shadcn UI",
+      "This is the site you are looking at right now. Check out my other projects!",
     link: "https://photkosee.github.io/next-portfolio/",
     github: "https://github.com/photkosee/next-portfolio",
     stack: [
@@ -212,7 +212,7 @@ export const projects = [
     category: "frontend",
     name: "Pymetrics Tower Game",
     description:
-      "A Pymetrics Towers Game with Vite, Tailwind CSS, NextUI, and React Beautiful DnD",
+      "Want to practice Pymetrics tests for your interview? Try out this game!",
     link: "https://photkosee.github.io/react-pymetrics-towers/",
     github: "https://github.com/photkosee/react-pymetrics-towers",
     stack: [
@@ -244,7 +244,8 @@ export const projects = [
   {
     category: "others",
     name: "Network Analyzer",
-    description: "A simple network monitoring in Go",
+    description:
+      "Looking for a tool to capture and monitor network traffic? Try this out!",
     github: "https://github.com/photkosee/network-analyzer",
     stack: [<FaGolang key={1} />],
     date: "Nov 2023",

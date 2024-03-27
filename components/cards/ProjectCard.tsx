@@ -43,9 +43,9 @@ const ProjectCard = ({
         <CardHeader className="p-0">
           <div
             className="
-          relative w-full h-[170px] sm:h-[200px] flex items-center justify-center
-          dark:bg-secondary/40 bg-[#fef5f5] overflow-hidden
-          "
+            relative w-full h-[170px] sm:h-[200px] flex items-center justify-center
+            dark:bg-secondary/40 bg-[#fef5f5] overflow-hidden
+            "
           >
             <Image
               className="absolute bottom-0 shadow-xl h-auto"
@@ -58,20 +58,20 @@ const ProjectCard = ({
 
             <div
               className="
-            bg-black opacity-0 group-hover:opacity-50 absolute inset-0 rounded-t-sm
-            scale-0 group-hover:scale-100 transition-all duration-100 z-10
-            "
+              bg-black opacity-0 group-hover:opacity-80 absolute inset-0 rounded-t-sm
+              scale-0 group-hover:scale-100 transition-all duration-100 z-10
+              "
             />
 
             <div className="flex gap-5">
               {link && (
                 <Link
                   className="
-                bg-secondary w-[50px] h-[50px] rounded-full
-                flex justify-center items-center
-                scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100
-                transition-all duration-400 z-10
-                "
+                  bg-secondary w-[50px] h-[50px] rounded-full
+                  flex justify-center items-center
+                  scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100
+                  transition-all duration-400 z-10
+                  "
                   href={link}
                   target="_blank"
                 >
@@ -82,11 +82,11 @@ const ProjectCard = ({
               {uml && (
                 <Link
                   className="
-                bg-secondary w-[50px] h-[50px] rounded-full
-                flex justify-center items-center
-                scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100
-                transition-all duration-400 z-10
-                "
+                  bg-secondary w-[50px] h-[50px] rounded-full
+                  flex justify-center items-center
+                  scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100
+                  transition-all duration-400 z-10
+                  "
                   href={uml}
                   target="_blank"
                 >
@@ -96,11 +96,11 @@ const ProjectCard = ({
 
               <Link
                 className="
-              bg-secondary w-[50px] h-[50px] rounded-full
-              flex justify-center items-center
-              scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100
-              transition-all duration-300 z-10
-              "
+                bg-secondary w-[50px] h-[50px] rounded-full
+                flex justify-center items-center
+                scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100
+                transition-all duration-300 z-10
+                "
                 href={github}
                 target="_blank"
               >
@@ -114,8 +114,8 @@ const ProjectCard = ({
           <h4 className="h4">{name}</h4>
           <p
             className="
-          text-muted-foreground text-[12px] sm:text-[15px] leading-[17px]
-          "
+            text-muted-foreground text-[12px] sm:text-[15px] leading-[17px]
+            "
           >
             {description}
           </p>
@@ -127,9 +127,9 @@ const ProjectCard = ({
               <div
                 key={index}
                 className="
-              text-[23px] text-primary sm:text-muted-foreground
-              sm:dark:text-muted-foreground
-              "
+                text-[23px] text-primary sm:text-muted-foreground
+                sm:dark:text-muted-foreground
+                "
               >
                 {icon}
               </div>
@@ -144,9 +144,9 @@ const ProjectCard = ({
 
         <div
           className="
-        absolute right-1 bottom-1 bg-primary text-white text-base
-        px-2 rounded-t-[20px] rounded-bl-[20px] rounded-br-[9px]
-        "
+          absolute right-1 bottom-1 bg-primary text-white text-base
+          px-2 rounded-t-[20px] rounded-bl-[20px] rounded-br-[9px]
+          "
         >
           {category}
         </div>
