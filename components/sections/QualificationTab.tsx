@@ -99,10 +99,13 @@ const QualificationTab = () => {
           <div>
             {educations.map((education, index) => (
               <div className="flex gap-x-5" key={index}>
-                <img
+                <Image
                   src={education.logo}
                   alt={education.school}
                   className="w-[55px] h-[55px] mt-2 object-scale-down"
+                  width={55}
+                  height={55}
+                  placeholder="blur"
                 />
                 <div className="flex flex-col">
                   <div className="text-base font-medium">{education.years}</div>
