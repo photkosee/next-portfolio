@@ -2,6 +2,7 @@ import { Briefcase, Layers, School } from "lucide-react";
 
 import { experiences, educations, stacks } from "@/components/storage";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Image from "next/image";
 
 const QualificationTab = () => {
   return (
@@ -60,10 +61,13 @@ const QualificationTab = () => {
           <div>
             {experiences.map((experience, index) => (
               <div className="flex gap-x-5 group" key={index}>
-                <img
+                <Image
                   src={experience.logo}
                   alt={experience.company}
                   className="w-[55px] h-[55px] mt-2 object-scale-down"
+                  width={55}
+                  height={55}
+                  placeholder="blur"
                 />
                 <div className="flex flex-col">
                   <div className="text-base font-medium">

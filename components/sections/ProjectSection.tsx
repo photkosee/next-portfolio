@@ -20,18 +20,15 @@ const ProjectSection = () => {
     <section className="mt-28">
       <motion.div
         className="
-        w-full mx-auto flex flex-col lg:flex-row gap-y-7 gap-x-3 relative
-        overflow-x-hidden max-w-7xl lg:pl-8 xl:pl-20 lg:items-center
+        w-full mx-auto flex flex-col gap-y-7 relative
+        overflow-x-hidden max-w-7xl px-3
         "
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.3 }}
       >
         <motion.div
-          className="
-          max-w-[330px] mx-auto h-1/2 lg:h-[84vh] lg:mx-0
-          flex flex-col justify-center
-          "
+          className="max-w-[330px] mx-auto flex flex-col justify-center gap-3"
           variants={fadeIn("left")}
         >
           <div
@@ -44,26 +41,6 @@ const ProjectSection = () => {
             My Projects
           </div>
 
-          <p
-            className="
-            my-2 lg:my-5 text-start text-muted-foreground font-light
-            text-sm md:text-[16px] md:leading-[24px] flex flex-col gap-y-2
-            "
-          >
-            <p>While hovering over a project card:</p>
-            <div className="flex items-center gap-x-2">
-              <Link2Icon className="text-black dark:text-white" />
-              links to live demo of the project
-            </div>
-            <div className="flex items-center gap-x-2">
-              <GithubIcon className="text-black dark:text-white" />
-              <div>
-                <p>links to source code</p>
-                <p>& more details about the project</p>
-              </div>
-            </div>
-          </p>
-
           <div className="w-full flex justify-center">
             <Link className="max-w-[170px]" href="/projects" passHref>
               <Button className="rounded-full max-w-[170px]">
@@ -74,23 +51,23 @@ const ProjectSection = () => {
         </motion.div>
 
         <motion.div
-          className="
-          max-w-[650px] w-full xl:max-w-[750px]
-          flex items-center h-full max-h-[450px] lg:max-h-full mx-auto
-          "
+          className="w-full flex items-center h-full max-h-[450px] mx-auto"
           variants={fadeIn("right")}
         >
           <Swiper
-            className="w-full h-[400px] sm:h-[430px]"
+            className="h-[400px] sm:h-[430px]"
             slidesPerView={1}
             autoplay={{
-              delay: 7000,
+              delay: 10000,
               stopOnLastSlide: false,
               disableOnInteraction: true,
             }}
             breakpoints={{
               700: {
                 slidesPerView: 2,
+              },
+              1050: {
+                slidesPerView: 3,
               },
             }}
             spaceBetween={30}
