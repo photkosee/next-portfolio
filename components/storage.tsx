@@ -157,7 +157,7 @@ export const projects = [
   {
     image: "./images/xo-cover.png",
     category: "frontend",
-    name: "XO is Unbeatable",
+    name: "XO is Unbeatable (AI)",
     description:
       "How good are you in Tic Tac Toe? Try beating my AI (Minimax Algorithm)!",
     link: "https://photkosee.github.io/xo-is-unbeatable/",
@@ -205,7 +205,6 @@ export const projects = [
       <TbBrandFramerMotion key={4} />,
     ],
     date: "Dec 2023",
-    show: true,
   },
   {
     image: "./images/towers-cover.png",

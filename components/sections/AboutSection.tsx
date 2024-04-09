@@ -10,7 +10,7 @@ import { fadeIn } from "@/components/variants";
 
 const AboutSection = () => {
   return (
-    <section className="w-full h-[970px] lg:h-[720px] relative">
+    <section className="w-full h-[1000px] lg:h-[720px] relative min-h-screen">
       <motion.div
         className="
         container mx-auto flex flex-col w-full h-full lg:flex-row lg:justify-around

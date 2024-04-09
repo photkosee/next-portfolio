@@ -53,7 +53,6 @@ const ProjectCard = ({
               width={200}
               height={150}
               alt="project's mockup"
-              placeholder="blur"
               priority
             />
 

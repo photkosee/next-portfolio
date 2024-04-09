@@ -8,18 +8,23 @@ import {
   Sheet,
   SheetContent,
   SheetFooter,
-  SheetTrigger
+  SheetTrigger,
 } from "@/components/ui/sheet";
+import { useMobileNav } from "@/app/MobileNavContext";
 
 const MobileNav = () => {
+  const { isOpen, openMobileNav, closeMobileNav, toggleMobileNav } =
+    useMobileNav();
+
   return (
-    <Sheet>
+    <Sheet open={isOpen} onOpenChange={toggleMobileNav}>
       <SheetTrigger asChild>
-        <Button variant="outline">
+        <Button variant="outline" onClick={openMobileNav}>
           <TbAlignJustified className="cursor-pointer" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="
+      <SheetContent
+        className="
         p-0 m-0 h-full flex flex-col justify-around
         bg-[#fef5f5] dark:bg-transparent
         "

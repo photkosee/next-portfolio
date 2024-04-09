@@ -1,7 +1,9 @@
-# Portfolio Website 2nd Edition
-> A website showcasing personal projects and experiences deployed on github page, you can now visit the site [here](https://photkosee.github.io/next-portfolio/)
+# <p align="center"><a href="https://chillflix-phot.vercel.app/">My Portfolio Website</a></p>
+
+<p align="center">A website showcasing personal projects and experiences. <a href="https://photkosee.github.io/next-portfolio/">Check out here!</a></p>
 
 ## Background
+
 In the past few months, I've been diving into creating my first portfolio website using React JS, skipping the use of CSS or UI libraries. Now, it's time to amp up my online presence. Following the tech stack from my ongoing software engineering gig, I've picked Next.js and Tailwind CSS as the base for this upgraded version.
 
 I'm stoked about adding a dark mode, a feature I haven't played with before. Using Shadcn UI should make the implementation smooth and enjoyable.

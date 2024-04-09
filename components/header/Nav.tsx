@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { motion } from "framer-motion";
+import { useMobileNav } from "@/app/MobileNavContext";
 
 const links = [
   {
@@ -17,7 +18,7 @@ const links = [
   },
   {
     path: "https://photkosee.github.io/hugo-blog/",
-    name: "blogs",
+    name: "blog",
   },
   {
     path: "/contact",
@@ -35,6 +36,7 @@ const Nav = ({
   underlineStyles: string;
 }) => {
   const [hasVisitedProject, setHasVisitedProject] = useState<boolean>(false);
+  const { closeMobileNav } = useMobileNav();
   const path = usePathname();
   // Check whether the user have visited the project page before
   // If not, show the ping animation
@@ -49,11 +51,7 @@ const Nav = ({
   }, [path]);
 
   return (
-    <nav
-      className={`
-      ${containerStyles}
-      `}
-    >
+    <nav className={`${containerStyles}`}>
       {links.map((link, index) => (
         <Link
           className={`
@@ -61,7 +59,8 @@ const Nav = ({
           `}
           href={link.path}
           key={index}
-          target={link.name === "blogs" ? "_blank" : ""}
+          target={link.name === "blog" ? "_blank" : ""}
+          onClick={closeMobileNav}
         >
           <span
             className={`${

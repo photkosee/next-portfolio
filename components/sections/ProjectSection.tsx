@@ -21,7 +21,7 @@ const ProjectSection = () => {
       <motion.div
         className="
         w-full mx-auto flex flex-col gap-y-7 relative
-        overflow-x-hidden max-w-7xl px-3
+        overflow-x-hidden max-w-7xl px-3 lg:min-h-screen
         "
         initial="offscreen"
         whileInView="onscreen"

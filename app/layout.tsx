@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
+
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import ThemeProvider from "@/components/header/ThemeProvider";
-import { Toaster } from "@/components/ui/toaster";
+import { MobileNavProvider } from "./MobileNavContext";
 
 const inter = Outfit({ subsets: ["latin"] });
 
@@ -30,17 +32,19 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          {children}
-          <Footer />
-          <Toaster />
-        </ThemeProvider>
+        <MobileNavProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            {children}
+            <Footer />
+            <Toaster />
+          </ThemeProvider>
+        </MobileNavProvider>
       </body>
     </html>
   );

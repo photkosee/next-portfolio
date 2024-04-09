@@ -67,7 +67,7 @@ const QualificationTab = () => {
                   className="w-[55px] h-[55px] mt-2 object-scale-down"
                   width={55}
                   height={55}
-                  placeholder="blur"
+                  priority
                 />
                 <div className="flex flex-col">
                   <div className="text-base font-medium">
@@ -105,7 +105,7 @@ const QualificationTab = () => {
                   className="w-[55px] h-[55px] mt-2 object-scale-down"
                   width={55}
                   height={55}
-                  placeholder="blur"
+                  priority
                 />
                 <div className="flex flex-col">
                   <div className="text-base font-medium">{education.years}</div>
