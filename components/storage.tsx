@@ -137,12 +137,29 @@ export const infoDatas = [
 
 export const projects = [
   {
+    image: "./images/geo-cover.png",
+    category: "frontend",
+    name: "GeoGenius Info",
+    description:
+      "Explore the information of each country with just a click on a world map!",
+    link: "https://geogenius-two.vercel.app/",
+    github: "https://github.com/photkosee/geogenius",
+    stack: [
+      <SiNextdotjs key={0} />,
+      <BiLogoTypescript key={2} />,
+      <SiTailwindcss key={3} />,
+      <SiNextui size={18} key={4} />,
+    ],
+    date: "Apr 2024",
+    show: true,
+  },
+  {
     image: "./images/chillflix-cover.png",
     category: "frontend",
     name: "ChillFlix - Anime Recommender",
     description:
       "Looking for an anime to watch but not sure what to watch? ChillFlix!",
-    link: "https://chillflix-phot.vercel.app//",
+    link: "https://chillflix-phot.vercel.app/",
     github: "https://github.com/photkosee/chillflix",
     stack: [
       <SiNextdotjs key={0} />,
