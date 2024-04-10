@@ -91,7 +91,7 @@ const HeroSection = () => {
             </Link>
 
             <Link
-              href="https://drive.google.com/file/d/1uWHf6d2l4dzpXoTHBB2bLEyUznn6rV7M/view?usp=sharing"
+              href="https://drive.google.com/file/d/1X8Ury-zXxbqrtEbWROt0CgHpysorjBq5/view?usp=sharing"
               target="_blank"
               passHref
             >
