@@ -160,7 +160,10 @@ const QualificationTab = () => {
                       >
                         <div>{tool.name}</div>
                         {tool.icon && (
-                          <StackIcon name={tool.icon} className="h-[17px]" />
+                          <StackIcon
+                            name={tool.icon}
+                            className="max-h-[17px] h-full max-w-[17px] w-full"
+                          />
                         )}
                       </Badge>
                     ))}
