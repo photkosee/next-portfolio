@@ -9,6 +9,7 @@ import { SiUml } from "react-icons/si";
 
 import { Project } from "@/components/types";
 import { Card, CardHeader } from "@/components/ui/card";
+import StackIcon from "tech-stack-icons";
 
 const variants = {
   hidden: { opacity: 0 },
@@ -121,18 +122,10 @@ const ProjectCard = ({
           </p>
         </div>
 
-        <div className="absolute top-2 right-2">
-          <div className="flex flex-col gap-2 items-center">
+        <div className="absolute top-3 right-2">
+          <div className="flex flex-col gap-2.5 items-center">
             {stack.map((icon, index) => (
-              <div
-                key={index}
-                className="
-                text-[23px] text-primary sm:text-muted-foreground
-                sm:dark:text-muted-foreground
-                "
-              >
-                {icon}
-              </div>
+              <StackIcon name={icon} key={index} className="w-5" />
             ))}
           </div>
         </div>
@@ -144,7 +137,7 @@ const ProjectCard = ({
 
         <div
           className="
-          absolute right-1 bottom-1 bg-primary text-white text-base
+          absolute right-1 bottom-1 bg-primary text-white
           px-2 rounded-t-[20px] rounded-bl-[20px] rounded-br-[9px]
           "
         >

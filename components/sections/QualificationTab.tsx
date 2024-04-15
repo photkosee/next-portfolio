@@ -1,8 +1,11 @@
+import Image from "next/image";
+
 import { Briefcase, Layers, School } from "lucide-react";
+import StackIcon from "tech-stack-icons";
 
 import { experiences, educations, stacks } from "@/components/storage";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
 
 const QualificationTab = () => {
   return (
@@ -132,33 +135,34 @@ const QualificationTab = () => {
             <Layers size={27} />
           </div>
 
-          <div>
+          <div className="flex flex-col">
             {stacks.map((stack, index) => (
-              <div className="flex gap-x-7 group" key={index}>
-                <div className="h-[50px] w-[1px] bg-border relative ml-3 mt-1">
-                  <div
-                    className="
-                    w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px]
-                    group-hover:translate-y-[40px] translate-all duration-500
-                    "
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <div className="font-semibold text-lg leading-none mb-2">
-                    {stack.skill}
+              <div className="flex group" key={index}>
+                <div className="flex flex-col w-full gap-2">
+                  <div className="flex gap-3 items-center w-full">
+                    <div className="w-full h-[1px] bg-neutral-300 dark:bg-slate-500 lg:hidden flex-1" />
+                    <div className="font-semibold text-lg leading-none">
+                      {stack.skill}
+                    </div>
+                    <div className="w-full h-[1px] bg-neutral-300 dark:bg-slate-500 flex-1" />
                   </div>
                   <div
                     className="
-                    mb-7 flex flex-wrap items-center gap-x-2 gap-y-1
+                    mb-7 flex flex-wrap items-center justify-center lg:justify-start
+                    gap-x-2 gap-y-1
                     "
                   >
                     {stack.tools.map((tool, index) => (
-                      <div
+                      <Badge
                         key={index}
-                        className="text-[23px] text-muted-foreground"
+                        variant="outline"
+                        className="h-7 gap-x-1.5 text-sm bg-white text-black flex items-center"
                       >
-                        {tool}
-                      </div>
+                        <div>{tool.name}</div>
+                        {tool.icon && (
+                          <StackIcon name={tool.icon} className="h-[17px]" />
+                        )}
+                      </Badge>
                     ))}
                   </div>
                 </div>
