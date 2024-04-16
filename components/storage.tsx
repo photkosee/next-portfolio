@@ -188,7 +188,7 @@ export const projects = [
       "Looking for an anime to watch but not sure what to watch? ChillFlix!",
     link: "https://chillflix-phot.vercel.app/",
     github: "https://github.com/photkosee/chillflix",
-    stack: ["nextjs2", "typescript", "tailwindcss", "redux"],
+    stack: ["nextjs2", "typescript", "tailwindcss", "zod", "redux"],
     date: "Mar 2024",
     show: true,
   },
@@ -246,7 +246,7 @@ export const projects = [
     description:
       "A property renting service website with React JS, Tailwind CSS, and MUI. Component testing with React Testing Library, and UI Testing with Cypress",
     github: "https://github.com/photkosee/react-airbrb",
-    stack: ["reactjs", "typescript", "tailwindcss", "materialui", "cypress"],
+    stack: ["reactjs", "tailwindcss", "materialui", "cypress"],
     date: "Nov 2023",
   },
   {

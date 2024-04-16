@@ -29,6 +29,9 @@ export default function RootLayout({
           name="google-site-verification"
           content="inHe6DFRHkKFZOiScpDCFdl4QbQoEq6LAb8wloKmkH0"
         />
+        <link rel="author" href="https://github.com/photkosee" />
+        <meta name="author" content="Phot Koseekrainiramon" />
+        <meta name="creator" content="Phot Koseekrainiramon" />
       </head>
 
       <body className={inter.className}>
