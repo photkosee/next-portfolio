@@ -268,33 +268,12 @@ export const projects = [
     date: "Oct 2023",
   },
   {
-    image: "./images/cse-trainee-cover.png",
-    category: "frontend",
-    name: "CSE Trainee Application",
-    description:
-      "Single day project building a profile website with Vite for CSESoc Training Program Application",
-    link: "https://photkosee.github.io/cse-trainee/",
-    github: "https://github.com/photkosee/cse-trainee",
-    stack: ["vitejs", "reactjs"],
-    date: "Sep 2023",
-  },
-  {
     category: "others",
     name: "DNS Resolver",
     description:
       "A homemade DNS resolver without supported libraries in Python, using Wireshark to help debuging",
     github: "https://github.com/photkosee/dns-resolver",
     stack: ["python"],
-    date: "Jul 2023",
-  },
-  {
-    image: "./images/portfolio1-cover.png",
-    category: "frontend",
-    name: "Portfolio Website 1st Edition",
-    description: "A website showcasing personal projects with React",
-    link: "https://photkosee.github.io/profile-react/",
-    github: "https://github.com/photkosee/profile-react",
-    stack: ["reactjs", "css3"],
     date: "Jul 2023",
   },
   {
