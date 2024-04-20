@@ -12,18 +12,18 @@ To boost my skills, I've thrown TypeScript into the mix, aiming to make the code
 
 Adding a contact section with EmailJS for email stuff on a static site turned out to be a breeze. And tossing in the Framer Motion library effortlessly spiced up the animations without going overboard on code. This journey was a blast, exploring new libraries and learning along the way.
 
-## Getting Started
+## Features
 
-First, run the development server:
+- Project slices
+- Slide/fade in motion
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Built with
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Next.js 14](https://nextjs.org/) - Development environment
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Motion library
+- [Shadcn/ui](https://nextui.org/) - Components library for User Interface
+
+## Data Sources
+
+- [Tech Stack Icons](https://www.tech-stack-icons.com/) - Tech Icons
