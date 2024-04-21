@@ -5,13 +5,13 @@ export const educations = [
     school: "The University of New South Wales",
     stream: "Bachelor of Computer Engineering",
     years: "2022 - Nov 2024 (Expected)",
-    logo: "./images/unsw.png",
+    logo: "./images/unsw.webp",
   },
   {
     school: "Thammasat University",
     stream: "Bachelor of Electrical Engineering",
     years: "2019 - 2021",
-    logo: "./images/tu.png",
+    logo: "./images/tu.webp",
   },
 ];
 
@@ -20,13 +20,13 @@ export const experiences = [
     company: "Cloud Natician",
     role: "Software Engineer",
     years: "Sep 2023 - Feb 2024",
-    logo: "./images/cloudnc.png",
+    logo: "./images/cloudnc.webp",
   },
   {
     company: "UNSW Computer Sceience and Engineering",
     role: "Casual Academic",
     years: "May 2023 - Sep 2023",
-    logo: "./images/unsw-cse.png",
+    logo: "./images/unsw-cse.webp",
   },
 ];
 
@@ -169,7 +169,7 @@ export const infoDatas = [
 
 export const projects = [
   {
-    image: "./images/geo-cover.png",
+    image: "./images/geo-cover.webp",
     category: "frontend",
     name: "GeoGenius Info",
     description:
@@ -181,7 +181,7 @@ export const projects = [
     show: true,
   },
   {
-    image: "./images/chillflix-cover.png",
+    image: "./images/chillflix-cover.webp",
     category: "frontend",
     name: "ChillFlix - Anime Recommender",
     description:
@@ -193,7 +193,7 @@ export const projects = [
     show: true,
   },
   {
-    image: "./images/xo-cover.png",
+    image: "./images/xo-cover.webp",
     category: "frontend",
     name: "XO is Unbeatable (AI)",
     description:
@@ -205,7 +205,7 @@ export const projects = [
     show: true,
   },
   {
-    image: "./images/blackpeach-cover.png",
+    image: "./images/blackpeach-cover.webp",
     category: "frontend",
     name: "BlackPeach | SHOP",
     description:
@@ -217,7 +217,7 @@ export const projects = [
     show: true,
   },
   {
-    image: "./images/portfolio2-cover.png",
+    image: "./images/portfolio2-cover.webp",
     category: "frontend",
     name: "Portfolio Website 2nd Edition",
     description:
@@ -228,7 +228,7 @@ export const projects = [
     date: "Dec 2023",
   },
   {
-    image: "./images/towers-cover.png",
+    image: "./images/towers-cover.webp",
     category: "frontend",
     name: "Pymetrics Tower Game",
     description:
@@ -240,7 +240,7 @@ export const projects = [
     show: true,
   },
   {
-    image: "./images/airbrb-cover.png",
+    image: "./images/airbrb-cover.webp",
     category: "frontend",
     name: "AirBrB",
     description:
@@ -259,7 +259,7 @@ export const projects = [
     date: "Nov 2023",
   },
   {
-    image: "./images/slackr-cover.png",
+    image: "./images/slackr-cover.webp",
     category: "frontend",
     name: "Slackr",
     description: "A messaging platform with Vanilla JS, and Bootstrap",
@@ -304,7 +304,7 @@ export const projects = [
   },
   {
     category: "backend",
-    image: "./images/dungeonmania-cover.png",
+    image: "./images/dungeonmania-cover.webp",
     name: "Dungeon Mania",
     description:
       "A 2D adventure game in Java, applying OOP principles with a UML diagram. Testing with Gradle",
@@ -315,7 +315,7 @@ export const projects = [
   },
   {
     category: "backend",
-    image: "./images/backtoblackout-cover.png",
+    image: "./images/backtoblackout-cover.webp",
     name: "Back to Blackout",
     description:
       "A demo of satellite orbit and communication in Java, applying OOP principles with a UML diagram. Testing with Gradle",

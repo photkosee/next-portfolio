@@ -50,7 +50,7 @@ const ProjectCard = ({
           >
             <Image
               className="absolute bottom-0 shadow-xl h-auto"
-              src={image ? image : "./images/project-cover.png"}
+              src={image ? image : "./images/project-cover.webp"}
               width={200}
               height={150}
               alt="project's mockup"
