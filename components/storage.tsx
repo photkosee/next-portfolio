@@ -169,6 +169,15 @@ export const infoDatas = [
 
 export const projects = [
   {
+    category: "backend",
+    name: "WAMwise - Degree Planner",
+    description:
+      "Being a CSE student at UNSW and having trouble calculating your honours WAM? WAMwise is for you!",
+    github: "https://github.com/photkosee/wamwise-server",
+    stack: ["nestjs", "typescript", "mysql"],
+    date: "Developing",
+  },
+  {
     image: "./images/geo-cover.webp",
     category: "frontend",
     name: "GeoGenius Info",
@@ -197,7 +206,7 @@ export const projects = [
     category: "frontend",
     name: "XO is Unbeatable (AI)",
     description:
-      "How good are you in Tic Tac Toe? Try beating my AI (Minimax Algorithm)!",
+      "How good are you in Tic Tac Toe? Try beating my AI (Alpha-Beta Pruning)!",
     link: "https://photkosee.github.io/xo-is-unbeatable/",
     github: "https://github.com/photkosee/xo-is-unbeatable",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
@@ -230,7 +239,7 @@ export const projects = [
   {
     image: "./images/towers-cover.webp",
     category: "frontend",
-    name: "Pymetrics Tower Game",
+    name: "Pymetrics Towers Game",
     description:
       "Want to practice Pymetrics tests for your interview? Try out this game!",
     link: "https://photkosee.github.io/react-pymetrics-towers/",
