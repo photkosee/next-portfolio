@@ -17,7 +17,7 @@ const ProjectTab = () => {
     <Tabs defaultValue={category}>
       <TabsList
         className="
-        grid sm:grid-cols-5 py-0 gap-1 mx-auto
+        grid sm:grid-cols-4 py-0 gap-1 mx-auto
         text-muted-foreground rounded-full dark:sm:bg-secondary
         border-none bg-transparent sm:bg-white dark:bg-transparent
         sm:border-solid sm:border max-w-md
@@ -25,7 +25,7 @@ const ProjectTab = () => {
       >
         <TabsTrigger
           className="
-          w-36 sm:w-full rounded-full data-[state=active]:bg-primary
+          w-full rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white 
           "
           value="all"
@@ -36,7 +36,7 @@ const ProjectTab = () => {
 
         <TabsTrigger
           className="
-          w-36 sm:w-full rounded-full data-[state=active]:bg-primary
+          w-full rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white
           "
           value="frontend"
@@ -47,7 +47,7 @@ const ProjectTab = () => {
 
         <TabsTrigger
           className="
-          w-36 sm:w-full rounded-full data-[state=active]:bg-primary
+          w-full rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white
           "
           value="backend"
@@ -58,18 +58,7 @@ const ProjectTab = () => {
 
         <TabsTrigger
           className="
-          w-36 sm:w-full rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white
-          "
-          value="fullstack"
-          onClick={() => setCategory("fullstack")}
-        >
-          Full Stack
-        </TabsTrigger>
-
-        <TabsTrigger
-          className="
-          w-36 sm:w-full rounded-full data-[state=active]:bg-primary
+          w-[107px] rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white
           "
           value="others"
