@@ -178,6 +178,17 @@ export const projects = [
     date: "Developing",
   },
   {
+    image: "./images/pogo-cover.webp",
+    category: "frontend",
+    name: "POGO - Power Up",
+    description:
+      "Easily calculate and plan out your resources for powering up your pokemons with this tool!",
+    link: "https://photkosee.github.io/pogo-powerup/",
+    github: "https://github.com/photkosee/pogo-powerup",
+    stack: ["vitejs", "reactjs", "typescript", "tailwindcss", "antd"],
+    date: "May 2024",
+  },
+  {
     image: "./images/geo-cover.webp",
     category: "frontend",
     name: "GeoGenius Info",
