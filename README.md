@@ -27,3 +27,9 @@ Adding a contact section with EmailJS for email stuff on a static site turned ou
 ## Data Sources
 
 - [Tech Stack Icons](https://www.tech-stack-icons.com/) - Tech Icons
+
+## Author
+Phot Koseekrainiramon
+- [LinkedIn](https://www.linkedin.com/in/phot-kosee/)
+- [GitHub](https://github.com/photkosee)
+

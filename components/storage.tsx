@@ -178,6 +178,18 @@ export const projects = [
     date: "Developing",
   },
   {
+    image: "./images/flexbox-cover.webp",
+    category: "frontend",
+    name: "Flexbox Froggy Hardcore",
+    description:
+      "Challenge your CSS skills with this game! There are unlimited challenges awaiting you!",
+    link: "https://photkosee.github.io/flexboxfroggy-hardcore/",
+    github: "https://github.com/photkosee/flexboxfroggy-hardcore",
+    stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
+    date: "June 2024",
+    show: true,
+  },
+  {
     image: "./images/pogo-cover.webp",
     category: "frontend",
     name: "POGO - Power Up",
