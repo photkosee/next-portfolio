@@ -168,15 +168,15 @@ export const infoDatas = [
 ];
 
 export const projects = [
-  {
-    category: "backend",
-    name: "WAMwise - Degree Planner",
-    description:
-      "Being a CSE student at UNSW and having trouble calculating your honours WAM? WAMwise is for you!",
-    github: "https://github.com/photkosee/wamwise-server",
-    stack: ["nestjs", "typescript", "mysql"],
-    date: "Developing",
-  },
+  // {
+  //   category: "backend",
+  //   name: "WAMwise - Degree Planner",
+  //   description:
+  //     "Being a CSE student at UNSW and having trouble calculating your honours WAM? WAMwise is for you!",
+  //   github: "https://github.com/photkosee/wamwise-server",
+  //   stack: ["nestjs", "typescript", "mysql"],
+  //   date: "Developing",
+  // },
   {
     image: "./images/flexbox-cover.webp",
     category: "frontend",
