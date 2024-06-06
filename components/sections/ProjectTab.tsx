@@ -5,13 +5,29 @@ import { useState } from "react";
 import { projects } from "@/components/storage";
 import ProjectCard from "@/components/cards/ProjectCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "../ui/button";
 
 const ProjectTab = () => {
   const [category, setCategory] = useState<string>("all");
-
-  const filteredProjects = projects.filter((project) => {
+  const [numShown, setNumShown] = useState(6);
+  const numAll = projects.length;
+  const numFrontend = projects.filter(
+    (project) => project.category === "frontend"
+  ).length;
+  const numBackend = projects.filter(
+    (project) => project.category === "backend"
+  ).length;
+  const numOthers = projects.filter(
+    (project) => project.category === "others"
+  ).length;
+  const numCurrProject = projects.filter((project) => {
     return category === "all" ? project : category === project.category;
-  });
+  }).length;
+  const filteredProjects = projects
+    .filter((project) => {
+      return category === "all" ? project : category === project.category;
+    })
+    .slice(0, numShown);
 
   return (
     <Tabs defaultValue={category}>
@@ -29,9 +45,12 @@ const ProjectTab = () => {
           data-[state=active]:text-white 
           "
           value="all"
-          onClick={() => setCategory("all")}
+          onClick={() => {
+            setNumShown(6);
+            setCategory("all");
+          }}
         >
-          All
+          All&nbsp;&nbsp;({numAll})
         </TabsTrigger>
 
         <TabsTrigger
@@ -40,9 +59,12 @@ const ProjectTab = () => {
           data-[state=active]:text-white
           "
           value="frontend"
-          onClick={() => setCategory("frontend")}
+          onClick={() => {
+            setNumShown(6);
+            setCategory("frontend");
+          }}
         >
-          Frontend
+          Frontend&nbsp;&nbsp;({numFrontend})
         </TabsTrigger>
 
         <TabsTrigger
@@ -51,9 +73,12 @@ const ProjectTab = () => {
           data-[state=active]:text-white
           "
           value="backend"
-          onClick={() => setCategory("backend")}
+          onClick={() => {
+            setNumShown(6);
+            setCategory("backend");
+          }}
         >
-          Backend
+          Backend&nbsp;&nbsp;({numBackend})
         </TabsTrigger>
 
         <TabsTrigger
@@ -62,37 +87,52 @@ const ProjectTab = () => {
           data-[state=active]:text-white
           "
           value="others"
-          onClick={() => setCategory("others")}
+          onClick={() => {
+            setNumShown(6);
+            setCategory("others");
+          }}
         >
-          Others
+          Others&nbsp;&nbsp;({numOthers})
         </TabsTrigger>
       </TabsList>
 
-      <div
-        className="
-        grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-36 sm:mt-3
-        "
-      >
-        {filteredProjects.map((project, index) => (
-          <TabsContent
-            value={category}
-            key={index}
-            className="flex justify-center"
+      <div className="flex flex-col items-center gap-y-7">
+        <div
+          className="
+          grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+          gap-4 mt-36 sm:mt-3 min-h-[800px]
+          "
+        >
+          {filteredProjects.map((project, index) => (
+            <TabsContent
+              value={category}
+              key={project.name}
+              className="flex justify-center"
+            >
+              <ProjectCard
+                image={project.image}
+                category={project.category}
+                name={project.name}
+                description={project.description}
+                link={project.link}
+                github={project.github}
+                stack={project.stack}
+                date={project.date}
+                uml={project.uml}
+                index={index % 6}
+              />
+            </TabsContent>
+          ))}
+        </div>
+
+        {numShown < numCurrProject && (
+          <Button
+            onClick={() => setNumShown(numShown + 6)}
+            className="rounded-full"
           >
-            <ProjectCard
-              image={project.image}
-              category={project.category}
-              name={project.name}
-              description={project.description}
-              link={project.link}
-              github={project.github}
-              stack={project.stack}
-              date={project.date}
-              uml={project.uml}
-              index={index}
-            />
-          </TabsContent>
-        ))}
+            Load More
+          </Button>
+        )}
       </div>
     </Tabs>
   );
