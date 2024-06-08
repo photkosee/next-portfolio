@@ -49,7 +49,7 @@ const ProjectCard = ({
             "
           >
             <Image
-              className="absolute bottom-0 shadow-xl h-auto"
+              className="absolute bottom-0 shadow-xl h-auto animate-fadein"
               src={image ? image : "./images/project-cover.webp"}
               width={200}
               height={150}
@@ -111,11 +111,11 @@ const ProjectCard = ({
           </div>
         </CardHeader>
 
-        <div className="h-[180px] px-5 py-2 sm:py-3 flex flex-col gap-1 xs:gap-3">
+        <div className="h-[180px] px-5 py-2 sm:py-3 flex flex-col gap-2 xs:gap-3">
           <h4 className="h4">{name}</h4>
           <p
             className="
-            text-muted-foreground text-[12px] sm:text-[15px] leading-[17px]
+            text-muted-foreground text-[13.5px] sm:text-[15px] leading-[17px]
             "
           >
             {description}

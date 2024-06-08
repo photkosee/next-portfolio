@@ -178,6 +178,18 @@ export const projects = [
   //   date: "Developing",
   // },
   {
+    image: "./images/dota2.webp",
+    category: "frontend",
+    name: "Dota 2 Hero Matchmaker",
+    description:
+      "Answer fun questions to discover your perfect Dota 2 hero. Whether you play support, offlane, mid, or carry, find the hero that suits you best!",
+    link: "https://photkosee.github.io/dota2-hero-matchmaker/#/",
+    github: "https://github.com/photkosee/dota2-hero-matchmaker",
+    stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
+    date: "June 2024",
+    show: true,
+  },
+  {
     image: "./images/flexbox-cover.webp",
     category: "frontend",
     name: "Flexbox Froggy Hardcore",
@@ -210,7 +222,6 @@ export const projects = [
     github: "https://github.com/photkosee/geogenius",
     stack: ["nextjs2", "typescript", "tailwindcss"],
     date: "Apr 2024",
-    show: true,
   },
   {
     image: "./images/chillflix-cover.webp",

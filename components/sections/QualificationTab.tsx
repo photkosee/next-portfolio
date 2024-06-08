@@ -67,7 +67,7 @@ const QualificationTab = () => {
                 <Image
                   src={experience.logo}
                   alt={experience.company}
-                  className="w-[55px] h-[55px] mt-2 object-scale-down"
+                  className="w-[55px] h-[55px] mt-2 object-scale-down animate-fadein"
                   width={55}
                   height={55}
                   priority
@@ -105,7 +105,7 @@ const QualificationTab = () => {
                 <Image
                   src={education.logo}
                   alt={education.school}
-                  className="w-[55px] h-[55px] mt-2 object-scale-down"
+                  className="w-[55px] h-[55px] mt-2 object-scale-down animate-fadein"
                   width={55}
                   height={55}
                   priority
