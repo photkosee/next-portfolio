@@ -22,16 +22,6 @@ const Contact = () => {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.6 }}
       >
-        <motion.div className="hidden lg:block" variants={fadeIn("left")}>
-          <Image
-            src="./images/contact-cover.webp"
-            width={200}
-            height={200}
-            alt="contact's mockup"
-            priority
-          />
-        </motion.div>
-
         <motion.div
           className="w-full max-w-[470px] flex flex-col gap-7"
           variants={fadeIn("right")}
