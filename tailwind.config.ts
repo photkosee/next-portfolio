@@ -74,6 +74,9 @@ const config: Config = {
           "0%" : {
             opacity: "0",
           },
+          "17%" : {
+            opacity: "0",
+          },
           "100%" : {
             opacity: "1",
           }
@@ -82,7 +85,7 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fadein": "fadein 1.5s",
+        "fadein": "fadein 2.5s",
       },
     },
   },
