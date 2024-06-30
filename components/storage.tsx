@@ -178,6 +178,17 @@ export const projects = [
   //   date: "Developing",
   // },
   {
+    image: "./images/task-cover.webp",
+    category: "fullstack",
+    name: "Task A Gotchi",
+    description:
+      "Gamify your habits to beat your procrastination with Task A Gotchi!",
+    github: "https://github.com/photkosee/task-a-gotchi",
+    stack: ["nextjs2", "tailwindcss", "antd", "mongodb", "prisma"],
+    date: "UNSW Flagship Hackathon",
+    show: true,
+  },
+  {
     image: "./images/dota2.webp",
     category: "frontend",
     name: "Dota 2 Hero Matchmaker",

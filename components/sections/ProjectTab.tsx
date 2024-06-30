@@ -12,20 +12,26 @@ const ProjectTab = () => {
   const [numShown, setNumShown] = useState(6);
   const numAll = projects.length;
   const numFrontend = projects.filter(
-    (project) => project.category === "frontend"
+    (project) =>
+      project.category === "frontend" || project.category === "fullstack"
   ).length;
   const numBackend = projects.filter(
-    (project) => project.category === "backend"
+    (project) =>
+      project.category === "backend" || project.category === "fullstack"
   ).length;
   const numOthers = projects.filter(
     (project) => project.category === "others"
   ).length;
   const numCurrProject = projects.filter((project) => {
-    return category === "all" ? project : category === project.category;
+    if (category === "all") return project;
+    if (category === "other") return project.category === "other";
+    return category === project.category || project.category === "fullstack";
   }).length;
   const filteredProjects = projects
     .filter((project) => {
-      return category === "all" ? project : category === project.category;
+      if (category === "all") return project;
+      if (category === "other") return project.category === "other";
+      return category === project.category || project.category === "fullstack";
     })
     .slice(0, numShown);
 
