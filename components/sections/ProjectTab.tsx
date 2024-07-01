@@ -106,7 +106,7 @@ const ProjectTab = () => {
         <div
           className="
           grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-          gap-4 mt-[120px] sm:mt-3 min-h-[800px]
+          gap-4 mt-[115px] sm:mt-3 min-h-[800px]
           "
         >
           {filteredProjects.map((project, index) => (
