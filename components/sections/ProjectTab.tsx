@@ -24,13 +24,13 @@ const ProjectTab = () => {
   ).length;
   const numCurrProject = projects.filter((project) => {
     if (category === "all") return project;
-    if (category === "other") return project.category === "other";
+    if (category === "others") return project.category === "others";
     return category === project.category || project.category === "fullstack";
   }).length;
   const filteredProjects = projects
     .filter((project) => {
       if (category === "all") return project;
-      if (category === "other") return project.category === "other";
+      if (category === "others") return project.category === "others";
       return category === project.category || project.category === "fullstack";
     })
     .slice(0, numShown);
@@ -106,7 +106,7 @@ const ProjectTab = () => {
         <div
           className="
           grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-          gap-4 mt-36 sm:mt-3 min-h-[800px]
+          gap-4 mt-[120px] sm:mt-3 min-h-[800px]
           "
         >
           {filteredProjects.map((project, index) => (

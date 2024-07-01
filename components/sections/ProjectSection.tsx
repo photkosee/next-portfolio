@@ -41,7 +41,19 @@ const ProjectSection = () => {
             My Projects
           </div>
 
-          <div className="w-full flex justify-center">
+          <div className="w-full flex justify-center flex-col items-center gap-5">
+            <div
+              className="text-muted-foreground text-[13.5px] sm:text-[15px]
+              leading-[17px] text-center"
+            >
+              <div className="flex flex-col gap-1.5">
+                Hover on a project card, then
+                <div className="text-nowrap flex items-center gap-1.5">
+                  click on the <GithubIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+                  icon for the project{`'`}s details
+                </div>
+              </div>
+            </div>
             <Link className="max-w-[170px]" href="/projects" passHref>
               <Button className="rounded-full max-w-[170px]">
                 View All Projects
