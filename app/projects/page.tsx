@@ -17,7 +17,7 @@ const Projects = () => {
           leading-[17px] text-center w-full flex justify-center"
         >
           <div className="flex flex-col gap-1.5">
-            Hover on a project card, then
+            Hover over any project card below, then
             <div className="text-nowrap flex items-center gap-1.5">
               click on the <GithubIcon className="w-4 h-4 sm:w-5 sm:h-5" />
               icon for the project{`'`}s details
