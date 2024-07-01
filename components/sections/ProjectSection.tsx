@@ -57,11 +57,6 @@ const ProjectSection = () => {
           <Swiper
             className="h-[400px] sm:h-[430px]"
             slidesPerView={1}
-            autoplay={{
-              delay: 10000,
-              stopOnLastSlide: false,
-              disableOnInteraction: true,
-            }}
             breakpoints={{
               700: {
                 slidesPerView: 2,
