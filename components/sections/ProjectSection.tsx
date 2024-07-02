@@ -28,7 +28,7 @@ const ProjectSection = () => {
         viewport={{ once: true, amount: 0.3 }}
       >
         <motion.div
-          className="max-w-[330px] mx-auto flex flex-col justify-center gap-3"
+          className="max-w-[350px] mx-auto flex flex-col justify-center gap-3"
           variants={fadeIn("left")}
         >
           <div
@@ -51,7 +51,7 @@ const ProjectSection = () => {
                 <div className="text-nowrap flex items-center gap-1 sm:gap-1.5">
                   then click on the
                   <GithubIcon className="w-[18px] h-[18px] sm:w-5 sm:h-5" />
-                  icon for the project{`'`}s details
+                  icon for further project details
                 </div>
               </div>
             </div>

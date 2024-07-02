@@ -79,8 +79,11 @@ const QualificationTab = () => {
                   <div className="font-semibold text-lg leading-none mb-2">
                     {experience.company}
                   </div>
-                  <div className="text-sm leading-none text-muted-foreground mb-5">
+                  <div className="text-sm leading-none text-muted-foreground mb-2">
                     {experience.role}
+                  </div>
+                  <div className="text-sm leading-[18px] text-muted-foreground mb-5">
+                    {experience.description}
                   </div>
                 </div>
               </div>

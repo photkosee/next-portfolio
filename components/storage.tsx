@@ -18,15 +18,19 @@ export const educations = [
 export const experiences = [
   {
     company: "Cloud Natician",
-    role: "Software Engineer",
+    role: "Software Engineer Intern",
     years: "Sep 2023 - Feb 2024",
     logo: "./images/cloudnc.webp",
+    description:
+      "Developed and maintained responsive websites according to customers’ requirements",
   },
   {
     company: "UNSW Computer Sceience and Engineering",
     role: "Casual Academic",
     years: "May 2023 - Sep 2023",
     logo: "./images/unsw-cse.webp",
+    description:
+      "Teaching Assistant (Marker role) for COMP3121/9101 (Algorithms and Programming Techniques course) at UNSW",
   },
 ];
 

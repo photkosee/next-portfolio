@@ -20,7 +20,7 @@ const Projects = () => {
             Hover over any project card below,
             <div className="text-nowrap flex items-center gap-1.5">
               then click on the <GithubIcon className="w-4 h-4 sm:w-5 sm:h-5" />
-              icon for the project{`'`}s details
+              icon for further project details
             </div>
           </div>
         </div>
