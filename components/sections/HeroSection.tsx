@@ -79,7 +79,7 @@ const HeroSection = () => {
             containerStyles="
             flex md:hidden justify-center items-center gap-x-5
             "
-            iconsStyles="text-[21px] hover:text-primary"
+            iconsStyles="text-[23px] hover:text-primary"
           />
 
           <div className="flex lex-row gap-x-2 sm:gap-x-3 mt-4">
