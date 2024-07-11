@@ -33,6 +33,7 @@ This is a personalized website to showcase my creative work apart from my univer
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 - [Framer Motion](https://www.framer.com/motion/) - Motion library
 - [Shadcn/ui](https://nextui.org/) - Components library for User Interface
+- [EmailJS](https://www.emailjs.com/) - Sending email from client-side
 
 ## Data Source
 
