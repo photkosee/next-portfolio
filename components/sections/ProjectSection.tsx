@@ -7,13 +7,13 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
-import { GithubIcon, Link2Icon } from "lucide-react";
 
 import ArrowDoodle from "@/components/background/ArrowDoodle";
 import ProjectCard from "@/components/cards/ProjectCard";
 import { projects } from "@/components/storage";
 import { Button } from "@/components/ui/button";
 import { fadeIn } from "@/components/variants";
+import { SiGithub } from "react-icons/si";
 
 const ProjectSection = () => {
   return (
@@ -50,7 +50,7 @@ const ProjectSection = () => {
                 Hover over any project card below,
                 <div className="text-nowrap flex items-center gap-1 sm:gap-1.5">
                   then click on the
-                  <GithubIcon className="w-[18px] h-[18px] sm:w-5 sm:h-5" />
+                  <SiGithub className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
                   icon for further project details
                 </div>
               </div>

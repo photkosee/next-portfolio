@@ -4,8 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
-import { Calendar, GithubIcon, Link2Icon } from "lucide-react";
-import { SiUml } from "react-icons/si";
+import { Calendar } from "lucide-react";
+import { SiUml, SiGithub } from "react-icons/si";
+import { TbExternalLink } from "react-icons/tb";
 
 import { Project } from "@/components/types";
 import { Card, CardHeader } from "@/components/ui/card";
@@ -59,7 +60,7 @@ const ProjectCard = ({
 
             <div
               className="
-              bg-black opacity-0 group-hover:opacity-80 absolute inset-0 rounded-t-sm
+              bg-black opacity-0 group-hover:opacity-90 absolute inset-0 rounded-t-sm
               scale-0 group-hover:scale-100 transition-all duration-100 z-10
               "
             />
@@ -76,7 +77,7 @@ const ProjectCard = ({
                   href={link}
                   target="_blank"
                 >
-                  <Link2Icon className="text-white" />
+                  <TbExternalLink className="text-white" size={24} />
                 </Link>
               )}
 
@@ -91,7 +92,7 @@ const ProjectCard = ({
                   href={uml}
                   target="_blank"
                 >
-                  <SiUml className="text-white text-[22px]" />
+                  <SiUml className="text-white" size={23} />
                 </Link>
               )}
 
@@ -105,7 +106,7 @@ const ProjectCard = ({
                 href={github}
                 target="_blank"
               >
-                <GithubIcon className="text-white" />
+                <SiGithub className="text-white" size={24} />
               </Link>
             </div>
           </div>
