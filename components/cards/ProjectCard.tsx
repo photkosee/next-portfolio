@@ -60,7 +60,7 @@ const ProjectCard = ({
 
             <div
               className="
-              bg-black opacity-0 group-hover:opacity-90 absolute inset-0 rounded-t-sm
+              bg-black opacity-0 group-hover:opacity-90 absolute inset-0 rounded-t-md
               scale-0 group-hover:scale-100 transition-all duration-100 z-10
               "
             />
