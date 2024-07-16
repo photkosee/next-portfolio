@@ -11,6 +11,7 @@ const ProjectTab = () => {
   const [category, setCategory] = useState<string>("all");
   const [numShown, setNumShown] = useState(6);
   const numAll = projects.length;
+  const numHighlight = projects.filter((project) => project.show).length;
   const numFrontend = projects.filter(
     (project) =>
       project.category === "frontend" || project.category === "fullstack"
@@ -29,6 +30,7 @@ const ProjectTab = () => {
   }).length;
   const filteredProjects = projects
     .filter((project) => {
+      if (category === "highlight") return project.show;
       if (category === "all") return project;
       if (category === "others") return project.category === "others";
       return category === project.category || project.category === "fullstack";
@@ -39,10 +41,10 @@ const ProjectTab = () => {
     <Tabs defaultValue={category}>
       <TabsList
         className="
-        grid sm:grid-cols-4 py-0 gap-1 mx-auto
+        grid sm:grid-cols-5 py-0 gap-1 mx-auto
         text-muted-foreground rounded-full dark:sm:bg-secondary
         border-none bg-transparent sm:bg-white dark:bg-transparent
-        sm:border-solid sm:border max-w-md
+        sm:border-solid sm:border max-w-[555px] w-full
         "
       >
         <TabsTrigger
@@ -57,6 +59,20 @@ const ProjectTab = () => {
           }}
         >
           All&nbsp;&nbsp;({numAll})
+        </TabsTrigger>
+
+        <TabsTrigger
+          className="
+          w-full rounded-full data-[state=active]:bg-primary
+          data-[state=active]:text-white 
+          "
+          value="highlight"
+          onClick={() => {
+            setNumShown(6);
+            setCategory("highlight");
+          }}
+        >
+          Highlight&nbsp;&nbsp;({numHighlight})
         </TabsTrigger>
 
         <TabsTrigger
@@ -106,7 +122,7 @@ const ProjectTab = () => {
         <div
           className="
           grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-          gap-4 mt-[115px] sm:mt-3 min-h-[800px]
+          gap-4 mt-[145px] sm:mt-3 min-h-[800px]
           "
         >
           {filteredProjects.map((project, index) => (

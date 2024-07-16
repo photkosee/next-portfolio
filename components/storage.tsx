@@ -248,7 +248,6 @@ export const projects = [
     github: "https://github.com/photkosee/chillflix",
     stack: ["nextjs2", "typescript", "tailwindcss", "zod", "redux"],
     date: "Mar 2024",
-    show: true,
   },
   {
     image: "./images/xo-cover.webp",
@@ -260,7 +259,6 @@ export const projects = [
     github: "https://github.com/photkosee/xo-is-unbeatable",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
     date: "Mar 2024",
-    show: true,
   },
   {
     image: "./images/blackpeach-cover.webp",
@@ -295,7 +293,6 @@ export const projects = [
     github: "https://github.com/photkosee/react-pymetrics-towers",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
     date: "Dec 2023",
-    show: true,
   },
   {
     image: "./images/airbrb-cover.webp",
