@@ -182,6 +182,16 @@ export const projects = [
   //   date: "Developing",
   // },
   {
+    image: "./images/wongnai-cover.webp",
+    category: "fullstack",
+    name: "What to Order",
+    description:
+      "API Gateway and Frontend for Online Ordering System. Using Jest for testing both frontend and backend.",
+    github: "https://github.com/photkosee/wongnai-frontend-assignment2023/",
+    stack: ["reactjs", "typescript", "tailwindcss", "nodejs", "jest"],
+    date: "July 2024",
+  },
+  {
     image: "./images/task-cover.webp",
     category: "fullstack",
     name: "Task A Gotchi",
@@ -259,6 +269,7 @@ export const projects = [
     github: "https://github.com/photkosee/xo-is-unbeatable",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
     date: "Mar 2024",
+    show: true,
   },
   {
     image: "./images/blackpeach-cover.webp",
