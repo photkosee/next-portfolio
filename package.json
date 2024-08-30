@@ -30,7 +30,7 @@
     "swiper": "^11.0.5",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7",
-    "tech-stack-icons": "^2.0.3"
+    "tech-stack-icons": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",

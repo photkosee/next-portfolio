@@ -182,6 +182,16 @@ export const projects = [
   //   date: "Developing",
   // },
   {
+    category: "backend",
+    name: "Cinevent",
+    description:
+      "An API that handles movie theater bookings, seat reservations, and admin management.",
+    github: "https://github.com/photkosee/cinevent",
+    stack: ["nodejs", "mongoose", "mongodb"],
+    date: "August 2024",
+    show: true,
+  },
+  {
     image: "./images/wongnai-cover.webp",
     category: "fullstack",
     name: "What to Order",
