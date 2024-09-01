@@ -182,6 +182,18 @@ export const projects = [
   //   date: "Developing",
   // },
   {
+    image: "./images/wam-to-gpa.webp",
+    category: "frontend",
+    name: "UNSW WAM to GPA Convertor",
+    description:
+      "An app that helps UNSW students convert their WAM to GPA by simply uploading their academic statement.",
+    link: "https://unsw-wam-to-gpa-convertor.vercel.app/",
+    github: "https://github.com/photkosee/unsw-wam-to-gpa-convertor",
+    stack: ["nextjs2", "typescript", "tailwindcss", "shadcnui"],
+    date: "September 2024",
+    show: true,
+  },
+  {
     category: "backend",
     name: "Cinevent",
     description:
