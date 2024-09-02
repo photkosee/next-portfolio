@@ -24,6 +24,7 @@ const ProjectTab = () => {
     (project) => project.category === "others"
   ).length;
   const numCurrProject = projects.filter((project) => {
+    if (category === "highlight") return project.show;
     if (category === "all") return project;
     if (category === "others") return project.category === "others";
     return category === project.category || project.category === "fullstack";
