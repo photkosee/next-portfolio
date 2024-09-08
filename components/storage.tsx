@@ -182,6 +182,18 @@ export const projects = [
   //   date: "Developing",
   // },
   {
+    image: "./images/smarttrip-cover.webp",
+    category: "fullstack",
+    name: "Smart Trip",
+    description:
+      "Create, customize, and optimize your itineraries with this free AI trip planner!",
+    link: "https://smart-trip-alpha.vercel.app/",
+    github: "https://github.com/photkosee/smart-trip",
+    stack: ["nextjs2", "typescript", "tailwindcss", "shadcnui", "firebase"],
+    date: "September 2024",
+    show: true,
+  },
+  {
     image: "./images/wam-to-gpa.webp",
     category: "frontend",
     name: "UNSW WAM to GPA Convertor",
@@ -201,7 +213,6 @@ export const projects = [
     github: "https://github.com/photkosee/cinevent",
     stack: ["nodejs", "mongoose", "mongodb"],
     date: "August 2024",
-    show: true,
   },
   {
     image: "./images/wongnai-cover.webp",
