@@ -141,7 +141,7 @@ const ProjectTab = () => {
                 github={project.github}
                 stack={project.stack}
                 date={project.date}
-                uml={project.uml}
+                // uml={project.uml}
                 index={index % 6}
               />
             </TabsContent>
