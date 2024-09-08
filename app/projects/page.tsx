@@ -9,7 +9,7 @@ const Projects = () => {
     <main className="min-h-screen pt-12 relative">
       <div className="container px-3 h-full flex flex-col relative gap-4 sm:gap-5">
         <div className="w-full flex gap-4 items-center justify-center">
-          <h2 className="text-big">My Projects</h2>
+          <h2 className="text-big">Personal Projects</h2>
           <Rocket className="text-primary" size={30} />
         </div>
 
