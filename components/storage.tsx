@@ -36,7 +36,7 @@ export const experiences = [
 
 export const stacks = [
   {
-    skill: "Frontend",
+    skill: "Most Comfortable",
     tools: [
       {
         name: "React",
@@ -59,38 +59,22 @@ export const stacks = [
         icon: "tailwindcss",
       },
       {
-        name: "Bootstrap",
-        icon: "bootstrap5",
-      },
-      {
-        name: "MUI",
-        icon: "materialui",
-      },
-      {
-        name: "Shadcn/ui",
-        icon: "shadcnui",
-      },
-      {
-        name: "NextUI",
-        icon: "",
-      },
-      {
         name: "Redux Toolkit",
         icon: "redux",
       },
-    ],
-  },
-  {
-    skill: "Backend",
-    tools: [
       {
-        name: "Node",
-        icon: "nodejs",
+        name: "Javascript",
+        icon: "js",
       },
       {
         name: "TypeScript",
         icon: "typescript",
       },
+    ],
+  },
+  {
+    skill: "Some Experienced",
+    tools: [
       {
         name: "Python",
         icon: "python",
@@ -111,11 +95,14 @@ export const stacks = [
         name: "PostgreSQL",
         icon: "postgresql",
       },
-    ],
-  },
-  {
-    skill: "Others",
-    tools: [
+      {
+        name: "MongoDB",
+        icon: "mongodb",
+      },
+      {
+        name: "Firebase",
+        icon: "firebase",
+      },
       {
         name: "Wireshark",
         icon: "",
@@ -131,14 +118,6 @@ export const stacks = [
       {
         name: "Gradle",
         icon: "",
-      },
-      {
-        name: "GitLab",
-        icon: "gitlab",
-      },
-      {
-        name: "GitHub",
-        icon: "github",
       },
       {
         name: "Postman",

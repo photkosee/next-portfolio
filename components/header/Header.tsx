@@ -44,7 +44,7 @@ const Header = () => {
             />
             <Socials
               containerStyles="w-full hidden md:flex justify-center items-center gap-x-5 mb-[2px]"
-              iconsStyles="text-[20px] hover:text-primary"
+              iconsStyles="text-[23px] hover:text-primary"
             />
           </div>
 

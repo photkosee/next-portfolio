@@ -1,10 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {
-  RiLinkedinFill,
-  RiGithubFill,
-} from "react-icons/ri";
+import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
 
 const icons = [
   {
@@ -20,21 +17,20 @@ const icons = [
 const Socials = ({
   containerStyles,
   iconsStyles,
-} : {
-  containerStyles: string
-  iconsStyles: string
+}: {
+  containerStyles: string;
+  iconsStyles: string;
 }) => {
   return (
     <div className={`${containerStyles}`}>
       {icons.map((icon, index) => (
-        <Link className="flex items-center"
+        <Link
+          className="flex items-center"
           href={icon.path}
           key={index}
           target="_blank"
         >
-          <div className={`${iconsStyles}`}>
-            {icon.name}
-          </div>
+          <div className={`${iconsStyles} p-1`}>{icon.name}</div>
         </Link>
       ))}
     </div>

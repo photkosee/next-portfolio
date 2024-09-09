@@ -70,8 +70,7 @@ const HeroSection = () => {
               text-sm md:text-[16px] md:leading-[24px]
               "
             >
-              A passionate developer on a mission to bring ideas to life through
-              code
+              I love to build things that can help people.
             </p>
           </div>
 
