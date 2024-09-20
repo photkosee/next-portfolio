@@ -63,12 +63,20 @@ export const stacks = [
         icon: "redux",
       },
       {
+        name: "Zustand",
+        icon: "",
+      },
+      {
         name: "Javascript",
         icon: "js",
       },
       {
         name: "TypeScript",
         icon: "typescript",
+      },
+      {
+        name: "Shadcn/UI",
+        icon: "shadcnui",
       },
     ],
   },
@@ -90,6 +98,30 @@ export const stacks = [
       {
         name: "Express",
         icon: "",
+      },
+      {
+        name: "Bootstrap",
+        icon: "bootstrap5",
+      },
+      {
+        name: "MUI",
+        icon: "materialui",
+      },
+      {
+        name: "Ant Design",
+        icon: "antd",
+      },
+      {
+        name: "NextUI",
+        icon: "",
+      },
+      {
+        name: "Framer Motion",
+        icon: "",
+      },
+      {
+        name: "Prisma",
+        icon: "prisma",
       },
       {
         name: "PostgreSQL",
@@ -160,6 +192,17 @@ export const projects = [
   //   stack: ["nestjs", "typescript", "mysql"],
   //   date: "Developing",
   // },
+  {
+    image: "./images/positivus-cover.png",
+    category: "frontend",
+    name: "Positivus",
+    description:
+      "Practice coding a website from a random Figma design using React with TypeScript, Vite, and Tailwind CSS",
+    link: "https://positivus-phot.vercel.app/",
+    github: "https://github.com/photkosee/positivus",
+    stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
+    date: "September 2024",
+  },
   {
     image: "./images/smarttrip-cover.webp",
     category: "fullstack",

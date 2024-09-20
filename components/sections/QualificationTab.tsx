@@ -43,9 +43,9 @@ const QualificationTab = () => {
           w-36 sm:w-[105px] rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white
           "
-          value="skills"
+          value="stacks"
         >
-          Skills
+          Stacks
         </TabsTrigger>
       </TabsList>
 
@@ -127,7 +127,7 @@ const QualificationTab = () => {
           </div>
         </TabsContent>
 
-        <TabsContent value="skills">
+        <TabsContent value="stacks">
           <div
             className="
             flex items-center gap-x-3 dark:text-white
