@@ -5,10 +5,10 @@ import { useState } from "react";
 import { projects } from "@/components/storage";
 import ProjectCard from "@/components/cards/ProjectCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 
 const ProjectTab = () => {
-  const [category, setCategory] = useState<string>("all");
+  const [category, setCategory] = useState<string>("highlight");
   const [numShown, setNumShown] = useState(6);
   const numAll = projects.length;
   const numHighlight = projects.filter((project) => project.show).length;
