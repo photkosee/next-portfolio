@@ -38,7 +38,7 @@ const ProjectSection = () => {
             "
           >
             <ArrowDoodle />
-            My Projects
+            Personal Projects
           </div>
 
           <div className="w-full flex justify-center flex-col items-center gap-5">

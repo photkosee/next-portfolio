@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 
 const ProjectTab = () => {
-  const [category, setCategory] = useState<string>("highlight");
+  const [category, setCategory] = useState<string>("all");
   const [numShown, setNumShown] = useState(6);
   const numAll = projects.length;
   const numHighlight = projects.filter((project) => project.show).length;

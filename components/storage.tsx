@@ -170,7 +170,7 @@ export const infoDatas = [
   },
   {
     icon: <MailIcon size={18} />,
-    description: "kosee.phot@gmail.com",
+    description: "phot.kosee@gmail.com",
   },
   {
     icon: <GraduationCap size={18} />,
@@ -183,21 +183,12 @@ export const infoDatas = [
 ];
 
 export const projects = [
-  // {
-  //   category: "backend",
-  //   name: "WAMwise - Degree Planner",
-  //   description:
-  //     "Being a CSE student at UNSW and having trouble calculating your honours WAM? WAMwise is for you!",
-  //   github: "https://github.com/photkosee/wamwise-server",
-  //   stack: ["nestjs", "typescript", "mysql"],
-  //   date: "Developing",
-  // },
   {
-    image: "./images/positivus-cover.png",
+    image: "./images/positivus-cover.webp",
     category: "frontend",
     name: "Positivus",
     description:
-      "Practice coding a website from a random Figma design using React with TypeScript, Vite, and Tailwind CSS",
+      "Figma to Code using React with TypeScript, Vite, and Tailwind CSS.",
     link: "https://positivus-phot.vercel.app/",
     github: "https://github.com/photkosee/positivus",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
@@ -208,7 +199,7 @@ export const projects = [
     category: "fullstack",
     name: "Smart Trip",
     description:
-      "Create, customize, and optimize your itineraries with this free AI trip planner!",
+      "Create, customize, and optimize your itineraries with this free AI trip planner, powered by Gemini AI.",
     link: "https://smart-trip-alpha.vercel.app/",
     github: "https://github.com/photkosee/smart-trip",
     stack: ["nextjs2", "tailwindcss", "shadcnui", "redux", "firebase"],
@@ -251,7 +242,7 @@ export const projects = [
     category: "fullstack",
     name: "Task A Gotchi",
     description:
-      "Gamify your habits to beat your procrastination with Task A Gotchi!",
+      "A responsive web app that gamifies users' habits to boost their productivity.",
     github: "https://github.com/photkosee/task-a-gotchi",
     stack: ["nextjs2", "tailwindcss", "antd", "mongodb", "prisma"],
     date: "UNSW Flagship Hackathon",
@@ -262,7 +253,7 @@ export const projects = [
     category: "frontend",
     name: "Dota 2 Hero Matchmaker",
     description:
-      "Answer fun questions to discover your perfect Dota 2 hero. Whether you play support, offlane, mid, or carry, find the hero that suits you best!",
+      "A responsive web app that helps DOTA 2 players find the perfect hero according to their preferences.",
     link: "https://photkosee.github.io/dota2-hero-matchmaker/#/",
     github: "https://github.com/photkosee/dota2-hero-matchmaker",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
@@ -273,7 +264,7 @@ export const projects = [
     category: "frontend",
     name: "Flexbox Froggy Hardcore",
     description:
-      "Challenge your CSS skills with this game! There are unlimited challenges awaiting you!",
+      "A game where users help the frogs reach their lily pads by using CSS Flexbox properties, featuring an UNLIMITED number of challenges.",
     link: "https://photkosee.github.io/flexboxfroggy-hardcore/",
     github: "https://github.com/photkosee/flexboxfroggy-hardcore",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
@@ -296,7 +287,7 @@ export const projects = [
     category: "frontend",
     name: "GeoGenius Info",
     description:
-      "Explore the information of each country with just a click on a world map!",
+      "Explore the information of each country with just a click on a world map.",
     link: "https://geogenius-two.vercel.app/",
     github: "https://github.com/photkosee/geogenius",
     stack: ["nextjs2", "typescript", "tailwindcss"],
@@ -307,7 +298,7 @@ export const projects = [
     category: "frontend",
     name: "ChillFlix - Anime Recommender",
     description:
-      "Looking for an anime to watch but not sure what to watch? ChillFlix!",
+      "Looking for an anime to watch but not sure what to watch? Search for it here!",
     link: "https://chillflix-phot.vercel.app/",
     github: "https://github.com/photkosee/chillflix",
     stack: ["nextjs2", "typescript", "tailwindcss", "zod", "redux"],
@@ -318,19 +309,18 @@ export const projects = [
     category: "frontend",
     name: "XO is Unbeatable (AI)",
     description:
-      "How good are you in Tic Tac Toe? Try beating my AI (Alpha-Beta Pruning)!",
+      "How good are you in Tic Tac Toe? Try beating my AI (Alpha-Beta Pruning) in this Tic Tac Toe game!",
     link: "https://photkosee.github.io/xo-is-unbeatable/",
     github: "https://github.com/photkosee/xo-is-unbeatable",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
     date: "Mar 2024",
-    show: true,
   },
   {
     image: "./images/blackpeach-cover.webp",
     category: "frontend",
     name: "BlackPeach | SHOP",
     description:
-      "Looking for some old albums and clothes of a K-POP band? Try BlackPeach!",
+      "An e-commerce platform selling all of albums and merchandise of a popular K-pop band.",
     link: "https://blackpeach.vercel.app/",
     github: "https://github.com/photkosee/blackpeach",
     stack: ["nextjs2", "typescript", "tailwindcss", "redux"],
@@ -353,7 +343,7 @@ export const projects = [
     category: "frontend",
     name: "Pymetrics Towers Game",
     description:
-      "Want to practice Pymetrics tests for your interview? Try out this game!",
+      "Want to practice Pymetrics tests for your interview? Try this game out!",
     link: "https://photkosee.github.io/react-pymetrics-towers/",
     github: "https://github.com/photkosee/react-pymetrics-towers",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
@@ -373,7 +363,7 @@ export const projects = [
     category: "others",
     name: "Network Analyzer",
     description:
-      "Looking for a tool to capture and monitor network traffic? Try this out!",
+      "Looking for a tool to capture and monitor network traffic? Try this tool out!",
     github: "https://github.com/photkosee/network-analyzer",
     stack: ["go"],
     date: "Nov 2023",

@@ -30,7 +30,7 @@ const Contact = () => {
                 <AtSign size={18} />
               </div>
               <div className="text-sm lg:text-[18px] md:leading-[23px]">
-                {"kosee.phot@gmail.com"}
+                {"phot.kosee@gmail.com"}
               </div>
             </div>
           </div>
