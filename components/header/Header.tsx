@@ -33,10 +33,10 @@ const Header = () => {
       ${!top && path !== "/contact" && "bg-[#fef5f5]"}
       ${
         top ? "bg-white shadow-lg dark:bg-accent" : "dark:bg-transparent"
-      } sticky py-4 md:py-5 xl:py-6 top-0 z-30 transition-all
+      } sticky py-5 md:py-6 xl:py-7 top-0 z-30 transition-all
       `}
     >
-      <div className="container">
+      <div className="max-w-7xl mx-auto px-7">
         <div className="flex justify-between items-center gap-x-6">
           <div>
             <ModeSwitch />
