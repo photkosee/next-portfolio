@@ -1,12 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
-import ModeToggle from "@/components/header/ModeToggle";
+// import ModeToggle from "@/components/header/ModeToggle";
 import Nav from "@/components/header/Nav";
 import MobileNav from "@/components/header/MobileNav";
-import Socials from "./Socials";
+import Socials from "@/components/header/Socials";
+
+const ModeSwitch = dynamic(() => import("@/components/header/ModeSwitch"), {
+  ssr: false,
+});
 
 const Header = () => {
   const [top, setTop] = useState<boolean>(false);
@@ -28,12 +33,15 @@ const Header = () => {
       ${!top && path !== "/contact" && "bg-[#fef5f5]"}
       ${
         top ? "bg-white shadow-lg dark:bg-accent" : "dark:bg-transparent"
-      } sticky py-2 top-0 z-30 transition-all
+      } sticky py-4 md:py-5 xl:py-6 top-0 z-30 transition-all
       `}
     >
       <div className="container">
         <div className="flex justify-between items-center gap-x-6">
-          <ModeToggle />
+          <div>
+            <ModeSwitch />
+          </div>
+
           <div className="flex items-center gap-x-8">
             <Nav
               containerStyles="hidden md:flex items-center gap-x-8"
