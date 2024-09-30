@@ -2,7 +2,7 @@ import Socials from "@/app/components/headers/Socials";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary py-7 lg:py-10">
+    <footer className="bg-secondary py-9 lg:py-10">
       <div className="container flex justify-center">
         <Socials
           containerStyles="flex gap-x-7 mx-auto items-center"
