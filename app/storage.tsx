@@ -192,7 +192,7 @@ export const projects = [
     link: "https://positivus-phot.vercel.app/",
     github: "https://github.com/photkosee/positivus",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
-    date: "September 2024",
+    date: "Sep 2024",
   },
   {
     image: "./images/smarttrip-cover.webp",
@@ -203,7 +203,7 @@ export const projects = [
     link: "https://smart-trip-alpha.vercel.app/",
     github: "https://github.com/photkosee/smart-trip",
     stack: ["nextjs2", "tailwindcss", "shadcnui", "redux", "firebase"],
-    date: "September 2024",
+    date: "Sep 2024",
     show: true,
   },
   {
@@ -215,7 +215,7 @@ export const projects = [
     link: "https://unsw-wam-to-gpa-convertor.vercel.app/",
     github: "https://github.com/photkosee/unsw-wam-to-gpa-convertor",
     stack: ["nextjs2", "typescript", "tailwindcss", "shadcnui"],
-    date: "September 2024",
+    date: "Aug 2024",
     show: true,
   },
   {
@@ -225,7 +225,7 @@ export const projects = [
       "An API that handles movie theater bookings, seat reservations, and admin management.",
     github: "https://github.com/photkosee/cinevent",
     stack: ["nodejs", "mongoose", "mongodb"],
-    date: "August 2024",
+    date: "Aug 2024",
   },
   {
     image: "./images/wongnai-cover.webp",
@@ -257,7 +257,7 @@ export const projects = [
     link: "https://photkosee.github.io/dota2-hero-matchmaker/#/",
     github: "https://github.com/photkosee/dota2-hero-matchmaker",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
-    date: "June 2024",
+    date: "Jun 2024",
   },
   {
     image: "./images/flexbox-cover.webp",
@@ -268,7 +268,7 @@ export const projects = [
     link: "https://photkosee.github.io/flexboxfroggy-hardcore/",
     github: "https://github.com/photkosee/flexboxfroggy-hardcore",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
-    date: "June 2024",
+    date: "Jun 2024",
     show: true,
   },
   {
