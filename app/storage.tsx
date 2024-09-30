@@ -235,7 +235,7 @@ export const projects = [
       "API Gateway and Frontend for Online Ordering System. Using Jest for testing both frontend and backend.",
     github: "https://github.com/photkosee/wongnai-frontend-assignment2023/",
     stack: ["reactjs", "typescript", "tailwindcss", "nodejs", "jest"],
-    date: "July 2024",
+    date: "Jul 2024",
   },
   {
     image: "./images/task-cover.webp",
