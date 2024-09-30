@@ -64,14 +64,22 @@ const QualificationTab = () => {
           <div>
             {experiences.map((experience, index) => (
               <div className="flex gap-x-5 group" key={index}>
-                <Image
-                  src={experience.logo}
-                  alt={experience.company}
-                  className="w-[55px] h-[55px] mt-2 object-scale-down animate-fadein"
-                  width={55}
-                  height={55}
-                  priority
-                />
+                <div
+                  className="w-[55px] h-[55px] flex items-center justify-center
+                  animate-fadein flex-shrink-0 pt-3"
+                >
+                  <Image
+                    src={experience.logo}
+                    alt={experience.company}
+                    className={`${
+                      experience.size ? experience.size : "w-[55px] h-[55px]"
+                    } object-scale-down`}
+                    width={0}
+                    height={0}
+                    priority
+                  />
+                </div>
+
                 <div className="flex flex-col">
                   <div className="text-base font-medium">
                     {experience.years}

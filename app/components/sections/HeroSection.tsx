@@ -20,11 +20,13 @@ const HeroSection = () => {
   return (
     <section
       className="relative bg-[#fef5f5] dark:bg-transparent h-[calc(100dvh-30px)]
-      flex justify-center items-center overflow-hidden"
+      flex justify-center items-center"
     >
       <WavyPattern />
 
-      <RotatingGeometric />
+      <div className="absolute w-full h-[calc(100dvh-32px)] top-0 overflow-hidden">
+        <RotatingGeometric />
+      </div>
 
       <motion.div
         variants={variants}

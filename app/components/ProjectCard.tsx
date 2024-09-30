@@ -51,7 +51,7 @@ const ProjectCard = ({
           >
             <Image
               className="absolute bottom-0 shadow-xl animate-fadein w-[200px] h-[150px] object-cover"
-              src={image ? image : "./images/project-cover.webp"}
+              src={image ? image : "./covers/project-cover.webp"}
               width={0}
               height={0}
               alt="project's mockup"

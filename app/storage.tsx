@@ -5,22 +5,29 @@ export const educations = [
     school: "The University of New South Wales",
     stream: "Bachelor of Computer Engineering",
     years: "2022 - Nov 2024 (Expected)",
-    logo: "./images/unsw.webp",
+    logo: "./logos/unsw.webp",
   },
   {
     school: "Thammasat University",
     stream: "Bachelor of Electrical Engineering",
     years: "2019 - 2021",
-    logo: "./images/tu.webp",
+    logo: "./logos/tu.webp",
   },
 ];
 
 export const experiences = [
   {
+    company: "OpenOnion",
+    role: "Software Engineer Intern",
+    years: "Sep 2024 - Present",
+    logo: "./logos/openonion.webp",
+    size: "w-[40px] h-[40px]",
+  },
+  {
     company: "Cloud Natician",
     role: "Software Engineer Intern",
     years: "Sep 2023 - Feb 2024",
-    logo: "./images/cloudnc.webp",
+    logo: "./logos/cloudnc.webp",
     description:
       "Developed and maintained responsive websites according to customers’ requirements",
   },
@@ -28,9 +35,10 @@ export const experiences = [
     company: "UNSW Computer Sceience and Engineering",
     role: "Casual Academic",
     years: "May 2023 - Sep 2023",
-    logo: "./images/unsw-cse.webp",
+    logo: "./logos/unsw-cse.webp",
     description:
-      "Teaching Assistant (Marker role) for COMP3121/9101 (Algorithms and Programming Techniques course) at UNSW",
+      "Teaching Assistant for COMP3121/9101 (Algorithms and Programming Techniques course) at UNSW",
+    size: "w-[45px] h-[45px]",
   },
 ];
 
@@ -184,7 +192,7 @@ export const infoDatas = [
 
 export const projects = [
   {
-    image: "./images/positivus-cover.webp",
+    image: "./covers/positivus-cover.webp",
     category: "frontend",
     name: "Positivus",
     description:
@@ -195,7 +203,7 @@ export const projects = [
     date: "Sep 2024",
   },
   {
-    image: "./images/smarttrip-cover.webp",
+    image: "./covers/smarttrip-cover.webp",
     category: "fullstack",
     name: "Smart Trip",
     description:
@@ -207,7 +215,7 @@ export const projects = [
     show: true,
   },
   {
-    image: "./images/wam-to-gpa.webp",
+    image: "./covers/wam-to-gpa-cover.webp",
     category: "frontend",
     name: "UNSW WAM to GPA Convertor",
     description:
@@ -228,7 +236,7 @@ export const projects = [
     date: "Aug 2024",
   },
   {
-    image: "./images/wongnai-cover.webp",
+    image: "./covers/wongnai-cover.webp",
     category: "fullstack",
     name: "What to Order",
     description:
@@ -238,7 +246,7 @@ export const projects = [
     date: "Jul 2024",
   },
   {
-    image: "./images/task-cover.webp",
+    image: "./covers/task-cover.webp",
     category: "fullstack",
     name: "Task A Gotchi",
     description:
@@ -249,7 +257,7 @@ export const projects = [
     show: true,
   },
   {
-    image: "./images/dota2.webp",
+    image: "./covers/dota2-cover.webp",
     category: "frontend",
     name: "Dota 2 Hero Matchmaker",
     description:
@@ -260,7 +268,7 @@ export const projects = [
     date: "Jun 2024",
   },
   {
-    image: "./images/flexbox-cover.webp",
+    image: "./covers/flexbox-cover.webp",
     category: "frontend",
     name: "Flexbox Froggy Hardcore",
     description:
@@ -272,7 +280,7 @@ export const projects = [
     show: true,
   },
   {
-    image: "./images/pogo-cover.webp",
+    image: "./covers/pogo-cover.webp",
     category: "frontend",
     name: "POGO - Power Up",
     description:
@@ -283,7 +291,7 @@ export const projects = [
     date: "May 2024",
   },
   {
-    image: "./images/geo-cover.webp",
+    image: "./covers/geo-cover.webp",
     category: "frontend",
     name: "GeoGenius Info",
     description:
@@ -294,7 +302,7 @@ export const projects = [
     date: "Apr 2024",
   },
   {
-    image: "./images/chillflix-cover.webp",
+    image: "./covers/chillflix-cover.webp",
     category: "frontend",
     name: "ChillFlix - Anime Recommender",
     description:
@@ -305,7 +313,7 @@ export const projects = [
     date: "Mar 2024",
   },
   {
-    image: "./images/xo-cover.webp",
+    image: "./covers/xo-cover.webp",
     category: "frontend",
     name: "XO is Unbeatable (AI)",
     description:
@@ -316,7 +324,7 @@ export const projects = [
     date: "Mar 2024",
   },
   {
-    image: "./images/blackpeach-cover.webp",
+    image: "./covers/blackpeach-cover.webp",
     category: "frontend",
     name: "BlackPeach | SHOP",
     description:
@@ -328,7 +336,7 @@ export const projects = [
     show: true,
   },
   {
-    image: "./images/portfolio2-cover.webp",
+    image: "./covers/portfolio2-cover.webp",
     category: "frontend",
     name: "Portfolio Website 2nd Edition",
     description:
@@ -339,7 +347,7 @@ export const projects = [
     date: "Dec 2023",
   },
   {
-    image: "./images/towers-cover.webp",
+    image: "./covers/towers-cover.webp",
     category: "frontend",
     name: "Pymetrics Towers Game",
     description:
@@ -350,7 +358,7 @@ export const projects = [
     date: "Dec 2023",
   },
   // {
-  //   image: "./images/airbrb-cover.webp",
+  //   image: "./covers/airbrb-cover.webp",
   //   category: "frontend",
   //   name: "AirBrB",
   //   description:
@@ -369,7 +377,7 @@ export const projects = [
     date: "Nov 2023",
   },
   // {
-  //   image: "./images/slackr-cover.webp",
+  //   image: "./covers/slackr-cover.webp",
   //   category: "frontend",
   //   name: "Slackr",
   //   description: "A messaging platform with Vanilla JS, and Bootstrap",
@@ -414,7 +422,7 @@ export const projects = [
   // },
   // {
   //   category: "backend",
-  //   image: "./images/dungeonmania-cover.webp",
+  //   image: "./covers/dungeonmania-cover.webp",
   //   name: "Dungeon Mania",
   //   description:
   //     "A 2D adventure game in Java, applying OOP principles with a UML diagram. Testing with Gradle",
@@ -425,7 +433,7 @@ export const projects = [
   // },
   // {
   //   category: "backend",
-  //   image: "./images/backtoblackout-cover.webp",
+  //   image: "./covers/backtoblackout-cover.webp",
   //   name: "Back to Blackout",
   //   description:
   //     "A demo of satellite orbit and communication in Java, applying OOP principles with a UML diagram. Testing with Gradle",
