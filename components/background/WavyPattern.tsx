@@ -1,16 +1,16 @@
 const WavyPattern = ({
   color,
-  className
-} : {
-  color?: string
-  className?: string
+  className,
+}: {
+  color?: string;
+  className?: string;
 }) => {
   return (
     <svg
       className={
         className
-        ? className
-        : "absolute bottom-0 w-full h-auto dark:hidden"
+          ? className
+          : "absolute z-10 bottom-0 w-full h-auto dark:hidden"
       }
       id="wavy"
       xmlns="http://www.w3.org/2000/svg"

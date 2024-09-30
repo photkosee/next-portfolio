@@ -30,10 +30,11 @@ const Header = () => {
   return (
     <header
       className={`
-      ${!top && path !== "/contact" && "bg-[#fef5f5]"}
       ${
-        top ? "bg-white shadow-lg dark:bg-accent" : "dark:bg-transparent"
-      } sticky py-5 md:py-6 xl:py-7 top-0 z-30 transition-all
+        top
+          ? "bg-white shadow-lg dark:bg-accent"
+          : "backdrop-blur-md dark:bg-transparent"
+      } fixed w-full py-6 lg:py-7 top-0 z-30 transition-all
       `}
     >
       <div className="max-w-7xl mx-auto px-7">
