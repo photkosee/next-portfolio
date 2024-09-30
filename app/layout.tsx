@@ -3,9 +3,9 @@ import { Outfit } from "next/font/google";
 
 import "@/app/globals.css";
 import { Toaster } from "@/components/ui/toaster";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
-import ThemeProvider from "@/components/header/ThemeProvider";
+import Header from "@/app/components/headers/Header";
+import Footer from "@/app/components/Footer";
+import ThemeProvider from "@/app/components/headers/ThemeProvider";
 import { MobileNavProvider } from "@/app/MobileNavContext";
 
 const inter = Outfit({ subsets: ["latin"] });

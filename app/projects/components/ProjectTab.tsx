@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 
-import { projects } from "@/components/storage";
-import ProjectCard from "@/components/cards/ProjectCard";
+import { projects } from "@/app/storage";
+import ProjectCard from "@/app/components/ProjectCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 

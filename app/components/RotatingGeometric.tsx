@@ -1,8 +1,8 @@
 const RotatingGeometric = () => {
   return (
     <div
-      className="absolute -top-3 sm:-top-24 left-1/2 -translate-x-1/2 w-[800px] h-[800px]
-      sm:w-[900px] sm:h-[900px] md:w-[1100px] md:h-[1100px] xl:w-[1300px] xl:h-[1300px] dark:hidden z-0"
+      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px]
+      sm:w-[900px] sm:h-[900px] md:w-[1100px] md:h-[1100px] xl:w-[1200px] xl:h-[1200px] dark:hidden z-0"
     >
       <svg
         width="1224"

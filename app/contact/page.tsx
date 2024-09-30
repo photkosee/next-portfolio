@@ -3,8 +3,8 @@
 import { AtSign } from "lucide-react";
 import { motion } from "framer-motion";
 
-import ContactForm from "@/components/forms/ContactForm";
-import { fadeIn } from "@/components/variants";
+import ContactForm from "@/app/contact/components/ContactForm";
+import { fadeIn } from "@/app/variants";
 
 const Contact = () => {
   return (

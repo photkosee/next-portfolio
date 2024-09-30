@@ -2,11 +2,11 @@
 
 import { motion } from "framer-motion";
 
-import CircleDoodle from "@/components/background/CircleDoodle";
-import QualificationTab from "@/components/sections/QualificationTab";
-import WavyPattern from "@/components/background/WavyPattern";
-import { infoDatas } from "@/components/storage";
-import { fadeIn } from "@/components/variants";
+import CircleDoodle from "@/app/components/CircleDoodle";
+import QualificationTab from "@/app/components/QualificationTab";
+import WavyPattern from "@/app/components/WavyPattern";
+import { infoDatas } from "@/app/storage";
+import { fadeIn } from "@/app/variants";
 
 const AboutSection = () => {
   return (

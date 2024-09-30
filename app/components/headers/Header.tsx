@@ -5,13 +5,16 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 // import ModeToggle from "@/components/header/ModeToggle";
-import Nav from "@/components/header/Nav";
-import MobileNav from "@/components/header/MobileNav";
-import Socials from "@/components/header/Socials";
+import Nav from "@/app/components/headers/Nav";
+import MobileNav from "@/app/components/headers/MobileNav";
+import Socials from "@/app/components/headers/Socials";
 
-const ModeSwitch = dynamic(() => import("@/components/header/ModeSwitch"), {
-  ssr: false,
-});
+const ModeSwitch = dynamic(
+  () => import("@/app/components/headers/ModeSwitch"),
+  {
+    ssr: false,
+  }
+);
 
 const Header = () => {
   const [top, setTop] = useState<boolean>(false);
@@ -34,10 +37,10 @@ const Header = () => {
         top
           ? "bg-white shadow-lg dark:bg-accent"
           : "backdrop-blur-md dark:bg-transparent"
-      } fixed w-full py-6 lg:py-7 top-0 z-30 transition-all
+      } fixed w-full py-[22px] lg:py-[25px] top-0 z-30 transition-all
       `}
     >
-      <div className="max-w-7xl mx-auto px-7">
+      <div className="max-w-7xl mx-auto px-10">
         <div className="flex justify-between items-center gap-x-6">
           <div>
             <ModeSwitch />

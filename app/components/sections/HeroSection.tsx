@@ -7,9 +7,9 @@ import { RiMailSendLine } from "react-icons/ri";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 import { Button } from "@/components/ui/button";
-import Socials from "@/components/header/Socials";
-import WavyPattern from "@/components/background/WavyPattern";
-import RotatingGeometric from "@/components/background/RotatingGeometric";
+import Socials from "@/app/components/headers/Socials";
+import WavyPattern from "@/app/components/WavyPattern";
+import RotatingGeometric from "@/app/components/RotatingGeometric";
 
 const variants = {
   hidden: { opacity: 0 },
@@ -19,7 +19,7 @@ const variants = {
 const HeroSection = () => {
   return (
     <section
-      className="relative bg-[#fef5f5] dark:bg-transparent h-screen
+      className="relative bg-[#fef5f5] dark:bg-transparent h-[calc(100dvh-30px)]
       flex justify-center items-center overflow-hidden"
     >
       <WavyPattern />

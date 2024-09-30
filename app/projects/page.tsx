@@ -1,8 +1,8 @@
 import { Rocket } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 
-import ProjectTab from "@/components/sections/ProjectTab";
-import WavyPattern from "@/components/background/WavyPattern";
+import ProjectTab from "@/app/projects/components/ProjectTab";
+import WavyPattern from "@/app/components/WavyPattern";
 
 const Projects = () => {
   return (

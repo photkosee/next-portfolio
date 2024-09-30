@@ -8,7 +8,7 @@ import { Calendar } from "lucide-react";
 import { SiUml, SiGithub } from "react-icons/si";
 import { TbExternalLink } from "react-icons/tb";
 
-import { Project } from "@/components/types";
+import { Project } from "@/app/types";
 import { Card, CardHeader } from "@/components/ui/card";
 import StackIcon from "tech-stack-icons";
 

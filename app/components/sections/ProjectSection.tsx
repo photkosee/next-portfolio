@@ -7,13 +7,13 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
-
-import ArrowDoodle from "@/components/background/ArrowDoodle";
-import ProjectCard from "@/components/cards/ProjectCard";
-import { projects } from "@/components/storage";
-import { Button } from "@/components/ui/button";
-import { fadeIn } from "@/components/variants";
 import { SiGithub } from "react-icons/si";
+
+import ArrowDoodle from "@/app/components/ArrowDoodle";
+import ProjectCard from "@/app/components/ProjectCard";
+import { projects } from "@/app/storage";
+import { Button } from "@/components/ui/button";
+import { fadeIn } from "@/app/variants";
 
 const ProjectSection = () => {
   return (

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Briefcase, Layers, School } from "lucide-react";
 import StackIcon from "tech-stack-icons";
 
-import { experiences, educations, stacks } from "@/components/storage";
+import { experiences, educations, stacks } from "@/app/storage";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 
