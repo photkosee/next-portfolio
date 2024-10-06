@@ -7,7 +7,7 @@ import WavyPattern from "@/app/components/WavyPattern";
 
 const ContactSection = () => {
   return (
-    <section className="pt-20">
+    <section className="pt-28">
       <div className="relative -z-10">
         <WavyPattern color="#fef5f5" />
       </div>
