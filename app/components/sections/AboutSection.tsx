@@ -2,15 +2,14 @@
 
 import { motion } from "framer-motion";
 
+import { fadeIn } from "@/app/variants";
+import infos from "@/app/data/infos";
 import CircleDoodle from "@/app/components/CircleDoodle";
 import QualificationTab from "@/app/components/QualificationTab";
-import WavyPattern from "@/app/components/WavyPattern";
-import { infoDatas } from "@/app/storage";
-import { fadeIn } from "@/app/variants";
 
 const AboutSection = () => {
   return (
-    <section className="w-full min-h-[1150px] lg:h-[720px] relative">
+    <section className="w-full min-h-[1150px] lg:min-h-[850px] relative">
       <motion.div
         className="
         container mx-auto flex flex-col w-full h-full lg:flex-row lg:justify-around
@@ -35,17 +34,19 @@ const AboutSection = () => {
             <div className="font-bold text-2xl md:text-3xl">About Me</div>
           </div>
 
-          <div>
-            {infoDatas.map((info, index) => (
-              <div
-                className="
-                flex items-center gap-x-4
-                "
-                key={index}
-              >
+          <div className="flex flex-col gap-y-2">
+            {infos.map((info, index) => (
+              <div className="flex items-center gap-x-4" key={index}>
                 <div className="text-primary">{info.icon}</div>
-                <div className="text-sm lg:text-[18px] md:leading-[23px]">
-                  {info.description}
+                <div>
+                  <div className="text-sm lg:text-[18px] md:leading-[23px]">
+                    {info.description}
+                  </div>
+                  {info.description2 ? (
+                    <div className="text-sm lg:text-[18px] md:leading-[23px]">
+                      {info.description2}
+                    </div>
+                  ) : null}
                 </div>
               </div>
             ))}
@@ -59,8 +60,6 @@ const AboutSection = () => {
           <QualificationTab />
         </motion.div>
       </motion.div>
-
-      <WavyPattern color="#fef5f5" />
     </section>
   );
 };

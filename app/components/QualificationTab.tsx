@@ -3,13 +3,15 @@ import Image from "next/image";
 import { Briefcase, Layers, School } from "lucide-react";
 import StackIcon from "tech-stack-icons";
 
-import { experiences, educations, stacks } from "@/app/storage";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
+import experiences from "@/app/data/experiences";
+import educations from "@/app/data/educations";
+import stacks from "@/app/data/stacks";
 
 const QualificationTab = () => {
   return (
-    <Tabs defaultValue="educations">
+    <Tabs defaultValue="experiences">
       <TabsList
         className="
         grid sm:grid-cols-3 py-0 gap-1 sm:gap-2
@@ -21,21 +23,21 @@ const QualificationTab = () => {
         <TabsTrigger
           className="
           w-36 sm:w-28 rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white 
-          "
-          value="experiences"
-        >
-          Experience
-        </TabsTrigger>
-
-        <TabsTrigger
-          className="
-          w-36 sm:w-28 rounded-full data-[state=active]:bg-primary
           data-[state=active]:text-white
           "
           value="educations"
         >
           Education
+        </TabsTrigger>
+
+        <TabsTrigger
+          className="
+          w-36 sm:w-28 rounded-full data-[state=active]:bg-primary
+          data-[state=active]:text-white 
+          "
+          value="experiences"
+        >
+          Experience
         </TabsTrigger>
 
         <TabsTrigger

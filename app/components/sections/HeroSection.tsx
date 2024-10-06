@@ -80,7 +80,7 @@ const HeroSection = () => {
             </Link>
 
             <Link
-              href="https://drive.google.com/file/d/1QToqn9z7oygspLll7nMUFKJOm_Ix6lp1/view?usp=sharing"
+              href="https://drive.google.com/file/d/1eoG9BnPtlf0KuHi5qaWLnynE6uvwbS1f/view?usp=sharing"
               target="_blank"
               passHref
             >

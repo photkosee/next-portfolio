@@ -16,10 +16,10 @@ const links = [
     path: "/projects",
     name: "projects",
   },
-  // {
-  //   path: "https://photkosee.github.io/hugo-blog/",
-  //   name: "blog",
-  // },
+  {
+    path: "https://photkosee.medium.com/",
+    name: "blog",
+  },
   {
     path: "/contact",
     name: "contact",

@@ -1,7 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 // import ModeToggle from "@/components/header/ModeToggle";
@@ -18,7 +17,6 @@ const ModeSwitch = dynamic(
 
 const Header = () => {
   const [top, setTop] = useState<boolean>(false);
-  const path = usePathname();
 
   useEffect(() => {
     // Whether the current scroll position is at the top of the page
@@ -37,7 +35,7 @@ const Header = () => {
         top
           ? "bg-white shadow-lg dark:bg-accent"
           : "backdrop-blur-md dark:bg-transparent"
-      } fixed w-full py-[22px] lg:py-[25px] top-0 z-30 transition-all
+      } fixed w-full py-[14px] sm:py-4 lg:py-[18px] top-0 z-30 transition-all
       `}
     >
       <div className="max-w-7xl mx-auto px-10">
@@ -56,7 +54,7 @@ const Header = () => {
             />
             <Socials
               containerStyles="w-full hidden md:flex justify-center items-center gap-x-5 mb-[2px]"
-              iconsStyles="text-[23px] hover:text-primary"
+              iconsStyles="text-[25px] hover:text-primary"
             />
           </div>
 

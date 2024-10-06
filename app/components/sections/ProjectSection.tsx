@@ -9,15 +9,15 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
 import { SiGithub } from "react-icons/si";
 
+import { fadeIn } from "@/app/variants";
+import { Button } from "@/components/ui/button";
+import projects from "@/app/data/projects";
 import ArrowDoodle from "@/app/components/ArrowDoodle";
 import ProjectCard from "@/app/components/ProjectCard";
-import { projects } from "@/app/storage";
-import { Button } from "@/components/ui/button";
-import { fadeIn } from "@/app/variants";
 
 const ProjectSection = () => {
   return (
-    <section className="mt-28">
+    <section className="my-10">
       <motion.div
         className="
         w-full mx-auto flex flex-col gap-y-7 relative

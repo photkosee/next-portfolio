@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 
-import { projects } from "@/app/storage";
-import ProjectCard from "@/app/components/ProjectCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
+import projects from "@/app/data/projects";
+import ProjectCard from "@/app/components/ProjectCard";
 
 const ProjectTab = () => {
   const [category, setCategory] = useState<string>("all");
