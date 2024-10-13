@@ -44,7 +44,7 @@ const HeroSection = () => {
         <div className="flex flex-col max-w-[380px] items-start">
           <div>
             <div
-              className="text-[10px] md:text-sm uppercase font-semibold mb-2 text-primary
+              className="text-[10px] sm:text-sm uppercase font-semibold mb-2 text-primary
               tracking-[3px] flex items-center gap-x-2 justify-start"
             >
               <span className="hidden md:block w-5 h-[2px] bg-primary rounded-lg" />

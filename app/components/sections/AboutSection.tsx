@@ -34,22 +34,16 @@ const AboutSection = () => {
             <div className="font-bold text-2xl md:text-3xl">About Me</div>
           </div>
 
-          <div className="flex flex-col gap-y-2">
-            {infos.map((info, index) => (
-              <div className="flex items-center gap-x-4" key={index}>
-                <div className="text-primary">{info.icon}</div>
-                <div>
-                  <div className="text-sm lg:text-[18px] md:leading-[23px]">
-                    {info.description}
-                  </div>
-                  {info.description2 ? (
-                    <div className="text-sm lg:text-[18px] md:leading-[23px]">
-                      {info.description2}
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            ))}
+          <div className="max-w-[500px] text-center lg:text-start">
+            My name is Phot Koseekrainiramon. I am a Computer Engineering
+            student at the University of New South Wales who loves solving
+            problems and building things, especially in web development.
+            <br />
+            <br /> I enjoy creating user-friendly applications and working with
+            both front-end and back-end technologies. I had not only focused on
+            my coursework but had also expanded my experience through various
+            side projects, hackathon events, and internships throughout my
+            academic journey.
           </div>
         </motion.div>
 

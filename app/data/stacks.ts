@@ -64,7 +64,7 @@ const stacks = [
         icon: "csharp",
       },
       {
-        name: ".NET Core",
+        name: "ASP.NET Core",
         icon: "",
       },
       {
