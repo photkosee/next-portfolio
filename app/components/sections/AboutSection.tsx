@@ -9,14 +9,20 @@ import QualificationTab from "@/app/components/QualificationTab";
 const AboutSection = () => {
   return (
     <section className="w-full min-h-[1150px] lg:min-h-[850px] relative">
-      <div
+      <motion.div
         className="
         container mx-auto flex flex-col w-full h-full lg:flex-row lg:justify-around
         gap-y-6 items-center lg:items-start pt-48 md:pt-[230px] lg:pt-24
         max-w-screen overflow-x-hidden
         "
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="flex flex-col gap-y-10 items-center lg:mt-24">
+        <motion.div
+          className="flex flex-col gap-y-10 items-center lg:mt-24"
+          variants={fadeIn("left")}
+        >
           <div className="relative w-max flex items-center justify-between gap-x-3">
             <CircleDoodle />
             <div className="font-bold text-2xl md:text-3xl">About Me</div>
@@ -33,12 +39,15 @@ const AboutSection = () => {
             side projects, hackathon events, and internships throughout my
             academic journey.
           </div>
-        </div>
+        </motion.div>
 
-        <div className="h-full max-w-[340px] z-10">
+        <motion.div
+          className="h-full max-w-[340px] z-10"
+          variants={fadeIn("right")}
+        >
           <QualificationTab />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
