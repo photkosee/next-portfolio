@@ -17,11 +17,11 @@ import ProjectCard from "@/app/components/ProjectCard";
 
 const ProjectSection = () => {
   return (
-    <section className="my-10">
+    <section className="my-10 min-h-[1200px] flex items-center">
       <motion.div
         className="
         w-full mx-auto flex flex-col gap-y-7 relative
-        overflow-x-hidden max-w-7xl px-3 lg:min-h-screen
+        overflow-x-hidden max-w-7xl px-3
         "
         initial="offscreen"
         whileInView="onscreen"
