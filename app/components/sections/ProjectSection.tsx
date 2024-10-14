@@ -18,19 +18,13 @@ import ProjectCard from "@/app/components/ProjectCard";
 const ProjectSection = () => {
   return (
     <section className="my-10">
-      <motion.div
+      <div
         className="
         w-full mx-auto flex flex-col gap-y-7 relative
         overflow-x-hidden max-w-7xl px-3 lg:min-h-screen
         "
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.3 }}
       >
-        <motion.div
-          className="max-w-[350px] mx-auto flex flex-col justify-center gap-3"
-          variants={fadeIn("left")}
-        >
+        <div className="max-w-[350px] mx-auto flex flex-col justify-center gap-3">
           <div
             className="
             font-bold relative w-full flex items-center justify-center
@@ -61,12 +55,9 @@ const ProjectSection = () => {
               </Button>
             </Link>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="w-full flex items-center h-full max-h-[450px] mx-auto"
-          variants={fadeIn("right")}
-        >
+        <div className="w-full flex items-center h-full max-h-[450px] mx-auto">
           <Swiper
             className="h-[400px] sm:h-[430px]"
             slidesPerView={1}
@@ -111,8 +102,8 @@ const ProjectSection = () => {
                 </SwiperSlide>
               ))}
           </Swiper>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 };

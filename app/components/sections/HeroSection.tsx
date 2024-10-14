@@ -28,16 +28,7 @@ const HeroSection = () => {
         <RotatingGeometric />
       </div>
 
-      <motion.div
-        variants={variants}
-        initial="hidden"
-        animate="visible"
-        transition={{
-          delay: 0.2,
-          ease: "easeInOut",
-          duration: 0.4,
-        }}
-        viewport={{ amount: 0 }}
+      <div
         className="flex flex-col md:flex-row-reverse justify-center items-center
         gap-x-10 gap-y-3 z-20"
       >
@@ -97,7 +88,7 @@ const HeroSection = () => {
           gap-x-5 md:flex-col md:gap-y-5"
           iconsStyles="text-[27px] hover:text-primary"
         />
-      </motion.div>
+      </div>
     </section>
   );
 };
