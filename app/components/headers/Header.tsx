@@ -35,7 +35,7 @@ const Header = () => {
         top
           ? "bg-white shadow-lg dark:bg-accent"
           : "backdrop-blur-md dark:bg-transparent"
-      } fixed w-full py-[14px] sm:py-4 lg:py-[18px] top-0 z-30 transition-all
+      } sticky w-full py-[14px] sm:py-4 lg:py-[18px] top-0 z-30 transition-all
       `}
     >
       <div className="max-w-7xl mx-auto px-10">

@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 
 import { fadeIn } from "@/app/variants";
-import infos from "@/app/data/infos";
 import CircleDoodle from "@/app/components/CircleDoodle";
 import QualificationTab from "@/app/components/QualificationTab";
 
@@ -24,12 +23,7 @@ const AboutSection = () => {
           className="flex flex-col gap-y-10 items-center lg:mt-24"
           variants={fadeIn("left")}
         >
-          <div
-            className="
-            relative w-max flex items-center justify-between
-            gap-x-3
-            "
-          >
+          <div className="relative w-max flex items-center justify-between gap-x-3">
             <CircleDoodle />
             <div className="font-bold text-2xl md:text-3xl">About Me</div>
           </div>
