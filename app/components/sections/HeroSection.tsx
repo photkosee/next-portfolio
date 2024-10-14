@@ -19,12 +19,12 @@ const variants = {
 const HeroSection = () => {
   return (
     <section
-      className="relative h-[calc(100svh-50px)] bg-[#fef5f5] dark:bg-transparent
+      className="relative h-[calc(100lvh-50px)] bg-[#fef5f5] dark:bg-transparent
       flex justify-center items-center"
     >
       <WavyPattern />
 
-      <div className="absolute w-full top-0 overflow-hidden h-[calc(100svh-50px)]">
+      <div className="absolute w-full top-0 overflow-hidden h-[calc(100lvh-50px)]">
         <RotatingGeometric />
       </div>
 

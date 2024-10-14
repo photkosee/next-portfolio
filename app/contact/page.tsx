@@ -8,7 +8,7 @@ import { fadeIn } from "@/app/variants";
 
 const Contact = () => {
   return (
-    <main className="h-[100svh] flex items-center pt-24 pb-12">
+    <main className="h-[100lvh] flex items-center pt-24 pb-12">
       <motion.div
         className="
         container flex flex-col items-center justify-center
