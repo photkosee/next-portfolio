@@ -9,6 +9,8 @@ import QualificationTab from "@/app/components/QualificationTab";
 const AboutSection = () => {
   return (
     <section className="w-full min-h-[1150px] lg:min-h-[850px] relative">
+      <div className="dark:hidden bg-white absolute -top-10 h-14 rounded-t-3xl md:rounded-t-full w-full" />
+
       <motion.div
         className="
         container mx-auto flex flex-col w-full h-full lg:flex-row lg:justify-around
