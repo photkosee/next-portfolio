@@ -10,7 +10,7 @@ const WavyPattern = ({
       className={
         className
           ? className
-          : "absolute z-10 bottom-0 w-full h-auto dark:hidden"
+          : "absolute z-10 -bottom-1 w-full h-auto dark:hidden"
       }
       id="wavy"
       xmlns="http://www.w3.org/2000/svg"

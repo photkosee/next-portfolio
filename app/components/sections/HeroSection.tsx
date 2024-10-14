@@ -19,12 +19,12 @@ const variants = {
 const HeroSection = () => {
   return (
     <section
-      className="relative bg-[#fef5f5] dark:bg-transparent h-[calc(100vh-70px)]
-      flex justify-center items-center"
+      className="relative min-h-screen h-full flex justify-center items-center
+      bg-[#fef5f5] dark:bg-transparent"
     >
       <WavyPattern />
 
-      <div className="absolute w-full h-[calc(100vh-72px)] top-0 overflow-hidden">
+      <div className="absolute w-full min-h-screen h-full top-0 overflow-hidden">
         <RotatingGeometric />
       </div>
 
@@ -39,7 +39,7 @@ const HeroSection = () => {
         }}
         viewport={{ amount: 0 }}
         className="flex flex-col md:flex-row-reverse justify-center items-center
-        gap-x-10 gap-y-3 z-20"
+        gap-x-10 gap-y-3 z-20 py-20"
       >
         <div className="flex flex-col max-w-[380px] items-start">
           <div>
