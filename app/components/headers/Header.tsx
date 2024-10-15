@@ -2,8 +2,8 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
-// import ModeToggle from "@/components/header/ModeToggle";
 import Nav from "@/app/components/headers/Nav";
 import MobileNav from "@/app/components/headers/MobileNav";
 import Socials from "@/app/components/headers/Socials";
@@ -14,6 +14,17 @@ const ModeSwitch = dynamic(
     ssr: false,
   }
 );
+
+const variants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+    },
+  },
+};
 
 const Header = () => {
   const [top, setTop] = useState<boolean>(false);
@@ -40,11 +51,11 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-10">
         <div className="flex justify-between items-center gap-x-6">
-          <div>
+          <motion.div variants={variants} initial="hidden" animate="visible">
             <ModeSwitch />
-          </div>
+          </motion.div>
 
-          <div className="flex items-center gap-x-8">
+          <div className="flex items-center gap-x-8 py-1">
             <Nav
               containerStyles="hidden md:flex items-center gap-x-8"
               linkStyles="relative hover:text-primary transition-all"

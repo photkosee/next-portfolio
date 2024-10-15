@@ -16,7 +16,7 @@ const ModeSwitch = () => {
 
   return (
     <div
-      className="flex items-center gap-x-1 text-2xl font-bold"
+      className="flex items-center gap-x-1 text-2xl font-bold p-1"
       onClick={toggleTheme}
       role="button"
     >
