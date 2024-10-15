@@ -197,7 +197,7 @@ const ProjectSection = () => {
                     target="_blank"
                   >
                     <Image
-                      src="/covers/wam-to-gpa-cover.webp"
+                      src="./covers/wam-to-gpa-cover.webp"
                       alt="app demo"
                       width={350}
                       height={350}
@@ -236,7 +236,7 @@ const ProjectSection = () => {
                   w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
                 >
                   <Image
-                    src="/showcase/analy-wam-convertor.png"
+                    src="./showcase/analy-wam-convertor.png"
                     alt="analytics graph"
                     width={450}
                     height={450}
