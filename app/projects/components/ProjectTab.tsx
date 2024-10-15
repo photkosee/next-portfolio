@@ -8,7 +8,7 @@ import projects from "@/app/data/projects";
 import ProjectCard from "@/app/components/ProjectCard";
 
 const ProjectTab = () => {
-  const [category, setCategory] = useState<string>("all");
+  const [category, setCategory] = useState<string>("highlight");
   const [numShown, setNumShown] = useState(6);
   const numAll = projects.length;
   const numHighlight = projects.filter((project) => project.show).length;
@@ -42,17 +42,15 @@ const ProjectTab = () => {
     <Tabs defaultValue={category}>
       <TabsList
         className="
-        grid sm:grid-cols-5 py-0 gap-1 mx-auto
+        flex flex-wrap gap-2 sm:grid sm:grid-cols-5 py-0.5 sm:gap-1 mx-auto
         text-muted-foreground rounded-full dark:sm:bg-secondary
         border-none bg-transparent sm:bg-white dark:bg-transparent
-        sm:border-solid sm:border max-w-[555px] w-full
+        sm:border-solid sm:border max-w-[555px] w-full h-auto
         "
       >
         <TabsTrigger
-          className="
-          w-full rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white 
-          "
+          className="min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full data-[state=active]:bg-primary
+          data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
           value="all"
           onClick={() => {
             setNumShown(6);
@@ -63,10 +61,8 @@ const ProjectTab = () => {
         </TabsTrigger>
 
         <TabsTrigger
-          className="
-          w-full rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white 
-          "
+          className="min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full data-[state=active]:bg-primary
+          data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
           value="highlight"
           onClick={() => {
             setNumShown(6);
@@ -77,10 +73,8 @@ const ProjectTab = () => {
         </TabsTrigger>
 
         <TabsTrigger
-          className="
-          w-full rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white
-          "
+          className="min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full data-[state=active]:bg-primary
+          data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
           value="frontend"
           onClick={() => {
             setNumShown(6);
@@ -91,10 +85,8 @@ const ProjectTab = () => {
         </TabsTrigger>
 
         <TabsTrigger
-          className="
-          w-full rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white
-          "
+          className="min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full data-[state=active]:bg-primary
+          data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
           value="backend"
           onClick={() => {
             setNumShown(6);
@@ -105,10 +97,8 @@ const ProjectTab = () => {
         </TabsTrigger>
 
         <TabsTrigger
-          className="
-          w-[107px] rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white
-          "
+          className="min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full data-[state=active]:bg-primary
+          data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
           value="others"
           onClick={() => {
             setNumShown(6);
@@ -119,13 +109,8 @@ const ProjectTab = () => {
         </TabsTrigger>
       </TabsList>
 
-      <div className="flex flex-col items-center gap-y-7">
-        <div
-          className="
-          grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-          gap-4 mt-[145px] sm:mt-3 min-h-[800px]
-          "
-        >
+      <div className="flex flex-col items-center gap-y-7 pt-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 min-h-[800px]">
           {filteredProjects.map((project, index) => (
             <TabsContent
               value={category}

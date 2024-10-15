@@ -44,13 +44,13 @@ const Projects = () => {
     <main className="min-h-screen pt-28 relative">
       <div className="container px-3 h-full flex flex-col relative gap-4 sm:gap-5">
         <motion.div
-          className="w-full flex gap-4 items-center justify-center"
+          className="w-full flex gap-x-3 items-center justify-center"
           variants={variants}
           initial="hidden"
           animate="visible"
         >
           <h2 className="text-big">Personal Projects</h2>
-          <Rocket className="text-primary" size={30} />
+          <Rocket className="text-primary hidden sm:block" size={30} />
         </motion.div>
 
         <motion.div
@@ -63,9 +63,9 @@ const Projects = () => {
           <div className="flex flex-col gap-1.5">
             Hover over any project card below,
             <div className="text-nowrap flex items-center gap-1.5">
-              then click on the{" "}
+              then click on{" "}
               <SiGithub className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
-              icon for further project details
+              icon for more project details
             </div>
           </div>
         </motion.div>

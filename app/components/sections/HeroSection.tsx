@@ -89,7 +89,7 @@ const HeroSection = () => {
             variants={childVariants}
             className="flex lex-row gap-x-2 sm:gap-x-3 mt-4"
           >
-            <Link href="/contact" passHref>
+            <Link href="#contact" passHref>
               <Button className="rounded-full gap-x-2">
                 Contact Me
                 <RiMailSendLine size={18} />

@@ -21,7 +21,7 @@ const links = [
     name: "blog",
   },
   {
-    path: "/contact",
+    path: "/home#contact",
     name: "contact",
   },
 ];
@@ -54,9 +54,7 @@ const Nav = ({
     <nav className={`${containerStyles}`}>
       {links.map((link, index) => (
         <Link
-          className={`
-          capitalize ${linkStyles} flex relative
-          `}
+          className={`capitalize ${linkStyles} flex relative`}
           href={link.path}
           key={index}
           target={link.name === "blog" ? "_blank" : ""}
@@ -87,7 +85,6 @@ const Nav = ({
               layoutId="underline"
             />
           )}
-
           {link.name}
         </Link>
       ))}
