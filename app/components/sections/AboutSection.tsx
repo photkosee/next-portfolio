@@ -118,7 +118,7 @@ const AboutSection = () => {
         w-full dark:bg-secondary/40"
       />
 
-      <div className="max-w-5xl mx-auto px-3 sm:px-5 flex flex-col gap-y-5">
+      <div className="max-w-5xl mx-auto px-1 xs:px-3 sm:px-5 flex flex-col gap-y-5">
         <motion.div
           className="w-full rounded-3xl border py-5 px-3 sm:px-5 flex flex-col items-center gap-y-3
           shadow-md max-w-[650px] lg:max-w-none mx-auto"
@@ -234,7 +234,7 @@ const AboutSection = () => {
                   </Button>
                 </Link>
 
-                <div className="flex items-center justify-center gap-x-2">
+                <div className="flex items-center justify-center gap-x-1">
                   <BiLogoGmail className="w-5 h-5 text-red-700" />
                   <div className="select-none">Email:</div>
                   <p>phot.kosee@gmail.com</p>
@@ -305,7 +305,7 @@ const AboutSection = () => {
                           <Badge
                             key={index}
                             variant="outline"
-                            className="h-7 gap-x-1.5 text-sm bg-white text-black flex items-center"
+                            className="h-7 gap-x-1.5 text-sm flex items-center"
                           >
                             <div>{tool.name}</div>
                             {tool.icon && (
@@ -362,7 +362,7 @@ const AboutSection = () => {
                 </Link>
               </div>
 
-              <div className="flex items-center justify-center gap-x-2">
+              <div className="flex items-center justify-center gap-x-1">
                 <BiLogoGmail className="w-5 h-5 text-red-700" />
                 <div className="select-none">Email:</div>
                 <p>phot.kosee@gmail.com</p>

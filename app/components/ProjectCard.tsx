@@ -41,7 +41,7 @@ const ProjectCard = ({
       }}
       viewport={{ amount: 0 }}
     >
-      <Card className="w-[300px] sm:max-w-[370px] relative group select-none">
+      <Card className="w-[295px] sm:max-w-[370px] relative group select-none">
         <CardHeader className="p-0">
           <div
             className="

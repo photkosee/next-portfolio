@@ -127,6 +127,9 @@ const config: Config = {
         "orbit": "orbit 16s ease-in-out infinite",
         "rotate": "rotate 16s ease-in-out infinite",
       },
+      screens: {
+        xs: "400px",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

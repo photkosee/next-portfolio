@@ -42,7 +42,7 @@ const appearanceVariants = {
 const Projects = () => {
   return (
     <main className="min-h-screen pt-28 relative">
-      <div className="container px-3 h-full flex flex-col relative gap-4 sm:gap-5">
+      <div className="container px-1 sm:px-3 h-full flex flex-col relative gap-4 sm:gap-5">
         <motion.div
           className="w-full flex gap-x-3 items-center justify-center"
           variants={variants}

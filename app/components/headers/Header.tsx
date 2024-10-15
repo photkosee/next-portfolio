@@ -38,7 +38,7 @@ const Header = () => {
       } sticky w-full py-[14px] sm:py-4 lg:py-[18px] top-0 z-30 transition-all
       `}
     >
-      <div className="max-w-7xl mx-auto px-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10">
         <div className="flex justify-between items-center gap-x-6">
           <div>
             <ModeSwitch />

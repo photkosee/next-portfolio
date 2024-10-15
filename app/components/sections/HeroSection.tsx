@@ -87,9 +87,14 @@ const HeroSection = () => {
 
           <motion.div
             variants={childVariants}
-            className="flex lex-row gap-x-2 sm:gap-x-3 mt-4"
+            className="flex gap-x-2 sm:gap-x-3 mt-3 w-full justify-start"
           >
-            <Link href="#contact" passHref>
+            <Link
+              href="#contact"
+              passHref
+              className="hidden xs:block"
+              aria-hidden
+            >
               <Button className="rounded-full gap-x-2">
                 Contact Me
                 <RiMailSendLine size={18} />
@@ -100,8 +105,33 @@ const HeroSection = () => {
               href="https://drive.google.com/file/d/1eoG9BnPtlf0KuHi5qaWLnynE6uvwbS1f/view?usp=sharing"
               target="_blank"
               passHref
+              className="hidden xs:block"
+              aria-hidden
             >
               <Button className="rounded-full gap-x-1" variant="secondary">
+                Resume
+                <IoDocumentTextOutline size={19} />
+              </Button>
+            </Link>
+
+            <Link href="#contact" passHref className="xs:hidden">
+              <Button className="rounded-full gap-x-2 px-3" size="sm">
+                Contact Me
+                <RiMailSendLine size={18} />
+              </Button>
+            </Link>
+
+            <Link
+              href="https://drive.google.com/file/d/1eoG9BnPtlf0KuHi5qaWLnynE6uvwbS1f/view?usp=sharing"
+              target="_blank"
+              passHref
+              className="xs:hidden"
+            >
+              <Button
+                className="rounded-full gap-x-1 px-3"
+                variant="secondary"
+                size="sm"
+              >
                 Resume
                 <IoDocumentTextOutline size={19} />
               </Button>

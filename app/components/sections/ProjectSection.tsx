@@ -117,7 +117,7 @@ const ProjectSection = () => {
         w-full dark:bg-transparent"
       />
 
-      <div className="max-w-5xl px-3 sm:px-5 mx-auto w-full flex flex-col gap-y-10">
+      <div className="max-w-5xl px-1 xs:px-3 sm:px-5 mx-auto w-full flex flex-col gap-y-10">
         <div className="w-full flex flex-col gap-y-5">
           <motion.h1
             className="font-bold text-3xl md:text-4xl text-center"
@@ -145,13 +145,13 @@ const ProjectSection = () => {
 
         <div className="w-full flex flex-col gap-y-5">
           <motion.div
-            className="border rounded-2xl shadow-md py-5 px-3 sm:px-5 w-auto bg-white dark:bg-transparent
+            className="border rounded-2xl shadow-md py-5 px-1 xs:px-3 sm:px-5 w-auto bg-white dark:bg-transparent
             flex flex-col gap-3"
             ref={ref3}
             initial="hidden"
             animate={animation3}
           >
-            <h3 className="text-2xl font-bold self-center py-2">
+            <h3 className="text-2xl font-bold mx-auto text-center py-2">
               UNSW WAM to GPA Convertor
             </h3>
             <div className="flex flex-col lg:flex-row gap-3 w-full">
@@ -231,7 +231,7 @@ const ProjectSection = () => {
                       <Badge
                         key={index}
                         variant="outline"
-                        className="h-7 gap-x-1.5 text-sm bg-white text-black flex items-center"
+                        className="h-7 gap-x-1.5 text-sm flex items-center"
                       >
                         <div>{tool.name}</div>
                         {tool.icon && (
@@ -275,7 +275,7 @@ const ProjectSection = () => {
                   >
                     <Button
                       variant="outline"
-                      className="rounded-full"
+                      className="rounded-full px-3"
                       size="sm"
                     >
                       More Details
@@ -289,7 +289,7 @@ const ProjectSection = () => {
                   >
                     <Button
                       variant="outline"
-                      className="rounded-full gap-1"
+                      className="rounded-full gap-1 px-3"
                       size="sm"
                     >
                       Live Demo
@@ -304,7 +304,7 @@ const ProjectSection = () => {
                   >
                     <Button
                       variant="outline"
-                      className="rounded-full gap-1"
+                      className="rounded-full gap-1 px-3"
                       size="sm"
                     >
                       Source Code

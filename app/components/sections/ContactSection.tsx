@@ -60,7 +60,7 @@ const ContactSection = () => {
         w-full dark:bg-secondary/40"
       />
 
-      <div className="px-5">
+      <div className="px-1 xs:px-3 sm:px-5">
         <div className="flex flex-col items-center gap-y-7">
           <motion.h2
             className="h2 max-w-xl text-center"
