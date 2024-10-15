@@ -33,80 +33,98 @@ const AboutSection = () => {
   useEffect(() => {
     if (inView) {
       animation.start({
+        y: 0,
         opacity: 1,
-        scale: 1,
-        transition: { delay: 0.1 },
+        transition: {
+          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+          delay: 0.1,
+        },
       });
     }
     if (!inView) {
       animation.start({
         opacity: 0,
-        scale: 0,
+        y: 50,
       });
     }
     if (inView2) {
       animation2.start({
+        y: 0,
         opacity: 1,
-        scale: 1,
-        transition: { delay: 0.1 },
+        transition: {
+          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+          delay: 0.1,
+        },
       });
     }
     if (!inView2) {
       animation2.start({
         opacity: 0,
-        scale: 0,
+        y: 50,
       });
     }
     if (inView3) {
       animation3.start({
+        y: 0,
         opacity: 1,
-        scale: 1,
-        transition: { delay: 0.1 },
+        transition: {
+          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+          delay: 0.1,
+        },
       });
     }
     if (!inView3) {
       animation3.start({
         opacity: 0,
-        scale: 0,
+        y: 50,
       });
     }
     if (inView4) {
       animation4.start({
+        y: 0,
         opacity: 1,
-        scale: 1,
-        transition: { delay: 0.1 },
+        transition: {
+          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+          delay: 0.1,
+        },
       });
     }
     if (!inView4) {
       animation4.start({
         opacity: 0,
-        scale: 0,
+        y: 50,
       });
     }
     if (inView5) {
       animation5.start({
+        y: 0,
         opacity: 1,
-        scale: 1,
-        transition: { delay: 0.1 },
+        transition: {
+          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+          delay: 0.1,
+        },
       });
     }
     if (!inView5) {
       animation5.start({
         opacity: 0,
-        scale: 0,
+        y: 50,
       });
     }
     if (inView6) {
       animation6.start({
+        y: 0,
         opacity: 1,
-        scale: 1,
-        transition: { delay: 0.1 },
+        transition: {
+          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+          delay: 0.1,
+        },
       });
     }
     if (!inView6) {
       animation6.start({
         opacity: 0,
-        scale: 0,
+        y: 50,
       });
     }
   }, [inView, inView2, inView3, inView4, inView5, inView6]);
@@ -123,7 +141,6 @@ const AboutSection = () => {
           className="w-full rounded-3xl border py-5 px-3 sm:px-5 flex flex-col items-center gap-y-3
           shadow-md max-w-[650px] lg:max-w-none mx-auto"
           ref={ref}
-          initial={{ scale: 0 }}
           animate={animation}
         >
           <div className="font-bold text-2xl md:text-3xl">About Me</div>
@@ -151,7 +168,6 @@ const AboutSection = () => {
           <div className="flex-1 flex flex-col gap-y-5">
             <motion.div
               ref={ref2}
-              initial={{ scale: 0 }}
               animate={animation2}
               className="h-full border shadow-md py-5 px-3 sm:px-5 rounded-3xl flex flex-col gap-y-5"
             >
@@ -201,7 +217,6 @@ const AboutSection = () => {
 
             <motion.div
               ref={ref3}
-              initial={{ scale: 0 }}
               animate={animation3}
               className="h-full border shadow-md py-5 px-3 sm:px-5 rounded-3xl hidden lg:flex flex-col gap-y-5"
             >
@@ -246,7 +261,6 @@ const AboutSection = () => {
           <div className="flex-1 flex flex-col gap-y-5">
             <motion.div
               ref={ref4}
-              initial={{ scale: 0 }}
               animate={animation4}
               className="h-full border shadow-md py-5 px-3 sm:px-5 rounded-3xl flex flex-col gap-y-5"
             >
@@ -282,7 +296,6 @@ const AboutSection = () => {
 
             <motion.div
               ref={ref5}
-              initial={{ scale: 0 }}
               animate={animation5}
               className="h-full border shadow-md py-5 px-3 sm:px-5 rounded-3xl flex flex-col gap-y-5"
             >
@@ -326,7 +339,6 @@ const AboutSection = () => {
 
           <motion.div
             ref={ref6}
-            initial={{ scale: 0 }}
             animate={animation6}
             className="h-full border shadow-md py-5 px-3 sm:px-5 rounded-3xl flex lg:hidden flex-col gap-y-5"
             aria-hidden
