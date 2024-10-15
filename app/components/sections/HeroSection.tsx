@@ -8,12 +8,27 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 
 import { Button } from "@/components/ui/button";
 import Socials from "@/app/components/headers/Socials";
-import WavyPattern from "@/app/components/WavyPattern";
 import RotatingGeometric from "@/app/components/RotatingGeometric";
 
-const variants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
+const containerVariants = {
+  visible: {
+    transition: {
+      staggerChildren: 0.14,
+    },
+  },
+};
+
+const childVariants = {
+  hidden: { y: 200, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.15,
+      y: { type: "spring", mass: 0.3, damping: 10, stiffness: 150 },
+      opacity: { duration: 0.4 },
+    },
+  },
 };
 
 const HeroSection = () => {
@@ -27,49 +42,53 @@ const HeroSection = () => {
       </div>
 
       <motion.div
-        variants={variants}
+        variants={containerVariants}
         initial="hidden"
         animate="visible"
-        transition={{
-          delay: 0.2,
-          ease: "easeInOut",
-          duration: 0.4,
-        }}
-        viewport={{ amount: 0 }}
         className="flex flex-col md:flex-row-reverse justify-center items-center
         gap-x-10 gap-y-3 z-20 py-20"
       >
         <div className="flex flex-col max-w-[380px] items-start">
           <div>
-            <div
+            <motion.div
               className="text-[10px] sm:text-sm uppercase font-semibold mb-2 text-primary
               tracking-[3px] flex items-center gap-x-2 justify-start"
+              variants={childVariants}
             >
               <span className="hidden md:block w-5 h-[2px] bg-primary rounded-lg" />
               Software Engineer
-            </div>
+            </motion.div>
 
-            <h1 className="text-big text-left flex flex-col items-start">
+            <motion.h1
+              variants={childVariants}
+              className="text-big text-left flex flex-col items-start"
+            >
               Hi there,
               <div className="flex gap-x-2 items-center">
                 my name is
                 <span className="text-primary">Phot</span>
               </div>
-            </h1>
-            <p
+            </motion.h1>
+            <motion.p
+              variants={childVariants}
               className="my-3 text-left text-muted-foreground font-light
               text-sm md:text-[16px] md:leading-[24px]"
             >
               I love to build things that can help people.
-            </p>
+            </motion.p>
           </div>
 
-          <Socials
-            containerStyles="flex md:hidden justify-center items-center gap-x-5"
-            iconsStyles="text-[23px] hover:text-primary"
-          />
+          <motion.div variants={childVariants}>
+            <Socials
+              containerStyles="flex md:hidden justify-center items-center gap-x-5"
+              iconsStyles="text-[23px] hover:text-primary"
+            />
+          </motion.div>
 
-          <div className="flex lex-row gap-x-2 sm:gap-x-3 mt-4">
+          <motion.div
+            variants={childVariants}
+            className="flex lex-row gap-x-2 sm:gap-x-3 mt-4"
+          >
             <Link href="/contact" passHref>
               <Button className="rounded-full gap-x-2">
                 Contact Me
@@ -87,14 +106,16 @@ const HeroSection = () => {
                 <IoDocumentTextOutline size={19} />
               </Button>
             </Link>
-          </div>
+          </motion.div>
         </div>
 
-        <Socials
-          containerStyles="hidden md:flex justify-center items-center
-          gap-x-5 md:flex-col md:gap-y-5"
-          iconsStyles="text-[27px] hover:text-primary"
-        />
+        <motion.div variants={childVariants}>
+          <Socials
+            containerStyles="hidden md:flex justify-center items-center
+            gap-x-5 md:flex-col md:gap-y-5"
+            iconsStyles="text-[27px] hover:text-primary"
+          />
+        </motion.div>
       </motion.div>
     </section>
   );
