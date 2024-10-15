@@ -279,7 +279,7 @@ const ProjectSection = () => {
                   >
                     <Button
                       variant="outline"
-                      className="rounded-full px-3"
+                      className="px-3 bg-secondary text-white hover:bg-secondary hover:text-white"
                       size="sm"
                     >
                       More Details
@@ -293,7 +293,7 @@ const ProjectSection = () => {
                   >
                     <Button
                       variant="outline"
-                      className="rounded-full gap-1 px-3"
+                      className="gap-1 px-3 bg-secondary text-white hover:bg-secondary hover:text-white"
                       size="sm"
                     >
                       Live Demo
@@ -308,7 +308,7 @@ const ProjectSection = () => {
                   >
                     <Button
                       variant="outline"
-                      className="rounded-full gap-1 px-3"
+                      className="gap-1 px-3 bg-secondary text-white hover:bg-secondary hover:text-white"
                       size="sm"
                     >
                       Source Code

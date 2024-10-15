@@ -81,7 +81,7 @@ const ContactSection = () => {
 
             <div className="flex flex-col gap-y-5 max-w-[400px] mx-auto w-full">
               <div className="flex items-center justify-center gap-x-2">
-                <BiLogoGmail className="w-5 h-5 text-red-700" />
+                <BiLogoGmail className="w-5 h-5 text-red-700 dark:text-white" />
                 <div className="select-none">Email:</div>
                 <p>phot.kosee@gmail.com</p>
               </div>
@@ -93,7 +93,7 @@ const ContactSection = () => {
                 passHref
               >
                 <Button variant="outline" className="gap-x-2 w-full">
-                  <RiLinkedinBoxFill className="w-5 h-5 text-blue-700" />
+                  <RiLinkedinBoxFill className="w-5 h-5 text-blue-700 dark:text-white" />
                   LinkedIn
                 </Button>
               </Link>
