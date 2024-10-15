@@ -7,6 +7,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { BiLogoGmail } from "react-icons/bi";
 import { RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri";
+import { FaMedium } from "react-icons/fa6";
 import StackIcon from "tech-stack-icons";
 
 import experiences from "@/app/data/experiences";
@@ -249,6 +250,18 @@ const AboutSection = () => {
                   </Button>
                 </Link>
 
+                <Link
+                  href="https://photkosee.medium.com/"
+                  target="_blank"
+                  className="w-full"
+                  passHref
+                >
+                  <Button variant="outline" className="gap-x-2 w-full">
+                    <FaMedium />
+                    Medium Blog
+                  </Button>
+                </Link>
+
                 <div className="flex items-center justify-center gap-x-1">
                   <BiLogoGmail className="w-5 h-5 text-red-700" />
                   <div className="select-none">Email:</div>
@@ -262,7 +275,8 @@ const AboutSection = () => {
             <motion.div
               ref={ref4}
               animate={animation4}
-              className="h-full border shadow-md py-5 px-3 sm:px-5 rounded-3xl flex flex-col gap-y-5"
+              className="h-full border shadow-md py-5 px-3 sm:px-5 rounded-3xl flex flex-col
+              gap-y-5 justify-center"
             >
               <h1 className="font-bold text-2xl md:text-3xl text-center">
                 Education
@@ -348,7 +362,7 @@ const AboutSection = () => {
             </h1>
 
             <div className="flex flex-col gap-y-3 max-w-[400px] mx-auto w-full">
-              <div className="flex gap-x-2">
+              <div className="flex gap-x-1 xs:gap-x-2">
                 <Link
                   href="https://github.com/photkosee"
                   target="_blank"
@@ -373,6 +387,18 @@ const AboutSection = () => {
                   </Button>
                 </Link>
               </div>
+
+              <Link
+                href="https://photkosee.medium.com/"
+                target="_blank"
+                className="w-full"
+                passHref
+              >
+                <Button variant="outline" className="gap-x-2 w-full">
+                  <FaMedium />
+                  Medium Blog
+                </Button>
+              </Link>
 
               <div className="flex items-center justify-center gap-x-1">
                 <BiLogoGmail className="w-5 h-5 text-red-700" />

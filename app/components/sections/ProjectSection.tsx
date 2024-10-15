@@ -155,17 +155,17 @@ const ProjectSection = () => {
               UNSW WAM to GPA Convertor
             </h3>
             <div className="flex flex-col lg:flex-row gap-3 w-full">
-              <div className="flex flex-col sm:flex-row gap-3 mx-auto">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <div
                   className="px-3 py-5 lg:max-w-[370px] text-center flex flex-col gap-y-1
                   w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
                 >
                   <h5 className="text-lg font-bold">Problem Statement</h5>
-                  <p>
+                  <p className="max-w-[400px] md:max-w-[350px]">
                     Unlike many other universities that use GPA system, UNSW
                     uses a WAM system.
                   </p>
-                  <p>
+                  <p className="max-w-[400px] md:max-w-[350px]">
                     This cause{" "}
                     <span className="text-primary">confusion to students</span>{" "}
                     including my friends on how to convert their WAM into GPA.
@@ -177,12 +177,16 @@ const ProjectSection = () => {
                   w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
                 >
                   <h5 className="text-lg font-bold">Solution</h5>
-                  <p>
-                    This app I developed not only converting students WAM into
-                    GPA, it also{" "}
-                    <span className="text-primary">automates the process</span>{" "}
-                    making it the most convinent.
-                  </p>
+                  <div className="max-w-[400px] md:max-w-[300px]">
+                    <p>
+                      This app I developed not only converting students WAM into
+                      GPA, it also{" "}
+                      <span className="text-primary">
+                        automates the process
+                      </span>{" "}
+                      making it the most convinent.
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -191,7 +195,7 @@ const ProjectSection = () => {
                 mx-auto w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
               >
                 <h5 className="text-lg font-bold">What this does?</h5>
-                <p>
+                <p className="max-w-[400px] md:max-w-[450px] text-wrap">
                   An app that helps UNSW students convert their WAM to GPA by
                   simply uploading their academic statement.
                 </p>
@@ -226,7 +230,7 @@ const ProjectSection = () => {
                   mx-auto w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
                 >
                   <h5 className="text-lg font-bold">Tech Stacks</h5>
-                  <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+                  <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 max-w-[350px]">
                     {showcase1.map((tool, index) => (
                       <Badge
                         key={index}
@@ -324,10 +328,7 @@ const ProjectSection = () => {
           animate={animation5}
         >
           <Link href="/projects" passHref>
-            <Button className="rounded-full gap-3">
-              View More Projects
-              <Rocket size={18} />
-            </Button>
+            <Button className="rounded-full">View More Projects</Button>
           </Link>
         </motion.div>
       </div>
