@@ -1,118 +1,320 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Rocket } from "lucide-react";
+import { RiGithubFill } from "react-icons/ri";
+import { HiGlobeAsiaAustralia } from "react-icons/hi2";
+import StackIcon from "tech-stack-icons";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
-import { motion } from "framer-motion";
-import { SiGithub } from "react-icons/si";
-
-import { fadeIn } from "@/app/variants";
 import { Button } from "@/components/ui/button";
-import projects from "@/app/data/projects";
-import ArrowDoodle from "@/app/components/ArrowDoodle";
-import ProjectCard from "@/app/components/ProjectCard";
+import { Badge } from "@/components/ui/badge";
+import { showcase1 } from "@/app/data/showcase1";
 
 const ProjectSection = () => {
-  return (
-    <section className="my-10 min-h-[1200px] flex items-center">
-      <motion.div
-        className="
-        w-full mx-auto flex flex-col gap-y-7 relative
-        overflow-x-hidden max-w-7xl px-3
-        "
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <motion.div
-          className="max-w-[350px] mx-auto flex flex-col justify-center gap-3"
-          variants={fadeIn("left")}
-        >
-          <div
-            className="
-            font-bold relative w-full flex items-center justify-center
-            text-2xl md:text-3xl
-            "
-          >
-            <ArrowDoodle />
-            Personal Projects
-          </div>
+  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref2, inView2] = useInView({ triggerOnce: true });
+  const [ref3, inView3] = useInView({ triggerOnce: true });
+  const [ref4, inView4] = useInView({ triggerOnce: true });
+  const [ref5, inView5] = useInView({ triggerOnce: true });
 
-          <div className="w-full flex justify-center flex-col items-center gap-5">
-            <div
-              className="text-muted-foreground text-[13.5px] sm:text-[15px]
-              leading-[17px] text-center"
-            >
-              <div className="flex flex-col gap-1.5">
-                Hover over any project card below,
-                <div className="text-nowrap flex items-center gap-1 sm:gap-1.5">
-                  then click on the
-                  <SiGithub className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
-                  icon for further project details
+  const animation = useAnimation();
+  const animation2 = useAnimation();
+  const animation3 = useAnimation();
+  const animation4 = useAnimation();
+  const animation5 = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+          delay: 0.1,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+        y: -50,
+      });
+    }
+    if (inView2) {
+      animation2.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+          delay: 0.1,
+        },
+      });
+    }
+    if (!inView2) {
+      animation2.start({
+        opacity: 0,
+        y: 50,
+      });
+    }
+    if (inView3) {
+      animation3.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+          delay: 0.1,
+        },
+      });
+    }
+    if (!inView3) {
+      animation3.start({
+        opacity: 0,
+        y: 50,
+      });
+    }
+    if (inView4) {
+      animation4.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+          delay: 0.1,
+        },
+      });
+    }
+    if (!inView4) {
+      animation4.start({
+        opacity: 0,
+        y: 50,
+      });
+    }
+    if (inView5) {
+      animation5.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
+          delay: 0.1,
+        },
+      });
+    }
+    if (!inView5) {
+      animation5.start({
+        opacity: 0,
+        y: 50,
+      });
+    }
+  }, [inView, inView2, inView3, inView4, inView5]);
+
+  return (
+    <section className="flex items-center h-auto relative pt-[70px] pb-[140px] bg-[#fef5f5] dark:bg-transparent">
+      <div
+        className="dark:hidden bg-[#fef5f5] absolute -top-10 h-14 rounded-t-3xl md:rounded-t-full
+        w-full dark:bg-transparent"
+      />
+
+      <div className="max-w-5xl px-3 sm:px-5 mx-auto w-full flex flex-col gap-y-10">
+        <motion.h1
+          className="font-bold text-3xl md:text-4xl text-center"
+          ref={ref}
+          initial="hidden"
+          animate={animation}
+        >
+          Personal Projects
+        </motion.h1>
+
+        <div className="w-full flex flex-col gap-y-5">
+          <motion.div
+            className="border rounded-2xl shadow-md py-5 px-3 sm:px-5 w-auto bg-white dark:bg-transparent
+            flex flex-col gap-3"
+            ref={ref3}
+            initial="hidden"
+            animate={animation3}
+          >
+            <h3 className="text-2xl font-bold self-center py-2">
+              UNSW WAM to GPA Convertor
+            </h3>
+            <div className="flex flex-col lg:flex-row gap-3 w-full">
+              <div className="flex flex-col sm:flex-row gap-3 mx-auto">
+                <div
+                  className="px-3 py-5 lg:max-w-[370px] text-center flex flex-col gap-y-1
+                  w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                >
+                  <h5 className="text-lg font-bold">Problem Statement</h5>
+                  <p>
+                    Unlike many other universities that use GPA system, UNSW
+                    uses a WAM system.
+                  </p>
+                  <p>
+                    This cause{" "}
+                    <span className="text-primary">confusion to students</span>{" "}
+                    including my friends on how to convert their WAM into GPA.
+                  </p>
+                </div>
+
+                <div
+                  className="px-3 py-5 lg:max-w-[300px] text-center flex flex-col gap-y-1
+                  w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                >
+                  <h5 className="text-lg font-bold">Solution</h5>
+                  <p>
+                    This app I developed not only converting students WAM into
+                    GPA, it also{" "}
+                    <span className="text-primary">automates the process</span>{" "}
+                    making it the most convinent.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                className="px-3 py-5 lg:max-w-[350px] text-center flex flex-col gap-y-1
+                mx-auto w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+              >
+                <h5 className="text-lg font-bold">What this does?</h5>
+                <p>
+                  An app that helps UNSW students convert their WAM to GPA by
+                  simply uploading their academic statement.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-3 w-full">
+              <div
+                className="w-full flex flex-col sm:flex-row md:flex-col items-center sm:items-stretch
+                md:items-center gap-3 md:max-w-[350px]"
+              >
+                <div
+                  className="px-3 py-5 sm:max-w-[350px] text-center flex flex-col gap-y-1 w-full 
+                  border rounded-2xl shadow-md flex-1 justify-center items-center"
+                >
+                  <Link
+                    href="https://unsw-wam-to-gpa-convertor.vercel.app/"
+                    passHref
+                    target="_blank"
+                  >
+                    <Image
+                      src="/covers/wam-to-gpa-cover.webp"
+                      alt="app demo"
+                      width={350}
+                      height={350}
+                    />
+                  </Link>
+                </div>
+
+                <div
+                  className="px-3 py-5 text-center flex flex-col gap-y-1 sm:max-w-[700px] lg:max-w-[350px]
+                  mx-auto w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                >
+                  <h5 className="text-lg font-bold">Tech Stacks</h5>
+                  <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+                    {showcase1.map((tool, index) => (
+                      <Badge
+                        key={index}
+                        variant="outline"
+                        className="h-7 gap-x-1.5 text-sm bg-white text-black flex items-center"
+                      >
+                        <div>{tool.name}</div>
+                        {tool.icon && (
+                          <StackIcon
+                            name={tool.icon}
+                            className="max-h-[17px] h-full max-w-[17px] w-full"
+                          />
+                        )}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full flex flex-col justify-between">
+                <div
+                  className="px-3 py-5 text-center flex flex-col gap-y-3 max-h-[370px]
+                  w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                >
+                  <Image
+                    src="/showcase/analy-wam-convertor.png"
+                    alt="analytics graph"
+                    width={450}
+                    height={450}
+                  />
+
+                  <div className="flex flex-col text-center">
+                    <h5 className="text-lg font-bold">Useful for Students</h5>
+                    <p>
+                      More than <span className="text-primary">100 users</span>{" "}
+                      in <span className="text-primary">a single day</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="self-center lg:self-end flex gap-2 pt-5 flex-wrap justify-center">
+                  <Link
+                    href="https://github.com/photkosee/unsw-wam-to-gpa-convertor?tab=readme-ov-file#table-of-contents"
+                    passHref
+                    target="_blank"
+                  >
+                    <Button
+                      variant="outline"
+                      className="rounded-full"
+                      size="sm"
+                    >
+                      More Details
+                    </Button>
+                  </Link>
+
+                  <Link
+                    href="https://unsw-wam-to-gpa-convertor.vercel.app/"
+                    passHref
+                    target="_blank"
+                  >
+                    <Button
+                      variant="outline"
+                      className="rounded-full gap-1"
+                      size="sm"
+                    >
+                      Live Demo
+                      <HiGlobeAsiaAustralia size={18} />
+                    </Button>
+                  </Link>
+
+                  <Link
+                    href="https://github.com/photkosee/unsw-wam-to-gpa-convertor"
+                    passHref
+                    target="_blank"
+                  >
+                    <Button
+                      variant="outline"
+                      className="rounded-full gap-1"
+                      size="sm"
+                    >
+                      Source Code
+                      <RiGithubFill size={18} />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
-            <Link className="max-w-[170px]" href="/projects" passHref>
-              <Button className="rounded-full max-w-[170px]">
-                View All Projects
-              </Button>
-            </Link>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
 
         <motion.div
-          className="w-full flex items-center h-full max-h-[450px] mx-auto"
-          variants={fadeIn("right")}
+          className="mx-auto"
+          ref={ref5}
+          initial="hidden"
+          animate={animation5}
         >
-          <Swiper
-            className="h-[400px] sm:h-[430px]"
-            slidesPerView={1}
-            breakpoints={{
-              700: {
-                slidesPerView: 2,
-              },
-              1050: {
-                slidesPerView: 3,
-              },
-            }}
-            spaceBetween={30}
-            modules={[Autoplay, Pagination]}
-            pagination={{
-              clickable: true,
-              dynamicBullets: true,
-            }}
-          >
-            {projects
-              .filter((product) => product.show)
-              .map((project, index) => (
-                <SwiperSlide
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "start",
-                  }}
-                  key={index}
-                >
-                  <ProjectCard
-                    name={project.name}
-                    image={project.image}
-                    category={project.category}
-                    description={project.description}
-                    link={project.link}
-                    github={project.github}
-                    stack={project.stack}
-                    date={project.date}
-                    // uml={project.uml}
-                    index={index}
-                  />
-                </SwiperSlide>
-              ))}
-          </Swiper>
+          <Link href="/projects" passHref>
+            <Button className="rounded-full gap-3">
+              View More Projects
+              <Rocket size={18} />
+            </Button>
+          </Link>
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 };
