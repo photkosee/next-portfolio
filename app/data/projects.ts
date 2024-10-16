@@ -6,8 +6,9 @@ const projects = [
     description:
       "Figma to Code using React with TypeScript, Vite, and Tailwind CSS.",
     link: "https://positivus-phot.vercel.app/",
-    github: "https://github.com/photkosee/positivus?tab=readme-ov-file#table-of-contents",
-    stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
+    readme: "https://github.com/photkosee/positivus?tab=readme-ov-file#table-of-contents",
+    github: "https://github.com/photkosee/positivus",
+    stack: ["Vite", "React", "TypeScript", "tailwindcss"],
     date: "Sep 2024",
   },
   {
@@ -17,7 +18,8 @@ const projects = [
     description:
       "Create, customize, and optimize your itineraries with this free AI trip planner, powered by Gemini AI.",
     link: "https://smart-trip-alpha.vercel.app/",
-    github: "https://github.com/photkosee/smart-trip?tab=readme-ov-file#table-of-contents",
+    github: "https://github.com/photkosee/smart-trip",
+    readme: "https://github.com/photkosee/smart-trip?tab=readme-ov-file#table-of-contents",
     stack: ["nextjs2", "tailwindcss", "shadcnui", "redux", "firebase"],
     date: "Sep 2024",
     show: true,
@@ -44,32 +46,32 @@ const projects = [
     date: "Aug 2024",
   },
   {
-    image: "./covers/wongnai-cover.webp",
-    category: "fullstack",
-    name: "What to Order",
-    description:
-      "API Gateway and Frontend for Online Ordering System. Using Jest for testing both frontend and backend.",
-    github: "https://github.com/photkosee/wongnai-frontend-assignment2023/?tab=readme-ov-file#table-of-contents",
-    stack: ["reactjs", "typescript", "tailwindcss", "nodejs", "jest"],
-    date: "Jul 2024",
-  },
-  {
     image: "./covers/task-cover.webp",
     category: "fullstack",
     name: "Task A Gotchi",
     description:
       "A responsive web app that gamifies users' habits to boost their productivity. For UNSW Flagship Hackathon 2024.",
     github: "https://github.com/photkosee/task-a-gotchi?tab=readme-ov-file#problem-statement",
-    stack: ["nextjs2", "tailwindcss", "antd", "mongodb", "prisma"],
-    date: "UNSW Flagship Hackathon",
+    stack: ["nextjs2", "reactjs", "tailwindcss", "zustand", "antd", "mongodb", "prisma"],
+    date: "Jul 2024",
     show: true,
+  },
+  {
+    image: "./covers/wongnai-cover.webp",
+    category: "fullstack",
+    name: "What to Order",
+    description:
+      "API Gateway and Frontend for Online Ordering System. Using Jest for testing both frontend and backend.",
+    github: "https://github.com/photkosee/wongnai-frontend-assignment2023/?tab=readme-ov-file#table-of-contents",
+    stack: ["nodejs", "express", "jest", "reactjs", "typescript", "tailwindcss"],
+    date: "Jul 2024",
   },
   {
     image: "./covers/dota2-cover.webp",
     category: "frontend",
     name: "Dota 2 Hero Matchmaker",
     description:
-      "A responsive web app that helps DOTA 2 players find the perfect hero according to their preferences.",
+      "An app that helps DOTA 2 players find the perfect hero according to their preferences.",
     link: "https://photkosee.github.io/dota2-hero-matchmaker/#/",
     github: "https://github.com/photkosee/dota2-hero-matchmaker?tab=readme-ov-file#table-of-contents",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
@@ -80,10 +82,10 @@ const projects = [
     category: "frontend",
     name: "Flexbox Froggy Hardcore",
     description:
-      "A game where users help the frogs reach their lily pads by using CSS Flexbox properties, featuring an UNLIMITED number of challenges.",
+      "A game practicing CSS flexbox properties, featuring an UNLIMITED number of challenges.",
     link: "https://photkosee.github.io/flexboxfroggy-hardcore/",
     github: "https://github.com/photkosee/flexboxfroggy-hardcore?tab=readme-ov-file#table-of-contents",
-    stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
+    stack: ["vitejs", "reactjs", "typescript", "tailwindcss", "zustand"],
     date: "Jun 2024",
     show: true,
   },
@@ -106,7 +108,7 @@ const projects = [
       "Explore the information of each country with just a click on a world map.",
     link: "https://geogenius-two.vercel.app/",
     github: "https://github.com/photkosee/geogenius?tab=readme-ov-file#table-of-contents",
-    stack: ["nextjs2", "typescript", "tailwindcss"],
+    stack: ["nextjs2", "typescript", "tailwindcss", "NextUI"],
     date: "Apr 2024",
   },
   {
@@ -117,7 +119,7 @@ const projects = [
       "Looking for an anime to watch but not sure what to watch? Search for it here!",
     link: "https://chillflix-phot.vercel.app/",
     github: "https://github.com/photkosee/chillflix?tab=readme-ov-file#table-of-contents",
-    stack: ["nextjs2", "typescript", "tailwindcss", "zod", "redux"],
+    stack: ["nextjs2", "typescript", "NextUI", "tailwindcss", "zod", "redux"],
     date: "Mar 2024",
   },
   {
@@ -128,7 +130,7 @@ const projects = [
       "How good are you in Tic Tac Toe? Try beating my AI (Alpha-Beta Pruning) in this Tic Tac Toe game!",
     link: "https://photkosee.github.io/xo-is-unbeatable/",
     github: "https://github.com/photkosee/xo-is-unbeatable?tab=readme-ov-file#table-of-contents",
-    stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
+    stack: ["vitejs", "reactjs", "typescript", "tailwindcss", "NextUI"],
     date: "Mar 2024",
   },
   {
@@ -139,7 +141,7 @@ const projects = [
       "An e-commerce platform selling all of albums and merchandise of a popular K-pop band.",
     link: "https://blackpeach.vercel.app/",
     github: "https://github.com/photkosee/blackpeach?tab=readme-ov-file#table-of-contents",
-    stack: ["nextjs2", "typescript", "tailwindcss", "redux"],
+    stack: ["nextjs2", "typescript", "tailwindcss", "NextUI", "redux"],
     date: "Feb 2024",
     show: true,
   },
@@ -162,7 +164,7 @@ const projects = [
       "Want to practice Pymetrics tests for your interview? Try this game out!",
     link: "https://photkosee.github.io/react-pymetrics-towers/",
     github: "https://github.com/photkosee/react-pymetrics-towers?tab=readme-ov-file#table-of-contents",
-    stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],
+    stack: ["vitejs", "reactjs", "typescript", "tailwindcss", "NextUI"],
     date: "Dec 2023",
   },
   // {

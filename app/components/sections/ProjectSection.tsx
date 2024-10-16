@@ -158,14 +158,14 @@ const ProjectSection = () => {
               <div className="flex flex-col sm:flex-row gap-3">
                 <div
                   className="px-3 py-5 lg:max-w-[370px] text-center flex flex-col gap-y-1
-                  w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                  w-full border rounded-2xl flex-1 justify-center items-center dark:bg-secondary/40"
                 >
                   <h5 className="text-lg font-bold">Problem Statement</h5>
-                  <p className="max-w-[400px] md:max-w-[350px]">
+                  <p className="max-w-[400px] md:max-w-[350px] text-muted-foreground">
                     Unlike many other universities that use GPA system, UNSW
                     uses a WAM system.
                   </p>
-                  <p className="max-w-[400px] md:max-w-[350px]">
+                  <p className="max-w-[400px] md:max-w-[350px] text-muted-foreground">
                     This cause{" "}
                     <span className="text-primary">confusion to students</span>{" "}
                     including my friends on how to convert their WAM into GPA.
@@ -174,11 +174,11 @@ const ProjectSection = () => {
 
                 <div
                   className="px-3 py-5 lg:max-w-[300px] text-center flex flex-col gap-y-1
-                  w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                  w-full border rounded-2xl flex-1 justify-center items-center dark:bg-secondary/40"
                 >
                   <h5 className="text-lg font-bold">Solution</h5>
                   <div className="max-w-[400px] md:max-w-[300px]">
-                    <p>
+                    <p className="text-muted-foreground">
                       This app I developed not only converting students WAM into
                       GPA, it also{" "}
                       <span className="text-primary">
@@ -192,10 +192,10 @@ const ProjectSection = () => {
 
               <div
                 className="px-3 py-5 lg:max-w-[350px] text-center flex flex-col gap-y-1
-                mx-auto w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                mx-auto w-full border rounded-2xl flex-1 justify-center items-center dark:bg-secondary/40"
               >
-                <h5 className="text-lg font-bold">What this does?</h5>
-                <p className="max-w-[400px] md:max-w-[450px] text-wrap">
+                <h5 className="text-lg font-bold">What This Does?</h5>
+                <p className="max-w-[400px] md:max-w-[450px] text-wrap text-muted-foreground">
                   An app that helps UNSW students convert their WAM to GPA by
                   simply uploading their academic statement.
                 </p>
@@ -209,7 +209,7 @@ const ProjectSection = () => {
               >
                 <div
                   className="px-3 py-5 sm:max-w-[350px] text-center flex flex-col gap-y-1 w-full 
-                  border rounded-2xl shadow-md flex-1 justify-center items-center"
+                  border rounded-2xl flex-1 justify-center items-center dark:bg-secondary/40"
                 >
                   <Link
                     href="https://unsw-wam-to-gpa-convertor.vercel.app/"
@@ -227,7 +227,7 @@ const ProjectSection = () => {
 
                 <div
                   className="px-3 py-5 text-center flex flex-col gap-y-1 sm:max-w-[700px] lg:max-w-[350px]
-                  mx-auto w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                  mx-auto w-full border rounded-2xl flex-1 justify-center items-center dark:bg-secondary/40"
                 >
                   <h5 className="text-lg font-bold">Tech Stacks</h5>
                   <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 max-w-[350px]">
@@ -237,7 +237,7 @@ const ProjectSection = () => {
                         variant="outline"
                         className="h-7 gap-x-1.5 text-sm flex items-center"
                       >
-                        <div>{tool.name}</div>
+                        <div className="text-muted-foreground">{tool.name}</div>
                         {tool.icon && (
                           <StackIcon
                             name={tool.icon}
@@ -253,7 +253,7 @@ const ProjectSection = () => {
               <div className="w-full flex flex-col justify-between">
                 <div
                   className="px-3 py-5 text-center flex flex-col gap-y-3 max-h-[370px]
-                  w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                  w-full border rounded-2xl flex-1 justify-center items-center dark:bg-secondary/40"
                 >
                   <Image
                     src="./showcases/analytic-wam-convertor.png"
@@ -264,51 +264,60 @@ const ProjectSection = () => {
 
                   <div className="flex flex-col text-center">
                     <h5 className="text-lg font-bold">Useful for Students</h5>
-                    <p>
+                    <p className="text-muted-foreground">
                       More than <span className="text-primary">100 users</span>{" "}
                       in <span className="text-primary">a single day</span>
                     </p>
                   </div>
                 </div>
 
-                <div className="self-center lg:self-end flex gap-2 pt-5 flex-wrap justify-center">
-                  <Link
-                    href="https://github.com/photkosee/unsw-wam-to-gpa-convertor?tab=readme-ov-file#table-of-contents"
-                    passHref
-                    target="_blank"
-                  >
-                    <Button
-                      variant="outline"
-                      className="px-3 bg-secondary text-white hover:bg-secondary hover:text-white"
-                      size="sm"
+                <div
+                  className="w-full lg:self-end flex flex-col sm:flex-row justify-center
+                  gap-y-1 gap-x-2 pt-5"
+                >
+                  <div className="flex flex-col xs:flex-row gap-x-2 gap-y-1 max-w-[300px] mx-auto w-full sm:mx-0">
+                    <Link
+                      href="https://github.com/photkosee/unsw-wam-to-gpa-convertor?tab=readme-ov-file#table-of-contents"
+                      passHref
+                      target="_blank"
+                      className="w-full flex-1"
                     >
-                      More Details
-                    </Button>
-                  </Link>
+                      <Button
+                        variant="outline"
+                        className="gap-1 px-3 bg-secondary text-white hover:bg-secondary/90 hover:text-white w-full"
+                        size="sm"
+                      >
+                        More Details
+                      </Button>
+                    </Link>
 
-                  <Link
-                    href="https://unsw-wam-to-gpa-convertor.vercel.app/"
-                    passHref
-                    target="_blank"
-                  >
-                    <Button
-                      variant="outline"
-                      className="gap-1 px-3 bg-secondary text-white hover:bg-secondary hover:text-white"
-                      size="sm"
+                    <Link
+                      href="https://unsw-wam-to-gpa-convertor.vercel.app/"
+                      passHref
+                      target="_blank"
+                      className="w-full flex-1"
                     >
-                      Live Demo
-                      <HiGlobeAsiaAustralia size={18} />
-                    </Button>
-                  </Link>
+                      <Button
+                        variant="outline"
+                        className="w-full gap-1 px-3 bg-secondary text-white
+                        hover:bg-secondary/90 hover:text-white"
+                        size="sm"
+                      >
+                        Live Demo
+                        <HiGlobeAsiaAustralia size={18} />
+                      </Button>
+                    </Link>
+                  </div>
 
                   <Link
                     href="https://github.com/photkosee/unsw-wam-to-gpa-convertor"
                     passHref
                     target="_blank"
+                    className="w-full sm:w-auto max-w-[300px] mx-auto sm:mx-0"
                   >
                     <Button
                       variant="outline"
-                      className="gap-1 px-3 bg-secondary text-white hover:bg-secondary hover:text-white"
+                      className="w-full gap-1 px-3 bg-secondary text-white hover:bg-secondary/90 hover:text-white"
                       size="sm"
                     >
                       Source Code

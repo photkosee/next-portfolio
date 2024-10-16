@@ -3,7 +3,6 @@ import { TbAlignJustified } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
 import Nav from "@/app/components/headers/Nav";
 import Socials from "@/app/components/headers/Socials";
-import WavyPattern from "@/app/components/WavyPattern";
 import {
   Sheet,
   SheetContent,
@@ -13,8 +12,7 @@ import {
 import { useMobileNav } from "@/app/MobileNavContext";
 
 const MobileNav = () => {
-  const { isOpen, openMobileNav, closeMobileNav, toggleMobileNav } =
-    useMobileNav();
+  const { isOpen, openMobileNav, toggleMobileNav } = useMobileNav();
 
   return (
     <Sheet open={isOpen} onOpenChange={toggleMobileNav}>
@@ -29,8 +27,6 @@ const MobileNav = () => {
         bg-[#fef5f5] dark:bg-transparent
         "
       >
-        <WavyPattern />
-
         <Nav
           containerStyles="flex flex-col justify-center items-center gap-5"
           linkStyles="relative hover:text-primary transition-all"

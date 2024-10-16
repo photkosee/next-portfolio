@@ -40,7 +40,8 @@ export default function RootLayout({
             defaultTheme="light"
             enableSystem
             disableTransitionOnChange
-            storageKey="newTheme"
+            storageKey="onlyLight"
+            forcedTheme="light"
           >
             <Header />
             <div className="-mt-[70px] relative">{children}</div>

@@ -9,7 +9,7 @@ import ProjectCard from "@/app/components/ProjectCard";
 
 const ProjectTab = () => {
   const [category, setCategory] = useState<string>("highlight");
-  const [numShown, setNumShown] = useState(6);
+  const [numShown, setNumShown] = useState(4);
   const numAll = projects.length;
   const numHighlight = projects.filter((project) => project.show).length;
   const numFrontend = projects.filter(
@@ -53,7 +53,7 @@ const ProjectTab = () => {
           data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
           value="all"
           onClick={() => {
-            setNumShown(6);
+            setNumShown(4);
             setCategory("all");
           }}
         >
@@ -65,7 +65,7 @@ const ProjectTab = () => {
           data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
           value="highlight"
           onClick={() => {
-            setNumShown(6);
+            setNumShown(4);
             setCategory("highlight");
           }}
         >
@@ -77,7 +77,7 @@ const ProjectTab = () => {
           data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
           value="frontend"
           onClick={() => {
-            setNumShown(6);
+            setNumShown(4);
             setCategory("frontend");
           }}
         >
@@ -89,7 +89,7 @@ const ProjectTab = () => {
           data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
           value="backend"
           onClick={() => {
-            setNumShown(6);
+            setNumShown(4);
             setCategory("backend");
           }}
         >
@@ -101,7 +101,7 @@ const ProjectTab = () => {
           data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
           value="others"
           onClick={() => {
-            setNumShown(6);
+            setNumShown(4);
             setCategory("others");
           }}
         >
@@ -109,8 +109,8 @@ const ProjectTab = () => {
         </TabsTrigger>
       </TabsList>
 
-      <div className="flex flex-col items-center gap-y-7 pt-3">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 min-h-[800px]">
+      <div className="flex flex-col items-center gap-y-16 pt-5 sm:pt-7">
+        <div className="flex flex-col gap-y-7 sm:gap-y-5 min-h-[800px]">
           {filteredProjects.map((project, index) => (
             <TabsContent
               value={category}
@@ -127,7 +127,7 @@ const ProjectTab = () => {
                 stack={project.stack}
                 date={project.date}
                 // uml={project.uml}
-                index={index % 6}
+                index={index % 4}
               />
             </TabsContent>
           ))}
@@ -135,7 +135,7 @@ const ProjectTab = () => {
 
         {numShown < numCurrProject && (
           <Button
-            onClick={() => setNumShown(numShown + 6)}
+            onClick={() => setNumShown(numShown + 4)}
             className="rounded-full"
           >
             Load More

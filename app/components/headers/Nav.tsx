@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
 import { motion } from "framer-motion";
+
 import { useMobileNav } from "@/app/MobileNavContext";
 
 const links = [
