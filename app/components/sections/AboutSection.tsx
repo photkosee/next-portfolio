@@ -2,9 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import { BiLogoGmail } from "react-icons/bi";
 import { RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri";
 import { FaMedium } from "react-icons/fa6";
@@ -15,120 +13,15 @@ import educations from "@/app/data/educations";
 import stacks from "@/app/data/stacks";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import useAnimateOnView from "@/app/hooks/useAnimateOnView";
+import AboutMeBox from "@/app/components/sections/AboutMeBox";
 
 const AboutSection = () => {
-  const [ref, inView] = useInView({ triggerOnce: true });
-  const [ref2, inView2] = useInView({ triggerOnce: true });
-  const [ref3, inView3] = useInView({ triggerOnce: true });
-  const [ref4, inView4] = useInView({ triggerOnce: true });
-  const [ref5, inView5] = useInView({ triggerOnce: true });
-  const [ref6, inView6] = useInView({ triggerOnce: true });
-
-  const animation = useAnimation();
-  const animation2 = useAnimation();
-  const animation3 = useAnimation();
-  const animation4 = useAnimation();
-  const animation5 = useAnimation();
-  const animation6 = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
-          delay: 0.1,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-    if (inView2) {
-      animation2.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
-          delay: 0.1,
-        },
-      });
-    }
-    if (!inView2) {
-      animation2.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-    if (inView3) {
-      animation3.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
-          delay: 0.1,
-        },
-      });
-    }
-    if (!inView3) {
-      animation3.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-    if (inView4) {
-      animation4.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
-          delay: 0.1,
-        },
-      });
-    }
-    if (!inView4) {
-      animation4.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-    if (inView5) {
-      animation5.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
-          delay: 0.1,
-        },
-      });
-    }
-    if (!inView5) {
-      animation5.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-    if (inView6) {
-      animation6.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
-          delay: 0.1,
-        },
-      });
-    }
-    if (!inView6) {
-      animation6.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-  }, [inView, inView2, inView3, inView4, inView5, inView6]);
+  const { ref: ref2, animation: animation2 } = useAnimateOnView();
+  const { ref: ref3, animation: animation3 } = useAnimateOnView();
+  const { ref: ref4, animation: animation4 } = useAnimateOnView();
+  const { ref: ref5, animation: animation5 } = useAnimateOnView();
+  const { ref: ref6, animation: animation6 } = useAnimateOnView();
 
   return (
     <section className="w-full h-auto bg-white relative pt-[70px] pb-[140px] dark:bg-secondary/40">
@@ -138,32 +31,7 @@ const AboutSection = () => {
       />
 
       <div className="max-w-5xl mx-auto px-1 xs:px-3 sm:px-5 flex flex-col gap-y-5">
-        <motion.div
-          className="w-full rounded-3xl border py-5 px-3 sm:px-5 flex flex-col items-center gap-y-3
-          shadow-md max-w-[650px] lg:max-w-none mx-auto"
-          ref={ref}
-          animate={animation}
-        >
-          <div className="font-bold text-2xl md:text-3xl">About Me</div>
-
-          <div className="text-center flex flex-col gap-y-3 max-w-[700px]">
-            <div>
-              My name is Phot Koseekrainiramon. I am a Computer Engineering
-              student at the University of New South Wales who loves{" "}
-              <span className="text-primary">solving problems</span> and{" "}
-              <span className="text-primary">building things</span>, especially
-              in web development.
-            </div>
-            <div>
-              I enjoy creating user-friendly applications and working with both{" "}
-              <span className="text-primary">front-end</span> and{" "}
-              <span className="text-primary">back-end</span> technologies. I
-              love learning new things by expanding my experience through
-              various side projects, hackathon events, and internships
-              throughout my academic journey.
-            </div>
-          </div>
-        </motion.div>
+        <AboutMeBox />
 
         <div className="flex flex-col lg:flex-row gap-5 max-w-[650px] lg:max-w-none mx-auto">
           <div className="flex-1 flex flex-col gap-y-5">

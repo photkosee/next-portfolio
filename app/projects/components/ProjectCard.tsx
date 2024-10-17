@@ -20,13 +20,11 @@ const variants = {
 const ProjectCard = ({
   image,
   name,
-  category,
   description,
   link,
   github,
   stack,
   date,
-  uml,
   index,
 }: Project) => {
   return (

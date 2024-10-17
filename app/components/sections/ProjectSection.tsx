@@ -2,9 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import { Rocket } from "lucide-react";
 import { RiGithubFill } from "react-icons/ri";
 import { HiGlobeAsiaAustralia } from "react-icons/hi2";
@@ -13,108 +11,22 @@ import StackIcon from "tech-stack-icons";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { showcase1 } from "@/app/data/showcase1";
+import useAnimateOnView from "@/app/hooks/useAnimateOnView";
 
 const ProjectSection = () => {
-  const [ref, inView] = useInView({ triggerOnce: true });
-  const [ref2, inView2] = useInView({ triggerOnce: true });
-  const [ref3, inView3] = useInView({ triggerOnce: true });
-  const [ref4, inView4] = useInView({ triggerOnce: true });
-  const [ref5, inView5] = useInView({ triggerOnce: true });
-
-  const animation = useAnimation();
-  const animation2 = useAnimation();
-  const animation3 = useAnimation();
-  const animation4 = useAnimation();
-  const animation5 = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
-          delay: 0.1,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-    if (inView2) {
-      animation2.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
-          delay: 0.1,
-        },
-      });
-    }
-    if (!inView2) {
-      animation2.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-    if (inView3) {
-      animation3.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
-          delay: 0.1,
-        },
-      });
-    }
-    if (!inView3) {
-      animation3.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-    if (inView4) {
-      animation4.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
-          delay: 0.1,
-        },
-      });
-    }
-    if (!inView4) {
-      animation4.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-    if (inView5) {
-      animation5.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          y: { type: "spring", mass: 0.5, damping: 8, stiffness: 200 },
-          delay: 0.1,
-        },
-      });
-    }
-    if (!inView5) {
-      animation5.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-  }, [inView, inView2, inView3, inView4, inView5]);
+  const { ref: ref, animation: animation } = useAnimateOnView();
+  const { ref: ref2, animation: animation2 } = useAnimateOnView();
+  const { ref: ref3, animation: animation3 } = useAnimateOnView();
+  const { ref: ref5, animation: animation5 } = useAnimateOnView();
 
   return (
-    <section className="flex items-center h-auto relative pt-[70px] pb-[140px] bg-[#fef5f5] dark:bg-transparent">
+    <section
+      className="flex items-center h-auto relative pt-[70px] pb-[140px]
+      bg-[#fef5f5] dark:bg-transparent"
+    >
       <div
-        className="dark:hidden bg-[#fef5f5] absolute -top-10 h-14 rounded-t-3xl md:rounded-t-full
-        w-full dark:bg-transparent"
+        className="dark:hidden bg-[#fef5f5] absolute -top-10 h-14 rounded-t-3xl
+        md:rounded-t-full w-full dark:bg-transparent"
       />
 
       <div className="max-w-5xl px-1 xs:px-3 sm:px-5 mx-auto w-full flex flex-col gap-y-10">
@@ -145,8 +57,8 @@ const ProjectSection = () => {
 
         <div className="w-full flex flex-col gap-y-5">
           <motion.div
-            className="border rounded-2xl shadow-md py-5 px-1 xs:px-3 sm:px-5 w-auto bg-white dark:bg-transparent
-            flex flex-col gap-3"
+            className="border rounded-2xl shadow-md py-5 px-1 xs:px-3 sm:px-5 w-auto
+            bg-white dark:bg-transparent flex flex-col gap-3"
             ref={ref3}
             initial="hidden"
             animate={animation3}

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import projects from "@/app/data/projects";
-import ProjectCard from "@/app/components/ProjectCard";
+import ProjectCard from "@/app/projects/components/ProjectCard";
 
 const ProjectTab = () => {
   const [category, setCategory] = useState<string>("highlight");
@@ -41,12 +41,10 @@ const ProjectTab = () => {
   return (
     <Tabs defaultValue={category}>
       <TabsList
-        className="
-        flex flex-wrap gap-2 sm:grid sm:grid-cols-5 py-0.5 sm:gap-1 mx-auto
+        className="flex flex-wrap gap-2 sm:grid sm:grid-cols-5 py-0.5 sm:gap-1 mx-auto
         text-muted-foreground rounded-full dark:sm:bg-secondary
         border-none bg-transparent sm:bg-white dark:bg-transparent
-        sm:border-solid sm:border max-w-[400px] sm:max-w-[555px] w-full h-auto
-        "
+        sm:border-solid sm:border max-w-[400px] sm:max-w-[555px] w-full h-auto"
       >
         <TabsTrigger
           className="min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full data-[state=active]:bg-primary
@@ -127,13 +125,13 @@ const ProjectTab = () => {
                   github={project.github}
                   stack={project.stack}
                   date={project.date}
-                  // uml={project.uml}
                   index={index % 6}
                 />
               </TabsContent>
             ))}
           </div>
         </div>
+
         {numShown < numCurrProject && (
           <Button
             onClick={() => setNumShown(numShown + 6)}
