@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
-import { Calendar } from "lucide-react";
 import { RiGithubFill } from "react-icons/ri";
 import { HiGlobeAsiaAustralia } from "react-icons/hi2";
 import StackIcon from "tech-stack-icons";
@@ -36,7 +35,7 @@ const ProjectCard = ({
       initial="hidden"
       animate="visible"
       transition={{
-        delay: index * 0.1,
+        delay: index * 0.08,
         ease: "easeInOut",
         duration: 0.35,
       }}
@@ -83,7 +82,7 @@ const ProjectCard = ({
             <Link href={github} passHref target="_blank" className="flex-1">
               <Button
                 variant="outline"
-                className="gap-1 text-sm px-3 w-full rounded-lg"
+                className="gap-1 text-sm px-3 w-full"
                 size="sm"
               >
                 More Details
@@ -94,7 +93,7 @@ const ProjectCard = ({
               <Link href={link} passHref target="_blank" className="flex-1">
                 <Button
                   variant="outline"
-                  className="w-full text-sm gap-1 px-3 rounded-lg"
+                  className="w-full text-sm gap-1 px-3"
                   size="sm"
                 >
                   Live Demo
@@ -112,7 +111,7 @@ const ProjectCard = ({
           >
             <Button
               variant="outline"
-              className="gap-1 text-sm px-3 w-full rounded-lg"
+              className="gap-1 text-sm px-3 w-full"
               size="sm"
             >
               Source Code
