@@ -262,7 +262,7 @@ const AboutSection = () => {
                   </Button>
                 </Link>
 
-                <div className="flex items-center justify-center gap-x-1">
+                <div className="flex items-center justify-center gap-x-1 py-2">
                   <BiLogoGmail className="w-5 h-5 text-red-700 dark:text-white" />
                   <div className="select-none">Email:</div>
                   <p>phot.kosee@gmail.com</p>
@@ -400,7 +400,7 @@ const AboutSection = () => {
                 </Button>
               </Link>
 
-              <div className="flex items-center justify-center gap-x-1">
+              <div className="flex items-center justify-center gap-x-1 py-2">
                 <BiLogoGmail className="w-5 h-5 text-red-700 dark:text-white" />
                 <div className="select-none">Email:</div>
                 <p>phot.kosee@gmail.com</p>

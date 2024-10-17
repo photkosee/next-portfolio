@@ -255,7 +255,7 @@ const ProjectSection = () => {
 
               <div className="w-full flex flex-col justify-between">
                 <div
-                  className="px-3 py-5 text-center flex flex-col gap-y-3 max-h-[370px]
+                  className="px-3 py-5 text-center flex flex-col gap-y-3
                   w-full border rounded-2xl flex-1 justify-center items-center"
                 >
                   <Image
@@ -274,33 +274,37 @@ const ProjectSection = () => {
                   </div>
                 </div>
 
-                <div className="self-center lg:self-end flex gap-2 pt-5 flex-wrap justify-center">
-                  <Link
-                    href="https://github.com/photkosee/unsw-wam-to-gpa-convertor?tab=readme-ov-file#table-of-contents"
-                    passHref
-                    target="_blank"
-                  >
-                    <Button
-                      className="px-3 bg-secondary text-white hover:bg-secondary/90 hover:text-white"
-                      size="sm"
+                <div className="self-center lg:self-end flex flex-wrap sm:flex-nowrap gap-1 pt-5 justify-center">
+                  <div className="flex gap-1">
+                    <Link
+                      href="https://github.com/photkosee/unsw-wam-to-gpa-convertor?tab=readme-ov-file#table-of-contents"
+                      passHref
+                      target="_blank"
                     >
-                      More Details
-                    </Button>
-                  </Link>
+                      <Button
+                        className="rounded-full px-3 gap-x-1 text-sm"
+                        variant="secondary"
+                        size="sm"
+                      >
+                        More Details
+                      </Button>
+                    </Link>
 
-                  <Link
-                    href="https://unsw-wam-to-gpa-convertor.vercel.app/"
-                    passHref
-                    target="_blank"
-                  >
-                    <Button
-                      className="gap-1 px-3 bg-secondary text-white hover:bg-secondary/90 hover:text-white"
-                      size="sm"
+                    <Link
+                      href="https://unsw-wam-to-gpa-convertor.vercel.app/"
+                      passHref
+                      target="_blank"
                     >
-                      Live Demo
-                      <HiGlobeAsiaAustralia size={18} />
-                    </Button>
-                  </Link>
+                      <Button
+                        className="rounded-full px-3 gap-x-1 text-sm"
+                        variant="secondary"
+                        size="sm"
+                      >
+                        Live Demo
+                        <HiGlobeAsiaAustralia size={18} />
+                      </Button>
+                    </Link>
+                  </div>
 
                   <Link
                     href="https://github.com/photkosee/unsw-wam-to-gpa-convertor"
@@ -308,7 +312,8 @@ const ProjectSection = () => {
                     target="_blank"
                   >
                     <Button
-                      className="gap-1 px-3 bg-secondary text-white hover:bg-secondary/90 hover:text-white"
+                      className="rounded-full px-3 gap-x-1 text-sm"
+                      variant="secondary"
                       size="sm"
                     >
                       Source Code
