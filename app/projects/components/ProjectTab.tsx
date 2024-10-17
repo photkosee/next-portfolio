@@ -2,41 +2,39 @@
 
 import { useState } from "react";
 
+import projects from "@/app/data/projects";
+import { Project } from "@/app/types";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import projects from "@/app/data/projects";
 import ProjectCard from "@/app/projects/components/ProjectCard";
+
+const filterByCategory = (projects: any, category: string) => {
+  return projects.filter((project: any) => {
+    if (category === "highlight") return project.show;
+    if (category === "others") return project.category === "others";
+    if (category === "backend")
+      return project.category === "backend" || project.category === "fullstack";
+    if (category === "frontend")
+      return (
+        project.category === "frontend" || project.category === "fullstack"
+      );
+    if (category === "all") return true;
+  });
+};
 
 const ProjectTab = () => {
   const [category, setCategory] = useState<string>("highlight");
   const [numShown, setNumShown] = useState(6);
   const numAll = projects.length;
-  const numHighlight = projects.filter((project) => project.show).length;
-  const numFrontend = projects.filter(
-    (project) =>
-      project.category === "frontend" || project.category === "fullstack"
-  ).length;
-  const numBackend = projects.filter(
-    (project) =>
-      project.category === "backend" || project.category === "fullstack"
-  ).length;
-  const numOthers = projects.filter(
-    (project) => project.category === "others"
-  ).length;
-  const numCurrProject = projects.filter((project) => {
-    if (category === "highlight") return project.show;
-    if (category === "all") return project;
-    if (category === "others") return project.category === "others";
-    return category === project.category || project.category === "fullstack";
-  }).length;
-  const filteredProjects = projects
-    .filter((project) => {
-      if (category === "highlight") return project.show;
-      if (category === "all") return project;
-      if (category === "others") return project.category === "others";
-      return category === project.category || project.category === "fullstack";
-    })
-    .slice(0, numShown);
+  const numHighlight = filterByCategory(projects, "highlight").length;
+  const numFrontend = filterByCategory(projects, "frontend").length;
+  const numBackend = filterByCategory(projects, "backend").length;
+  const numOthers = filterByCategory(projects, "others").length;
+  const numCurrProject = filterByCategory(projects, category).length;
+  const filteredProjects = filterByCategory(projects, category).slice(
+    0,
+    numShown
+  );
 
   return (
     <Tabs defaultValue={category}>
@@ -47,8 +45,7 @@ const ProjectTab = () => {
         sm:border-solid sm:border max-w-[400px] sm:max-w-[555px] w-full h-auto"
       >
         <TabsTrigger
-          className="min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
+          className="tab data-[state=active]:bg-primary data-[state=active]:text-white"
           value="all"
           onClick={() => {
             setNumShown(6);
@@ -59,8 +56,7 @@ const ProjectTab = () => {
         </TabsTrigger>
 
         <TabsTrigger
-          className="min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
+          className="tab data-[state=active]:bg-primary data-[state=active]:text-white"
           value="highlight"
           onClick={() => {
             setNumShown(6);
@@ -71,8 +67,7 @@ const ProjectTab = () => {
         </TabsTrigger>
 
         <TabsTrigger
-          className="min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
+          className="tab data-[state=active]:bg-primary data-[state=active]:text-white"
           value="frontend"
           onClick={() => {
             setNumShown(6);
@@ -83,8 +78,7 @@ const ProjectTab = () => {
         </TabsTrigger>
 
         <TabsTrigger
-          className="min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
+          className="tab data-[state=active]:bg-primary data-[state=active]:text-white"
           value="backend"
           onClick={() => {
             setNumShown(6);
@@ -95,8 +89,7 @@ const ProjectTab = () => {
         </TabsTrigger>
 
         <TabsTrigger
-          className="min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full data-[state=active]:bg-primary
-          data-[state=active]:text-white bg-primary/10 sm:bg-transparent"
+          className="tab data-[state=active]:bg-primary data-[state=active]:text-white"
           value="others"
           onClick={() => {
             setNumShown(6);
@@ -110,7 +103,7 @@ const ProjectTab = () => {
       <div className="flex flex-col items-center gap-y-10 pt-5">
         <div className="min-h-[800px]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredProjects.map((project, index) => (
+            {filteredProjects.map((project: Project, index: number) => (
               <TabsContent
                 value={category}
                 key={project.name}
