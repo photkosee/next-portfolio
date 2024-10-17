@@ -44,6 +44,17 @@ const projects = [
     date: "Aug 2024",
   },
   {
+    image: "./covers/task-cover.webp",
+    category: "fullstack",
+    name: "Task A Gotchi",
+    description:
+      "A responsive web app that gamifies users' habits to boost their productivity. For UNSW Flagship Hackathon 2024.",
+    github: "https://github.com/photkosee/task-a-gotchi?tab=readme-ov-file#problem-statement",
+    stack: ["nextjs2", "tailwindcss", "antd", "mongodb", "prisma"],
+    date: "Jul 2024",
+    show: true,
+  },
+  {
     image: "./covers/wongnai-cover.webp",
     category: "fullstack",
     name: "What to Order",
@@ -52,17 +63,6 @@ const projects = [
     github: "https://github.com/photkosee/wongnai-frontend-assignment2023/?tab=readme-ov-file#table-of-contents",
     stack: ["reactjs", "typescript", "tailwindcss", "nodejs", "jest"],
     date: "Jul 2024",
-  },
-  {
-    image: "./covers/task-cover.webp",
-    category: "fullstack",
-    name: "Task A Gotchi",
-    description:
-      "A responsive web app that gamifies users' habits to boost their productivity. For UNSW Flagship Hackathon 2024.",
-    github: "https://github.com/photkosee/task-a-gotchi?tab=readme-ov-file#problem-statement",
-    stack: ["nextjs2", "tailwindcss", "antd", "mongodb", "prisma"],
-    date: "UNSW Flagship Hackathon",
-    show: true,
   },
   {
     image: "./covers/dota2-cover.webp",
@@ -80,7 +80,7 @@ const projects = [
     category: "frontend",
     name: "Flexbox Froggy Hardcore",
     description:
-      "A game where users help the frogs reach their lily pads by using CSS Flexbox properties, featuring an UNLIMITED number of challenges.",
+      "A game practicing CSS flexbox properties, featuring an UNLIMITED number of challenges.",
     link: "https://photkosee.github.io/flexboxfroggy-hardcore/",
     github: "https://github.com/photkosee/flexboxfroggy-hardcore?tab=readme-ov-file#table-of-contents",
     stack: ["vitejs", "reactjs", "typescript", "tailwindcss"],

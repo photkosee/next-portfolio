@@ -161,11 +161,11 @@ const ProjectSection = () => {
                   w-full border rounded-2xl flex-1 justify-center items-center"
                 >
                   <h5 className="text-lg font-bold">Problem Statement</h5>
-                  <p className="max-w-[400px] md:max-w-[350px]">
+                  <p className="max-w-[400px] md:max-w-[350px] text-muted-foreground">
                     Unlike many other universities that use GPA system, UNSW
                     uses a WAM system.
                   </p>
-                  <p className="max-w-[400px] md:max-w-[350px]">
+                  <p className="max-w-[400px] md:max-w-[350px] text-muted-foreground">
                     This cause{" "}
                     <span className="text-primary">confusion to students</span>{" "}
                     including my friends on how to convert their WAM into GPA.
@@ -177,7 +177,7 @@ const ProjectSection = () => {
                   w-full border rounded-2xl flex-1 justify-center items-center"
                 >
                   <h5 className="text-lg font-bold">Solution</h5>
-                  <div className="max-w-[400px] md:max-w-[300px]">
+                  <div className="max-w-[400px] md:max-w-[300px] text-muted-foreground">
                     <p>
                       This app I developed not only converting students WAM into
                       GPA, it also{" "}
@@ -195,7 +195,7 @@ const ProjectSection = () => {
                 mx-auto w-full border rounded-2xl flex-1 justify-center items-center"
               >
                 <h5 className="text-lg font-bold">What this does?</h5>
-                <p className="max-w-[400px] md:max-w-[450px] text-wrap">
+                <p className="max-w-[400px] md:max-w-[450px] text-wrap text-muted-foreground">
                   An app that helps UNSW students convert their WAM to GPA by
                   simply uploading their academic statement.
                 </p>
@@ -264,7 +264,7 @@ const ProjectSection = () => {
 
                   <div className="flex flex-col text-center">
                     <h5 className="text-lg font-bold">Useful for Students</h5>
-                    <p>
+                    <p className="text-muted-foreground">
                       More than <span className="text-primary">100 users</span>{" "}
                       in <span className="text-primary">a single day</span>
                     </p>
@@ -278,7 +278,6 @@ const ProjectSection = () => {
                     target="_blank"
                   >
                     <Button
-                      variant="outline"
                       className="px-3 bg-secondary text-white hover:bg-secondary/90 hover:text-white"
                       size="sm"
                     >
@@ -292,7 +291,6 @@ const ProjectSection = () => {
                     target="_blank"
                   >
                     <Button
-                      variant="outline"
                       className="gap-1 px-3 bg-secondary text-white hover:bg-secondary/90 hover:text-white"
                       size="sm"
                     >
@@ -307,7 +305,6 @@ const ProjectSection = () => {
                     target="_blank"
                   >
                     <Button
-                      variant="outline"
                       className="gap-1 px-3 bg-secondary text-white hover:bg-secondary/90 hover:text-white"
                       size="sm"
                     >
