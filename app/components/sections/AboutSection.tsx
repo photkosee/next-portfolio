@@ -225,7 +225,7 @@ const AboutSection = () => {
                 Connect with Me
               </h1>
 
-              <div className="flex flex-col gap-y-2 max-w-[400px] mx-auto w-full">
+              <div className="flex flex-col gap-y-1 max-w-[400px] mx-auto w-full">
                 <Link
                   href="https://github.com/photkosee"
                   target="_blank"
@@ -361,7 +361,7 @@ const AboutSection = () => {
               Connect with Me
             </h1>
 
-            <div className="flex flex-col gap-y-3 max-w-[400px] mx-auto w-full">
+            <div className="flex flex-col gap-y-2 max-w-[400px] mx-auto w-full">
               <div className="flex gap-x-1 xs:gap-x-2">
                 <Link
                   href="https://github.com/photkosee"

@@ -151,9 +151,12 @@ const ProjectSection = () => {
             initial="hidden"
             animate={animation3}
           >
-            <h3 className="text-2xl font-bold mx-auto text-center py-2">
-              UNSW WAM to GPA Convertor
-            </h3>
+            <div className="text-center py-2">
+              <h3 className="text-2xl font-bold mx-auto text-center">
+                UNSW WAM to GPA Convertor
+              </h3>
+              <p className="text-xs text-muted-foreground">Aug 2024</p>
+            </div>
             <div className="flex flex-col lg:flex-row gap-3 w-full">
               <div className="flex flex-col sm:flex-row gap-3">
                 <div
