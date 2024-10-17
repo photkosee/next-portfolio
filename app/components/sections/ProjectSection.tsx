@@ -274,7 +274,7 @@ const ProjectSection = () => {
                   </div>
                 </div>
 
-                <div className="self-center lg:self-end flex flex-wrap sm:flex-nowrap gap-1 pt-5 justify-center">
+                <div className="self-center flex flex-wrap sm:flex-nowrap gap-1 pt-5 justify-center">
                   <div className="flex gap-1">
                     <Link
                       href="https://github.com/photkosee/unsw-wam-to-gpa-convertor?tab=readme-ov-file#table-of-contents"
