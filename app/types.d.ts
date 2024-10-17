@@ -10,5 +10,5 @@ export interface Project {
   stack: ReactComponentElement[];
   uml?: string;
   date: string;
-  index: number;
+  show?: boolean;
 }

@@ -1,4 +1,6 @@
-const projects = [
+import { Project } from "@/app/types";
+
+const projects: Project[] = [
   {
     image: "./covers/positivus-cover.webp",
     category: "frontend",

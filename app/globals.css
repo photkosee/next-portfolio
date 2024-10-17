@@ -29,6 +29,10 @@
   @apply bg-primary;
 }
 
+.tab {
+  @apply min-w-[120px] w-auto sm:min-w-min sm:w-full rounded-full bg-primary/10 sm:bg-transparent;
+}
+
 @layer base {
   * {
     @apply border-border;
