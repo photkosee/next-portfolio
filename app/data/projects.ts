@@ -151,7 +151,7 @@ const projects: Project[] = [
     name: "Portfolio Website 2nd Edition",
     description:
       "This is the site you are looking at right now. Check out my other projects!",
-    link: "https://photkosee.github.io/next-portfolio/",
+    link: "https://photkosee.vercel.app/",
     github: "https://github.com/photkosee/next-portfolio?tab=readme-ov-file#table-of-contents",
     stack: ["nextjs2", "typescript", "tailwindcss", "shadcnui"],
     date: "Dec 2023",

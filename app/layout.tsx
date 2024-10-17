@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 import "@/app/globals.css";
 import { Toaster } from "@/components/ui/toaster";
@@ -48,6 +49,8 @@ export default function RootLayout({
             <Toaster />
           </ThemeProvider>
         </MobileNavProvider>
+
+        <Analytics />
       </body>
     </html>
   );
