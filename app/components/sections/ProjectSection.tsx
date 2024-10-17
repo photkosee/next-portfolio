@@ -3,9 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Rocket } from "lucide-react";
+import { ExternalLink, Rocket } from "lucide-react";
 import { RiGithubFill } from "react-icons/ri";
-import { HiGlobeAsiaAustralia } from "react-icons/hi2";
 import StackIcon from "tech-stack-icons";
 
 import { Button } from "@/components/ui/button";
@@ -212,8 +211,8 @@ const ProjectSection = () => {
                         variant="secondary"
                         size="sm"
                       >
+                        <ExternalLink size={18} />
                         Live Demo
-                        <HiGlobeAsiaAustralia size={18} />
                       </Button>
                     </Link>
                   </div>
@@ -228,8 +227,8 @@ const ProjectSection = () => {
                       variant="secondary"
                       size="sm"
                     >
-                      Source Code
                       <RiGithubFill size={18} />
+                      Source Code
                     </Button>
                   </Link>
                 </div>

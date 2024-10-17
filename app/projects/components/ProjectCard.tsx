@@ -5,12 +5,12 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 import { RiGithubFill } from "react-icons/ri";
-import { HiGlobeAsiaAustralia } from "react-icons/hi2";
 import StackIcon from "tech-stack-icons";
 
 import { Project } from "@/app/types";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 interface ProjectCardProps {
   image?: string;
@@ -105,8 +105,8 @@ const ProjectCard = ({
                   className="w-full text-sm gap-1 px-3"
                   size="sm"
                 >
+                  <ExternalLink size={18} />
                   Live Demo
-                  <HiGlobeAsiaAustralia size={18} />
                 </Button>
               </Link>
             )}
@@ -123,8 +123,8 @@ const ProjectCard = ({
               className="gap-1 text-sm px-3 w-full"
               size="sm"
             >
-              Source Code
               <RiGithubFill size={18} />
+              Source Code
             </Button>
           </Link>
         </div>
