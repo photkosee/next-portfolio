@@ -25,7 +25,7 @@ const projects = [
   {
     image: "./covers/wam-to-gpa-cover.webp",
     category: "frontend",
-    name: "UNSW WAM to GPA Convertor",
+    name: "WAM to GPA Convertor",
     description:
       "An app that helps UNSW students convert their WAM to GPA by simply uploading their academic statement.",
     link: "https://unsw-wam-to-gpa-convertor.vercel.app/",

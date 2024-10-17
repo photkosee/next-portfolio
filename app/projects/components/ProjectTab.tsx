@@ -109,30 +109,28 @@ const ProjectTab = () => {
         </TabsTrigger>
       </TabsList>
 
-      <div className="flex flex-col items-center gap-y-10">
-        <div className="flex flex-col items-center gap-y-10 pt-5 min-h-[1000px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredProjects.map((project, index) => (
-              <TabsContent
-                value={category}
-                key={project.name}
-                className="flex justify-center"
-              >
-                <ProjectCard
-                  image={project.image}
-                  category={project.category}
-                  name={project.name}
-                  description={project.description}
-                  link={project.link}
-                  github={project.github}
-                  stack={project.stack}
-                  date={project.date}
-                  // uml={project.uml}
-                  index={index % 6}
-                />
-              </TabsContent>
-            ))}
-          </div>
+      <div className="flex flex-col items-center gap-y-10 pt-5 min-h-[1000px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {filteredProjects.map((project, index) => (
+            <TabsContent
+              value={category}
+              key={project.name}
+              className="flex justify-center"
+            >
+              <ProjectCard
+                image={project.image}
+                category={project.category}
+                name={project.name}
+                description={project.description}
+                link={project.link}
+                github={project.github}
+                stack={project.stack}
+                date={project.date}
+                // uml={project.uml}
+                index={index % 6}
+              />
+            </TabsContent>
+          ))}
         </div>
         {numShown < numCurrProject && (
           <Button
