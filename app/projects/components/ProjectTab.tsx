@@ -8,8 +8,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import ProjectCard from "@/app/projects/components/ProjectCard";
 
-const filterByCategory = (projects: any, category: string) => {
-  return projects.filter((project: any) => {
+const filterByCategory = (projects: Project[], category: string) => {
+  return projects.filter((project: Project) => {
     if (category === "highlight") return project.show;
     if (category === "others") return project.category === "others";
     if (category === "backend")
@@ -111,7 +111,6 @@ const ProjectTab = () => {
               >
                 <ProjectCard
                   image={project.image}
-                  category={project.category}
                   name={project.name}
                   description={project.description}
                   link={project.link}

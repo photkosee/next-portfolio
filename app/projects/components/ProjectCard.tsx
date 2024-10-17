@@ -12,6 +12,17 @@ import { Project } from "@/app/types";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+interface ProjectCardProps {
+  image?: string;
+  name: string;
+  description: string;
+  link?: string;
+  github: string;
+  stack: Project["stack"];
+  date: string;
+  index: number;
+}
+
 const variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
@@ -26,7 +37,7 @@ const ProjectCard = ({
   stack,
   date,
   index,
-}: Project) => {
+}: ProjectCardProps) => {
   return (
     <motion.div
       variants={variants}
