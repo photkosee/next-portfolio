@@ -51,7 +51,7 @@ const HeroSection = () => {
         <div className="flex flex-col max-w-[380px] items-start">
           <div>
             <motion.div
-              className="text-[10px] sm:text-sm uppercase font-semibold mb-2 text-primary
+              className="text-sm uppercase font-semibold mb-2 text-primary
               tracking-[3px] flex items-center gap-x-2 justify-start"
               variants={childVariants}
             >

@@ -3,7 +3,6 @@ import { TbAlignJustified } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
 import Nav from "@/app/components/headers/Nav";
 import Socials from "@/app/components/headers/Socials";
-import WavyPattern from "@/app/components/WavyPattern";
 import {
   Sheet,
   SheetContent,
@@ -29,8 +28,6 @@ const MobileNav = () => {
         bg-[#fef5f5] dark:bg-transparent
         "
       >
-        <WavyPattern />
-
         <Nav
           containerStyles="flex flex-col justify-center items-center gap-5"
           linkStyles="relative hover:text-primary transition-all"

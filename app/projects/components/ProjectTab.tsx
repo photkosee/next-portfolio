@@ -45,7 +45,7 @@ const ProjectTab = () => {
         flex flex-wrap gap-2 sm:grid sm:grid-cols-5 py-0.5 sm:gap-1 mx-auto
         text-muted-foreground rounded-full dark:sm:bg-secondary
         border-none bg-transparent sm:bg-white dark:bg-transparent
-        sm:border-solid sm:border max-w-[555px] w-full h-auto
+        sm:border-solid sm:border max-w-[400px] sm:max-w-[555px] w-full h-auto
         "
       >
         <TabsTrigger
@@ -109,30 +109,31 @@ const ProjectTab = () => {
         </TabsTrigger>
       </TabsList>
 
-      <div className="flex flex-col items-center gap-y-7 pt-3">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 min-h-[800px]">
-          {filteredProjects.map((project, index) => (
-            <TabsContent
-              value={category}
-              key={project.name}
-              className="flex justify-center"
-            >
-              <ProjectCard
-                image={project.image}
-                category={project.category}
-                name={project.name}
-                description={project.description}
-                link={project.link}
-                github={project.github}
-                stack={project.stack}
-                date={project.date}
-                // uml={project.uml}
-                index={index % 6}
-              />
-            </TabsContent>
-          ))}
+      <div className="flex flex-col items-center gap-y-10">
+        <div className="flex flex-col items-center gap-y-10 pt-5 min-h-[1000px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filteredProjects.map((project, index) => (
+              <TabsContent
+                value={category}
+                key={project.name}
+                className="flex justify-center"
+              >
+                <ProjectCard
+                  image={project.image}
+                  category={project.category}
+                  name={project.name}
+                  description={project.description}
+                  link={project.link}
+                  github={project.github}
+                  stack={project.stack}
+                  date={project.date}
+                  // uml={project.uml}
+                  index={index % 6}
+                />
+              </TabsContent>
+            ))}
+          </div>
         </div>
-
         {numShown < numCurrProject && (
           <Button
             onClick={() => setNumShown(numShown + 6)}
