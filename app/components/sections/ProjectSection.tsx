@@ -158,7 +158,7 @@ const ProjectSection = () => {
               <div className="flex flex-col sm:flex-row gap-3">
                 <div
                   className="px-3 py-5 lg:max-w-[370px] text-center flex flex-col gap-y-1
-                  w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                  w-full border rounded-2xl flex-1 justify-center items-center"
                 >
                   <h5 className="text-lg font-bold">Problem Statement</h5>
                   <p className="max-w-[400px] md:max-w-[350px]">
@@ -174,7 +174,7 @@ const ProjectSection = () => {
 
                 <div
                   className="px-3 py-5 lg:max-w-[300px] text-center flex flex-col gap-y-1
-                  w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                  w-full border rounded-2xl flex-1 justify-center items-center"
                 >
                   <h5 className="text-lg font-bold">Solution</h5>
                   <div className="max-w-[400px] md:max-w-[300px]">
@@ -192,7 +192,7 @@ const ProjectSection = () => {
 
               <div
                 className="px-3 py-5 lg:max-w-[350px] text-center flex flex-col gap-y-1
-                mx-auto w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                mx-auto w-full border rounded-2xl flex-1 justify-center items-center"
               >
                 <h5 className="text-lg font-bold">What this does?</h5>
                 <p className="max-w-[400px] md:max-w-[450px] text-wrap">
@@ -209,7 +209,7 @@ const ProjectSection = () => {
               >
                 <div
                   className="px-3 py-5 sm:max-w-[350px] text-center flex flex-col gap-y-1 w-full 
-                  border rounded-2xl shadow-md flex-1 justify-center items-center"
+                  border rounded-2xl flex-1 justify-center items-center"
                 >
                   <Link
                     href="https://unsw-wam-to-gpa-convertor.vercel.app/"
@@ -227,7 +227,7 @@ const ProjectSection = () => {
 
                 <div
                   className="px-3 py-5 text-center flex flex-col gap-y-1 sm:max-w-[700px] lg:max-w-[350px]
-                  mx-auto w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                  mx-auto w-full border rounded-2xl flex-1 justify-center items-center"
                 >
                   <h5 className="text-lg font-bold">Tech Stacks</h5>
                   <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 max-w-[350px]">
@@ -253,7 +253,7 @@ const ProjectSection = () => {
               <div className="w-full flex flex-col justify-between">
                 <div
                   className="px-3 py-5 text-center flex flex-col gap-y-3 max-h-[370px]
-                  w-full border rounded-2xl shadow-md flex-1 justify-center items-center"
+                  w-full border rounded-2xl flex-1 justify-center items-center"
                 >
                   <Image
                     src="./showcases/analytic-wam-convertor.png"
@@ -279,7 +279,7 @@ const ProjectSection = () => {
                   >
                     <Button
                       variant="outline"
-                      className="px-3 bg-secondary text-white hover:bg-secondary hover:text-white"
+                      className="px-3 bg-secondary text-white hover:bg-secondary/90 hover:text-white"
                       size="sm"
                     >
                       More Details
@@ -293,7 +293,7 @@ const ProjectSection = () => {
                   >
                     <Button
                       variant="outline"
-                      className="gap-1 px-3 bg-secondary text-white hover:bg-secondary hover:text-white"
+                      className="gap-1 px-3 bg-secondary text-white hover:bg-secondary/90 hover:text-white"
                       size="sm"
                     >
                       Live Demo
@@ -308,7 +308,7 @@ const ProjectSection = () => {
                   >
                     <Button
                       variant="outline"
-                      className="gap-1 px-3 bg-secondary text-white hover:bg-secondary hover:text-white"
+                      className="gap-1 px-3 bg-secondary text-white hover:bg-secondary/90 hover:text-white"
                       size="sm"
                     >
                       Source Code

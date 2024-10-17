@@ -110,7 +110,7 @@ const ProjectTab = () => {
       </TabsList>
 
       <div className="flex flex-col items-center gap-y-7 pt-3">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 min-h-[800px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch min-h-[800px]">
           {filteredProjects.map((project, index) => (
             <TabsContent
               value={category}
