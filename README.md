@@ -2,7 +2,7 @@
 
 A website showcasing personal projects and experiences
 
-This site is now live at https://photkosee.github.io/next-portfolio/
+This site is now live at https://photkosee.vercel.app
 
 
 ## Table of Contents
@@ -32,12 +32,12 @@ This is a personalized website to showcase my creative work apart from my univer
 
 ## Author
 Phot Koseekrainiramon
-- [LinkedIn](https://www.linkedin.com/in/phot-kosee/)
+- [LinkedIn](https://www.linkedin.com/in/photkosee/)
 - [GitHub](https://github.com/photkosee)
 
 ## Deployment
 
-This project is deployed to GitHub Pages:
+This project is deployed to Vercel (used to be deployed to GitHub Pages):
 
-[https://photkosee.github.io/next-portfolio/](https://photkosee.github.io/next-portfolio/)
+https://photkosee.vercel.app
 

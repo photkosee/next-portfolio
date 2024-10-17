@@ -5,11 +5,11 @@ import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
 
 const icons = [
   {
-    path: "https://www.linkedin.com/in/phot-koseekrainiramon-70a313274/",
+    path: "https://www.linkedin.com/in/photkosee/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "https://github.com/PhotKosee",
+    path: "https://github.com/photkosee",
     name: <RiGithubFill />,
   },
 ];

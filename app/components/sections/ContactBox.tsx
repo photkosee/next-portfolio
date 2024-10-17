@@ -38,7 +38,7 @@ const ContactBox = () => {
           </Link>
 
           <Link
-            href="https://www.linkedin.com/in/phot-kosee/"
+            href="https://www.linkedin.com/in/photkosee/"
             target="_blank"
             className="w-full"
             passHref
