@@ -9,7 +9,7 @@ import { useMobileNav } from "@/app/MobileNavContext";
 
 const links = [
   {
-    path: "/home",
+    path: "/",
     name: "home",
   },
   {
@@ -21,7 +21,7 @@ const links = [
     name: "blog",
   },
   {
-    path: "/home#contact",
+    path: "/#contact",
     name: "contact",
   },
 ];

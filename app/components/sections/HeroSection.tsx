@@ -34,10 +34,10 @@ const childVariants = {
 const HeroSection = () => {
   return (
     <section
-      className="relative bg-[#fef5f5] dark:bg-transparent h-[650px] sm:h-[750px] xl:h-[800px]
+      className="relative bg-[#fef5f5] dark:bg-transparent h-[650px] sm:h-[700px] md:h-[750px]
       flex justify-center items-center"
     >
-      <div className="absolute w-full top-0 overflow-hidden h-[650px] sm:h-[750px] xl:h-[800px]">
+      <div className="absolute w-full top-0 overflow-hidden h-[650px] sm:h-[700px] md:h-[750px]">
         <RotatingGeometric />
       </div>
 
