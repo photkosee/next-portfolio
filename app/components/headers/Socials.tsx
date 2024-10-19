@@ -30,7 +30,7 @@ const Socials = ({
           key={index}
           target="_blank"
         >
-          <div className={`${iconsStyles} p-1`}>{icon.name}</div>
+          <div className={`${iconsStyles} md:p-1`}>{icon.name}</div>
         </Link>
       ))}
     </div>

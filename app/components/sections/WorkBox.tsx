@@ -13,7 +13,8 @@ const WorkBox = () => {
     <motion.div
       ref={ref}
       animate={animation}
-      className="h-full border shadow-md py-5 px-3 sm:px-5 rounded-3xl flex flex-col gap-y-5"
+      className="h-full border shadow-md py-5 px-3 sm:px-5 rounded-3xl flex flex-col
+      gap-y-5 dark:bg-secondary"
     >
       <h1 className="font-bold text-2xl md:text-3xl text-center">
         Work Experience

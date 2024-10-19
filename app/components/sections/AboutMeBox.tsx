@@ -10,7 +10,7 @@ const AboutMeBox = () => {
   return (
     <motion.div
       className="w-full rounded-3xl border py-5 px-3 sm:px-5 flex flex-col items-center gap-y-3
-      shadow-md max-w-[650px] lg:max-w-none mx-auto"
+      shadow-md max-w-[650px] lg:max-w-none mx-auto dark:bg-secondary"
       ref={ref}
       animate={animation}
     >
