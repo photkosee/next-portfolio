@@ -56,13 +56,19 @@ const ProjectCard = ({
           <Link
             href={github}
             target="_blank"
-            className="
-            relative w-full h-[200px] flex items-center justify-center
-            dark:bg-secondary/40 bg-[#fef5f5] overflow-hidden
-            "
+            className="relative w-full h-[200px] flex items-center justify-center
+            dark:bg-secondary/40 bg-[#fef5f5] overflow-hidden"
           >
+            <div className="absolute top-3 right-2">
+              <div className="flex flex-col gap-2.5 items-center">
+                {stack.map((icon, index) => (
+                  <StackIcon name={icon} key={index} className="w-5" />
+                ))}
+              </div>
+            </div>
+
             <Image
-              className={`absolute bottom-0 shadow-xl ${
+              className={`absolute bottom-0 shadow-xl transition-all hover:scale-105 ${
                 image ? "w-[200px] h-[150px]" : "w-[235px] h-[130px]"
               }`}
               src={image ? image : "./covers/project-cover.webp"}
@@ -127,14 +133,6 @@ const ProjectCard = ({
               Source Code
             </Button>
           </Link>
-        </div>
-
-        <div className="absolute top-3 right-2">
-          <div className="flex flex-col gap-2.5 items-center">
-            {stack.map((icon, index) => (
-              <StackIcon name={icon} key={index} className="w-5" />
-            ))}
-          </div>
         </div>
       </Card>
     </motion.div>
