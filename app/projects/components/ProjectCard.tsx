@@ -52,14 +52,12 @@ const ProjectCard = ({
       className="h-full relative"
     >
       <Card className="max-w-[320px] relative h-full flex flex-col justify-between">
-        <div>
-          <Link
-            href={github}
-            target="_blank"
+        <Link href={github} target="_blank" className="group">
+          <div
             className="relative w-full h-[200px] flex items-center justify-center
             dark:bg-secondary/40 bg-[#fef5f5] overflow-hidden"
           >
-            <div className="absolute top-3 right-2">
+            <div className="absolute top-4 right-2">
               <div className="flex flex-col gap-2.5 items-center">
                 {stack.map((icon, index) => (
                   <StackIcon name={icon} key={index} className="w-5" />
@@ -68,16 +66,16 @@ const ProjectCard = ({
             </div>
 
             <Image
-              className={`absolute bottom-0 shadow-xl transition-all hover:scale-105 ${
+              className={`absolute bottom-0 shadow-xl transition-all ${
                 image ? "w-[200px] h-[150px]" : "w-[235px] h-[130px]"
-              }`}
+              } group-hover:scale-105 group-hover:-translate-y-1`}
               src={image ? image : "./covers/project-cover.webp"}
               width={image ? 200 : 235}
               height={image ? 150 : 130}
               alt="project's mockup"
               priority
             />
-          </Link>
+          </div>
 
           <div className="px-4 pb-2 sm:pb-3 pt-3 flex flex-col gap-2">
             <div className="flex flex-col gap-y-0.5">
@@ -90,7 +88,7 @@ const ProjectCard = ({
               {description}
             </p>
           </div>
-        </div>
+        </Link>
 
         <div className="flex flex-col items-center w-full gap-1 p-2">
           <div className="flex w-full gap-1">
