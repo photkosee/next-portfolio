@@ -51,7 +51,7 @@ const projects: Project[] = [
     name: "Task A Gotchi",
     description:
       "A responsive web app that gamifies users' habits to boost their productivity. For UNSW Flagship Hackathon 2024.",
-    github: "https://github.com/photkosee/task-a-gotchi?tab=readme-ov-file#problem-statement",
+    github: "https://github.com/photkosee/task-a-gotchi?tab=readme-ov-file#table-of-contents",
     stack: ["nextjs2", "tailwindcss", "antd", "mongodb", "prisma"],
     date: "Jul 2024",
     show: true,

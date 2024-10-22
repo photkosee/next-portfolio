@@ -27,6 +27,10 @@ export default function RootLayout({
       <head>
         <meta
           name="google-site-verification"
+          content="CnlwpaPq5AkFDd-p3szQDoH4TKkdW43R_fRCcNoLF1Q"
+        />
+        <meta
+          name="google-site-verification"
           content="inHe6DFRHkKFZOiScpDCFdl4QbQoEq6LAb8wloKmkH0"
         />
         <link rel="author" href="https://github.com/photkosee" />

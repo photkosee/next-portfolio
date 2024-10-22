@@ -7,12 +7,11 @@ This site is now live at https://photkosee.vercel.app
 
 ## Table of Contents
 
-1. [Inspiration](#inspiration)
-2. [What this does?](#what-this-does)
-3. [Built with](#built-with)
-4. [Data Source](#data-source)
-5. [Author](#author)
-6. [Deployment](#deployment)
+- [What this does?](#what-this-does)
+- [Built with](#built-with)
+- [Data Source](#data-source)
+- [Author](#author)
+- [Deployment](#deployment)
 
 ## What this does?
 

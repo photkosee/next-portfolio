@@ -10,7 +10,7 @@ import StackIcon from "tech-stack-icons";
 import { Project } from "@/app/types";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 interface ProjectCardProps {
   image?: string;
@@ -52,38 +52,40 @@ const ProjectCard = ({
       className="h-full relative"
     >
       <Card className="max-w-[320px] relative h-full flex flex-col justify-between">
-        <div>
-          <Link
-            href={github}
-            target="_blank"
-            className="
-            relative w-full h-[200px] flex items-center justify-center
-            dark:bg-secondary/40 bg-[#fef5f5] overflow-hidden
-            "
-          >
-            <Image
-              className={`absolute bottom-0 shadow-xl ${
-                image ? "w-[200px] h-[150px]" : "w-[235px] h-[130px]"
-              }`}
-              src={image ? image : "./covers/project-cover.webp"}
-              width={image ? 200 : 235}
-              height={image ? 150 : 130}
-              alt="project's mockup"
-              priority
-            />
-          </Link>
-
-          <div className="px-4 pb-2 sm:pb-3 pt-3 flex flex-col gap-2">
-            <div className="flex flex-col gap-y-0.5">
-              <h4 className="h4">{name}</h4>
-              <p className="text-muted-foreground text-xs font-normal">
-                {date}
-              </p>
+        <Link
+          href={link ? link : github}
+          target="_blank"
+          className="relative w-full h-[200px] flex items-center justify-center
+            dark:bg-secondary/40 bg-[#fef5f5] overflow-hidden group"
+        >
+          <div className="absolute top-4 right-2">
+            <div className="flex flex-col gap-2.5 items-center">
+              {stack.map((icon, index) => (
+                <StackIcon name={icon} key={index} className="w-5" />
+              ))}
             </div>
-            <p className="text-muted-foreground text-[13.5px] sm:text-[15px] leading-[17px]">
-              {description}
-            </p>
           </div>
+
+          <Image
+            className={`absolute bottom-0 shadow-xl transition-all ${
+              image ? "w-[200px] h-[150px]" : "w-[235px] h-[130px]"
+            } group-hover:scale-105 group-hover:-translate-y-1`}
+            src={image ? image : "./covers/project-cover.webp"}
+            width={image ? 200 : 235}
+            height={image ? 150 : 130}
+            alt="project's mockup"
+            priority
+          />
+        </Link>
+
+        <div className="px-4 pb-2 sm:pb-3 pt-3 flex flex-col gap-2">
+          <div className="flex flex-col gap-y-0.5">
+            <h4 className="h4">{name}</h4>
+            <p className="text-muted-foreground text-xs font-normal">{date}</p>
+          </div>
+          <p className="text-muted-foreground text-[13.5px] sm:text-[15px] leading-[17px]">
+            {description}
+          </p>
         </div>
 
         <div className="flex flex-col items-center w-full gap-1 p-2">
@@ -105,7 +107,7 @@ const ProjectCard = ({
                   className="w-full text-sm gap-1 px-3"
                   size="sm"
                 >
-                  <ExternalLink size={18} />
+                  <SquareArrowOutUpRight size={18} />
                   Live Demo
                 </Button>
               </Link>
@@ -127,14 +129,6 @@ const ProjectCard = ({
               Source Code
             </Button>
           </Link>
-        </div>
-
-        <div className="absolute top-3 right-2">
-          <div className="flex flex-col gap-2.5 items-center">
-            {stack.map((icon, index) => (
-              <StackIcon name={icon} key={index} className="w-5" />
-            ))}
-          </div>
         </div>
       </Card>
     </motion.div>
