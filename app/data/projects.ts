@@ -2,6 +2,18 @@ import { Project } from "@/app/types";
 
 const projects: Project[] = [
   {
+    image: "./covers/electivor-cover.webp",
+    category: "fullstack",
+    name: "Electivor.ai",
+    description:
+      "Feeling overwhelmed by the choices of courses you can enroll as a UNSW student? Ask this Course Recommender Chatbot!",
+    link: "https://electivor.vercel.app/",
+    github: "https://github.com/photkosee/electivor.ai?tab=readme-ov-file#table-of-contents",
+    stack: ["nextjs2", "typescript", "tailwindcss", "firebase", "gcloud"],
+    date: "Developing",
+    show: true,
+  },
+  {
     image: "./covers/positivus-cover.webp",
     category: "frontend",
     name: "Positivus",
@@ -20,7 +32,7 @@ const projects: Project[] = [
       "Create, customize, and optimize your itineraries with this free AI trip planner, powered by Gemini AI.",
     link: "https://smart-trip-alpha.vercel.app/",
     github: "https://github.com/photkosee/smart-trip?tab=readme-ov-file#table-of-contents",
-    stack: ["nextjs2", "tailwindcss", "shadcnui", "redux", "firebase"],
+    stack: ["nextjs2", "shadcnui", "redux", "firebase", "gcloud"],
     date: "Sep 2024",
     show: true,
   },
