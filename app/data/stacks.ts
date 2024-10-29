@@ -11,10 +11,6 @@ const stacks = [
         icon: "nextjs2",
       },
       {
-        name: "React Native",
-        icon: "reactjs",
-      },
-      {
         name: "HTML",
         icon: "html5",
       },
@@ -35,8 +31,8 @@ const stacks = [
         icon: "",
       },
       {
-        name: "Javascript",
-        icon: "js",
+        name: "Node.js",
+        icon: "nodejs",
       },
       {
         name: "TypeScript",
@@ -48,52 +44,32 @@ const stacks = [
     skill: "Experienced",
     tools: [
       {
-        name: "Python",
-        icon: "python",
-      },
-      {
-        name: "Java",
-        icon: "java",
+        name: "Golang",
+        icon: "go",
       },
       {
         name: "C",
         icon: "",
       },
       {
-        name: "C#",
-        icon: "csharp",
+        name: "Java",
+        icon: "java",
       },
       {
-        name: "ASP.NET Core",
+        name: "Python",
+        icon: "python",
+      },
+      {
+        name: "Express.js",
         icon: "",
-      },
-      {
-        name: "Express",
-        icon: "",
-      },
-      {
-        name: "NestJS",
-        icon: "nestjs",
-      },
-      {
-        name: "PostgreSQL",
-        icon: "postgresql",
       },
       {
         name: "MongoDB",
         icon: "mongodb",
       },
       {
-        name: "Docker",
-        icon: "docker",
-      },
-      {
-        name: "Firebase",
-        icon: "firebase",
-      },
-      {
-        name: "Wireshark",
-        icon: "",
+        name: "PostgreSQL",
+        icon: "postgresql",
       },
       {
         name: "Jest",
@@ -104,12 +80,8 @@ const stacks = [
         icon: "cypress",
       },
       {
-        name: "Gradle",
-        icon: "",
-      },
-      {
-        name: "Postman",
-        icon: "postman",
+        name: "Docker",
+        icon: "docker",
       },
     ],
   },
