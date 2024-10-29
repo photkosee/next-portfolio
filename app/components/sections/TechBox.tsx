@@ -15,12 +15,12 @@ const TechBox = () => {
       ref={ref}
       animate={animation}
       className="h-full border shadow-md py-5 px-3 sm:px-5 rounded-3xl flex flex-col
-      gap-y-5 dark:bg-secondary"
+      gap-y-5 dark:bg-secondary justify-center"
     >
       <h1 className="font-bold text-2xl md:text-3xl text-center">
         Tech Stacks
       </h1>
-      <div>
+      <div className="flex flex-col gap-y-7">
         {stacks.map((stack, index) => (
           <div key={index}>
             <div className="flex flex-col w-full gap-3">
@@ -31,7 +31,7 @@ const TechBox = () => {
                 </div>
                 <div className="w-full h-[1px] bg-neutral-300 dark:bg-slate-500 flex-1" />
               </div>
-              <div className="mb-7 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+              <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
                 {stack.tools.map((tool, index) => (
                   <Badge
                     key={index}
