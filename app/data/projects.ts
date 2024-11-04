@@ -2,15 +2,24 @@ import { Project } from "@/app/types";
 
 const projects: Project[] = [
   {
+    image: "",
+    category: "fullstack",
+    name: "Todo App with Fiber",
+    description:
+      "A Todo List app built with React as the frontend, and Fiber (Go) as the backend.",
+    github: "https://github.com/photkosee/todo-go?tab=readme-ov-file#table-of-contents",
+    stack: ["reactjs", "typescript", "tailwindcss", "go", "mongodb"],
+    date: "Nov 2024",
+  },
+  {
     image: "./covers/electivor-cover.webp",
     category: "fullstack",
     name: "Electivor.ai",
     description:
       "Feeling overwhelmed by the choices of courses you can enroll as a UNSW student? Ask this Course Recommender Chatbot!",
-    link: "https://electivor.vercel.app/",
     github: "https://github.com/photkosee/electivor.ai?tab=readme-ov-file#table-of-contents",
     stack: ["nextjs2", "typescript", "tailwindcss", "firebase", "gcloud"],
-    date: "Developing",
+    date: "Oct 2024",
     show: true,
   },
   {
@@ -67,16 +76,6 @@ const projects: Project[] = [
     stack: ["nextjs2", "tailwindcss", "antd", "mongodb", "prisma"],
     date: "Jul 2024",
     show: true,
-  },
-  {
-    image: "./covers/wongnai-cover.webp",
-    category: "fullstack",
-    name: "What to Order",
-    description:
-      "API Gateway and Frontend for Online Ordering System. Using Jest for testing both frontend and backend.",
-    github: "https://github.com/photkosee/wongnai-frontend-assignment2023/?tab=readme-ov-file#table-of-contents",
-    stack: ["reactjs", "typescript", "tailwindcss", "nodejs", "jest"],
-    date: "Jul 2024",
   },
   {
     image: "./covers/dota2-cover.webp",
