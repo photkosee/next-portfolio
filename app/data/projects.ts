@@ -17,6 +17,7 @@ const projects: Project[] = [
     name: "Electivor.ai",
     description:
       "Feeling overwhelmed by the choices of courses you can enroll as a UNSW student? Ask this Course Recommender Chatbot!",
+    link: "https://electivor.vercel.app/",
     github: "https://github.com/photkosee/electivor.ai?tab=readme-ov-file#table-of-contents",
     stack: ["nextjs2", "typescript", "tailwindcss", "firebase", "gcloud"],
     date: "Oct 2024",
