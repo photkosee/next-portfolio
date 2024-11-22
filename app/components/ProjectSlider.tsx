@@ -19,18 +19,23 @@ const ProjectSlider = () => {
       }}
       className="w-full relative"
     >
-      <CarouselContent className="gap-3">
+      <CarouselContent>
         {highlightedProjects.map((project, index) => (
           <CarouselItem
             key={index}
-            className="lg:basis-1/2 flex items-center justify-center"
+            className="md:basis-1/2 lg:basis-1/3 flex items-center justify-center"
           >
             <ProjectCard {...project} index={index} />
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+
+      <div className="relative">
+        <div className="absolute -bottom-7 sm:-bottom-10 left-1/2 -translate-x-1/2">
+          <CarouselPrevious className="dark:bg-black" />
+          <CarouselNext className="dark:bg-black" />
+        </div>
+      </div>
     </Carousel>
   );
 };

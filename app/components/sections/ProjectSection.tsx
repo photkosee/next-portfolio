@@ -15,11 +15,11 @@ const ProjectSection = () => {
 
   return (
     <section
-      className="flex items-center h-auto relative pt-[70px] pb-[140px]
+      className="flex items-center h-auto relative pt-[70px] pb-[190px]
       bg-white dark:bg-transparent"
     >
-      <div className="max-w-5xl px-3 sm:px-5 mx-auto w-full flex flex-col gap-y-10">
-        <div className="w-full flex flex-col gap-y-5">
+      <div className="max-w-6xl px-3 sm:px-5 mx-auto w-full flex flex-col gap-y-5 sm:gap-y-10">
+        <div className="w-full flex flex-col gap-y-3 sm:gap-y-5">
           <motion.h1
             className="font-bold text-3xl md:text-4xl text-center"
             ref={ref}
@@ -44,19 +44,8 @@ const ProjectSection = () => {
           </motion.div>
         </div>
 
-        <div className="w-full px-3 flex justify-center">
+        <motion.div ref={ref3} initial="hidden" animate={animation3}>
           <ProjectSlider />
-        </div>
-
-        <motion.div
-          className="mx-auto hidden xl:block"
-          ref={ref3}
-          initial="hidden"
-          animate={animation3}
-        >
-          <Link href="/projects" passHref>
-            <Button className="rounded-full">View More Projects</Button>
-          </Link>
         </motion.div>
       </div>
     </section>

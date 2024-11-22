@@ -72,7 +72,7 @@ const ContactBox = () => {
             </div>
           </div>
 
-          <div className="relative h-full flex items-end w-full">
+          <div className="relative h-full flex items-end w-full min-h-[100px]">
             <div className="relative animate-infinite-scroll w-full">
               <div
                 id="dinosaur"
@@ -85,9 +85,9 @@ const ContactBox = () => {
             <div className="w-[9px] h-[1px] bg-black dark:bg-white absolute bottom-4 left-[20px]" />
             <div className="w-[15px] h-[1px] bg-black dark:bg-white absolute bottom-4 left-[150px]" />
             <div className="w-[7px] h-[1px] bg-black dark:bg-white absolute bottom-4 left-[170px]" />
-            <div className="w-[5px] h-[1px] bg-black dark:bg-white absolute bottom-4 left-[277px]" />
-            <div className="w-[17px] h-[1px] bg-black dark:bg-white absolute bottom-4 left-[377px]" />
-            <div className="w-[3px] h-[1px] bg-black dark:bg-white absolute bottom-4 left-[400px]" />
+            <div className="w-[5px] h-[1px] bg-black dark:bg-white absolute bottom-4 xs:left-[277px]" />
+            <div className="w-[17px] h-[1px] bg-black dark:bg-white absolute bottom-4 sm:left-[377px]" />
+            <div className="w-[3px] h-[1px] bg-black dark:bg-white absolute bottom-4 sm:left-[400px]" />
             <div className="w-[9px] h-[1px] bg-black dark:bg-white absolute bottom-4 right-[27px]" />
           </div>
         </CardContent>

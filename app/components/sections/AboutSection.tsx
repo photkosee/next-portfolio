@@ -16,7 +16,7 @@ const AboutSection = () => {
 
         <WorkAndEduBox />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-fr gap-x-5 gap-y-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 sm:auto-rows-fr gap-x-5 gap-y-16">
           <div className="flex-1 max-w-xl mx-auto w-full h-full">
             <TechBox />
           </div>
