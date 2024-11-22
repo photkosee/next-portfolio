@@ -39,8 +39,8 @@ const ContactBox = () => {
         aria-disabled
       >
         <CardContent className="h-full flex flex-col justify-between overflow-hidden">
-          <div className="flex flex-col gap-y-1 mx-auto w-full pt-7">
-            <div className="flex flex-row lg:flex-col gap-1 xs:gap-x-2">
+          <div className="flex flex-col gap-1 sm:gap-y-1 mx-auto w-full pt-5">
+            <div className="flex flex-row lg:flex-col gap-1">
               <Link
                 href="https://github.com/photkosee"
                 target="_blank"
