@@ -21,7 +21,6 @@ const projects: Project[] = [
     github: "https://github.com/photkosee/electivor.ai?tab=readme-ov-file#table-of-contents",
     stack: ["nextjs2", "typescript", "tailwindcss", "firebase", "gcloud"],
     date: "Oct 2024",
-    show: true,
   },
   {
     image: "./covers/positivus-cover.webp",

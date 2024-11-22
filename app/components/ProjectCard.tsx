@@ -56,7 +56,7 @@ const ProjectCard = ({
           href={link ? link : github}
           target="_blank"
           className="relative w-full h-[200px] flex items-center justify-center
-            dark:bg-secondary/40 bg-[#fef5f5] overflow-hidden group"
+          dark:bg-secondary/40 bg-[#fef5f5] overflow-hidden group"
         >
           <div className="absolute top-4 right-2">
             <div className="flex flex-col gap-2.5 items-center">

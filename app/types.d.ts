@@ -12,3 +12,12 @@ export interface Project {
   date: string;
   show?: boolean;
 }
+
+export interface Experience {
+  company: string;
+  logo: string;
+  role: string;
+  year: string;
+  description: string[];
+  size?: string;
+}
