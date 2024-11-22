@@ -44,6 +44,10 @@ const stacks = [
     skill: "Experienced",
     tools: [
       {
+        name: "React Native",
+        icon: "reactjs",
+      },
+      {
         name: "Golang",
         icon: "go",
       },
@@ -60,8 +64,8 @@ const stacks = [
         icon: "python",
       },
       {
-        name: "Express.js",
-        icon: "",
+        name: "NestJS",
+        icon: "nestjs",
       },
       {
         name: "MongoDB",

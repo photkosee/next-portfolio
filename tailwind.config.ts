@@ -119,6 +119,10 @@ const config: Config = {
           "98%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(0deg)" },
         },
+        "infinite-scroll": {
+          from: { transform: "translateX(-35%)" },
+          to: { transform: "translateX(100%)" },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -126,6 +130,7 @@ const config: Config = {
         "fadein": "fadein 2.2s",
         "orbit": "orbit 16s ease-in-out infinite",
         "rotate": "rotate 16s ease-in-out infinite",
+        "infinite-scroll": "infinite-scroll 7s linear infinite",
       },
       screens: {
         xs: "400px",

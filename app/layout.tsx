@@ -44,7 +44,9 @@ export default function RootLayout({
             storageKey="newTheme2"
           >
             <Header />
-            <div className="-mt-[68px] md:-mt-[75px] relative">{children}</div>
+            <div className="-mt-[68px] md:-mt-[75px] relative overflow-hidden">
+              {children}
+            </div>
             <Footer />
             <Toaster />
           </ThemeProvider>

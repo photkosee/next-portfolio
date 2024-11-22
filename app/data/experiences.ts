@@ -2,28 +2,34 @@ const experiences = [
   {
     company: "OpenOnion",
     role: "Software Engineer Intern",
-    years: "Sep 2024 - Present",
+    year: "Sep 2024 - Present",
     logo: "./logos/openonion.webp",
     size: "w-[40px] h-[40px]",
-    description:
-      "Developing new features and maintaining the main product of the company",
+    description: [
+      "Maintaining and debugging the main product of the company, mainly as a frontend developer",
+      "Assisting team lead in reviewing all pull requests to ensure code quality and adherence to standards",
+    ]
   },
   {
     company: "Cloud Natician",
     role: "Software Engineer Intern",
-    years: "Sep 2023 - Feb 2024",
+    year: "Sep 2023 - Feb 2024",
     logo: "./logos/cloudnc.webp",
-    description:
-      "Developed and maintained responsive websites according to customers’ requirements",
+    description: [
+      "Produced and maintained two responsive Next.js websites with Express.js as a server",
+      "Provided regular updates in daily stand-ups and sprint planning",
+    ],
+    size: "w-[40px] h-[40px]",
   },
   {
     company: "UNSW Computer Sceience and Engineering",
-    role: "Casual Academic",
-    years: "May 2023 - Sep 2023",
+    role: "Casual Academic (Teaching Assistant)",
+    year: "May 2023 - Sep 2023",
     logo: "./logos/unsw-cse.webp",
-    description:
-      "Teaching Assistant for COMP3121/9101 (Algorithms and Programming Techniques course) at UNSW",
-    size: "w-[45px] h-[45px]",
+    description: [
+      "Assessed and provided detailed feedback on 100+ student assignments in an Algorithm and Programming Techniques course at the University of New South Wales",
+    ],
+    size: "w-[40px] h-[40px]",
   },
 ];
 

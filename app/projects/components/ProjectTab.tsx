@@ -6,7 +6,7 @@ import projects from "@/app/data/projects";
 import { Project } from "@/app/types";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import ProjectCard from "@/app/projects/components/ProjectCard";
+import ProjectCard from "@/app/components/ProjectCard";
 
 const filterByCategory = (projects: Project[], category: string) => {
   return projects.filter((project: Project) => {
