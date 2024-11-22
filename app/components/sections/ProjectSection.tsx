@@ -18,7 +18,7 @@ const ProjectSection = () => {
       className="flex items-center h-auto relative pt-[70px] pb-[190px]
       bg-white dark:bg-transparent"
     >
-      <div className="max-w-6xl px-3 sm:px-5 mx-auto w-full flex flex-col gap-y-5 sm:gap-y-10">
+      <div className="max-w-6xl px-3 sm:px-5 mx-auto w-full flex flex-col gap-y-7 sm:gap-y-10">
         <div className="w-full flex flex-col gap-y-3 sm:gap-y-5">
           <motion.h1
             className="font-bold text-3xl md:text-4xl text-center"

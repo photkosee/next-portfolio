@@ -122,6 +122,17 @@ const config: Config = {
         "infinite-scroll": {
           from: { transform: "translateX(-35%)" },
           to: { transform: "translateX(100%)" },
+        },
+        "jump": {
+          "0%": {
+            transform: "translateY(0)"
+          },
+          "50%": {
+            transform: "translateY(-50px)"
+          },
+          "100%": {
+            transform: "translateY(0)"
+          },
         }
       },
       animation: {
@@ -131,6 +142,7 @@ const config: Config = {
         "orbit": "orbit 16s ease-in-out infinite",
         "rotate": "rotate 16s ease-in-out infinite",
         "infinite-scroll": "infinite-scroll 7s linear infinite",
+        "jump": "jump 0.7s ease-in-out"
       },
       screens: {
         xs: "400px",

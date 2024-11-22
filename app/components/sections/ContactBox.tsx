@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaMedium } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
@@ -13,6 +14,7 @@ import "./dino.css";
 
 const ContactBox = () => {
   const { ref: ref, animation: animation } = useAnimateOnView();
+  const [jump, setJump] = useState(false);
 
   return (
     <motion.div
@@ -24,10 +26,21 @@ const ContactBox = () => {
         Connect with Me
       </h1>
 
-      <Card className="h-full">
+      <Card
+        className="h-full"
+        onClick={() => {
+          if (jump) return;
+          setJump(true);
+
+          setTimeout(() => {
+            setJump(false);
+          }, 700);
+        }}
+        aria-disabled
+      >
         <CardContent className="h-full flex flex-col justify-between overflow-hidden">
-          <div className="flex flex-col gap-y-1 mx-auto w-full pt-7">
-            <div className="flex flex-row lg:flex-col gap-1 xs:gap-x-2">
+          <div className="flex flex-col gap-1 sm:gap-y-1 mx-auto w-full pt-5">
+            <div className="flex flex-row lg:flex-col gap-1">
               <Link
                 href="https://github.com/photkosee"
                 target="_blank"
@@ -76,7 +89,9 @@ const ContactBox = () => {
             <div className="relative animate-infinite-scroll w-full">
               <div
                 id="dinosaur"
-                className="h-10 w-10 -bottom-1 left-0 absolute"
+                className={`h-10 w-10 -bottom-1 left-0 absolute ${
+                  jump ? "animate-jump" : ""
+                }`}
               />
             </div>
 
