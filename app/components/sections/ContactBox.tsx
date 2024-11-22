@@ -72,7 +72,7 @@ const ContactBox = () => {
             </div>
           </div>
 
-          <div className="relative h-[100px] flex items-end w-full">
+          <div className="relative h-full flex items-end w-full">
             <div className="relative animate-infinite-scroll w-full">
               <div
                 id="dinosaur"

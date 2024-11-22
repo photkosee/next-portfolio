@@ -18,11 +18,6 @@ const ProjectSection = () => {
       className="flex items-center h-auto relative pt-[70px] pb-[140px]
       bg-white dark:bg-transparent"
     >
-      <div
-        className="dark:hidden bg-white absolute -top-10 h-14 rounded-t-3xl
-        md:rounded-t-full w-full dark:bg-transparent"
-      />
-
       <div className="max-w-5xl px-3 sm:px-5 mx-auto w-full flex flex-col gap-y-10">
         <div className="w-full flex flex-col gap-y-5">
           <motion.h1
@@ -49,9 +44,7 @@ const ProjectSection = () => {
           </motion.div>
         </div>
 
-        <div className="w-full hidden xl:flex flex-col gap-y-5"></div>
-
-        <div className="w-full px-3 flex xl:hidden justify-center">
+        <div className="w-full px-3 flex justify-center">
           <ProjectSlider />
         </div>
 

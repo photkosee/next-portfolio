@@ -11,12 +11,12 @@ const AboutSection = () => {
         w-full dark:bg-secondary/40"
       />
 
-      <div className="max-w-5xl mx-auto px-3 sm:px-5 flex flex-col gap-y-16">
+      <div className="max-w-5xl mx-auto px-1 xs:px-3 sm:px-5 flex flex-col gap-y-16">
         <AboutMeBox />
 
         <WorkAndEduBox />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-fr gap-x-5 gap-y-16">
           <div className="flex-1 max-w-xl mx-auto w-full h-full">
             <TechBox />
           </div>
