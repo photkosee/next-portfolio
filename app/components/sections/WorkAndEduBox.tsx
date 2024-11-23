@@ -33,7 +33,7 @@ const WorkAndEduBox = () => {
   }, [counter, delay]);
 
   return (
-    <>
+    <div>
       <div className="hidden lg:grid grid-cols-2 gap-x-5">
         <div className="flex flex-col gap-y-4 h-full">
           <motion.h1
@@ -118,7 +118,7 @@ const WorkAndEduBox = () => {
           </TabsContent>
         </Tabs>
       </motion.div>
-    </>
+    </div>
   );
 };
 
