@@ -10,7 +10,7 @@ const educations = [
   },
   {
     company: "Thammasat University",
-    role: "Bachelor of Electrical Engineering",
+    role: "Bachelor of Electrical Engineering (TEP)",
     year: "2019 - 2021",
     logo: "./logos/tu.webp",
     description: [

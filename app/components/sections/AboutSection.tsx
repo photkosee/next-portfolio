@@ -1,7 +1,7 @@
 import AboutMeBox from "@/app/components/sections/AboutMeBox";
 import TechBox from "@/app/components/sections/TechBox";
-import ContactBox from "@/app/components/sections/ContactBox";
 import WorkAndEduBox from "@/app/components/sections/WorkAndEduBox";
+import ConnectBox from "@/app/components/sections/ConnectBox";
 
 const AboutSection = () => {
   return (
@@ -21,7 +21,7 @@ const AboutSection = () => {
             <TechBox />
           </div>
           <div className="flex-1 max-w-xl mx-auto w-full h-full">
-            <ContactBox />
+            <ConnectBox />
           </div>
         </div>
       </div>

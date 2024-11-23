@@ -89,12 +89,7 @@ const HeroSection = () => {
             variants={childVariants}
             className="flex gap-x-2 sm:gap-x-3 mt-3 w-full justify-start"
           >
-            <Link
-              href="#contact"
-              passHref
-              className="hidden xs:block"
-              aria-hidden
-            >
+            <Link href="#contact" passHref className="hidden xs:block">
               <Button className="rounded-full gap-x-2">
                 Contact Me
                 <RiMailSendLine size={18} />
@@ -106,7 +101,6 @@ const HeroSection = () => {
               target="_blank"
               passHref
               className="hidden xs:block"
-              aria-hidden
             >
               <Button className="rounded-full gap-x-1" variant="secondary">
                 Resume

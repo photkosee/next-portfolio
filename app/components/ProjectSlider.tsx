@@ -14,7 +14,7 @@ const ProjectSlider = () => {
   return (
     <Carousel
       opts={{
-        startIndex: 1,
+        startIndex: 0,
         align: "center",
       }}
       className="w-full relative"

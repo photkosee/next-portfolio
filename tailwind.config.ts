@@ -141,7 +141,8 @@ const config: Config = {
         "fadein": "fadein 2.2s",
         "orbit": "orbit 16s ease-in-out infinite",
         "rotate": "rotate 16s ease-in-out infinite",
-        "infinite-scroll": "infinite-scroll 7s linear infinite",
+        "infinite-scroll": "infinite-scroll 5.5s linear infinite",
+        "mini-infinite-scroll": "infinite-scroll 7s linear infinite",
         "jump": "jump 0.7s ease-in-out"
       },
       screens: {

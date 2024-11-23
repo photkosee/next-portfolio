@@ -59,6 +59,7 @@ const Nav = ({
           key={index}
           target={link.name === "blog" ? "_blank" : ""}
           onClick={closeMobileNav}
+          aria-label={`Link to ${link.name} page`}
         >
           <span
             className={`${

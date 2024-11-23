@@ -1,8 +1,9 @@
 "use client";
 
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+import "@/app/styles/tama.css";
 import experiences from "@/app/data/experiences";
 import useAnimateOnView from "@/app/hooks/useAnimateOnView";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
@@ -11,26 +12,81 @@ import educations from "@/app/data/educations";
 
 const WorkAndEduBox = () => {
   const { ref: ref, animation: animation } = useAnimateOnView();
+  const { ref: ref2, animation: animation2 } = useAnimateOnView();
+  const { ref: ref3, animation: animation3 } = useAnimateOnView();
+  const { ref: ref4, animation: animation4 } = useAnimateOnView();
+  const { ref: ref5, animation: animation5 } = useAnimateOnView();
+  const [counter, setCounter] = useState(1);
+  const [delay, setDelay] = useState(2200);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (counter % 2 === 0) {
+        setDelay(2200);
+      } else {
+        setDelay(700);
+      }
+      setCounter((prev) => prev + 1);
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [counter, delay]);
 
   return (
-    <motion.div ref={ref} animate={animation}>
+    <>
       <div className="hidden lg:grid grid-cols-2 gap-x-5">
         <div className="flex flex-col gap-y-4 h-full">
-          <h1 className="font-bold text-2xl md:text-3xl text-center">
+          <motion.h1
+            ref={ref}
+            animate={animation}
+            initial="hidden"
+            className="font-bold text-2xl md:text-3xl text-center"
+          >
             Work Experience
-          </h1>
-          <Timeline experiences={experiences} />
+          </motion.h1>
+          <motion.div
+            ref={ref2}
+            animate={animation2}
+            initial="hidden"
+            className="h-full"
+          >
+            <Timeline experiences={experiences} />
+          </motion.div>
         </div>
 
         <div className="flex flex-col gap-y-4 h-full">
-          <h1 className="font-bold text-2xl md:text-3xl text-center">
+          <motion.h1
+            ref={ref3}
+            animate={animation3}
+            initial="hidden"
+            className="font-bold text-2xl md:text-3xl text-center"
+          >
             Education
-          </h1>
-          <Timeline experiences={educations} />
+          </motion.h1>
+          <motion.div
+            ref={ref4}
+            animate={animation4}
+            initial="hidden"
+            className="h-full relative"
+          >
+            <Timeline experiences={educations} />
+            <div className="absolute bottom-[135px] right-[100px]">
+              {counter % 2 === 0 ? (
+                <div className="tama2" />
+              ) : (
+                <div className="tama" />
+              )}
+            </div>
+          </motion.div>
         </div>
       </div>
 
-      <div className="lg:hidden max-w-xl w-full mx-auto">
+      <motion.div
+        ref={ref5}
+        animate={animation5}
+        initial="hidden"
+        className="lg:hidden max-w-xl w-full mx-auto"
+      >
         <Tabs defaultValue="work" className="w-full">
           <TabsList
             className="gap-2 grid grid-cols-2 p-0.5 mx-auto
@@ -61,8 +117,8 @@ const WorkAndEduBox = () => {
             <Timeline experiences={educations} />
           </TabsContent>
         </Tabs>
-      </div>
-    </motion.div>
+      </motion.div>
+    </>
   );
 };
 

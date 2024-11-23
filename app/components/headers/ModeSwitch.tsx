@@ -19,9 +19,10 @@ const ModeSwitch = () => {
       className="flex items-center gap-x-1 text-2xl font-bold p-1"
       onClick={toggleTheme}
       role="button"
+      aria-label="Toggle theme mode"
     >
       <span className="select-none">PH</span>
-      <Switch checked={checked} />
+      <Switch checked={checked} aria-label="Toggle theme mode" />
       <span className="select-none">T</span>
     </div>
   );
