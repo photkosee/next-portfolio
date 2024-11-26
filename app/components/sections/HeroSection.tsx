@@ -13,7 +13,7 @@ import RotatingGeometric from "@/app/components/RotatingGeometric";
 const containerVariants = {
   visible: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.07,
     },
   },
 };
@@ -24,9 +24,9 @@ const childVariants = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 0.15,
+      duration: 0.12,
       y: { type: "spring", mass: 0.3, damping: 10, stiffness: 150 },
-      opacity: { duration: 0.4 },
+      opacity: { duration: 0.35 },
     },
   },
 };

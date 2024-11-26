@@ -44,7 +44,7 @@ const ProjectCard = ({
       initial="hidden"
       animate="visible"
       transition={{
-        delay: index * 0.08,
+        delay: index * 0.07,
         ease: "easeInOut",
         duration: 0.35,
       }}
