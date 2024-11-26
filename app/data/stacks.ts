@@ -80,8 +80,12 @@ const stacks = [
         icon: "jest",
       },
       {
-        name: "Cypress",
-        icon: "cypress",
+        name: "Google Cloud Platform",
+        icon: "gcloud",
+      },
+      {
+        name: "Amazon Web Services",
+        icon: "aws",
       },
       {
         name: "Docker",
