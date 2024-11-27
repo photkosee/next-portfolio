@@ -49,7 +49,7 @@ const ProjectCard = ({
         duration: 0.35,
       }}
       viewport={{ amount: 0 }}
-      className="h-full relative"
+      className="h-full relative select-none"
     >
       <Card className="max-w-[320px] relative h-full flex flex-col justify-between">
         <Link
