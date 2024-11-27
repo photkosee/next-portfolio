@@ -22,9 +22,9 @@ const WorkAndEduBox = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (counter % 2 === 0) {
-        setDelay(2200);
+        setDelay(1500);
       } else {
-        setDelay(700);
+        setDelay(1000);
       }
       setCounter((prev) => prev + 1);
     }, delay);
