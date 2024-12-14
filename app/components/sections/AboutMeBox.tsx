@@ -20,8 +20,8 @@ const AboutMeBox = () => {
         <CardContent>
           <div className="text-center flex flex-col gap-y-3 max-w-[700px] pt-5">
             <div>
-              My name is Phot Koseekrainiramon. I am a Computer Engineering
-              student at the University of New South Wales who loves{" "}
+              My name is Phot Koseekrainiramon. Recent graduate from the
+              University of New South Wales who loves{" "}
               <span className="font-bold">solving problems</span> and{" "}
               <span className="font-bold">building things</span>, especially in
               web development.

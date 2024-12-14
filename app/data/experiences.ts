@@ -2,16 +2,16 @@ const experiences = [
   {
     company: "OpenOnion",
     role: "Software Engineer Intern",
-    year: "Sep 2024 - Present",
+    year: "Sep 2024 - Dec 2024",
     logo: "./logos/openonion.webp",
     size: "w-[40px] h-[40px]",
     description: [
-      "Maintaining and debugging the main product of the company, mainly as a frontend developer",
+      "Maintaining and debugging the main product of the company, a community chatbot AI",
       "Assisting team lead in reviewing all pull requests to ensure code quality and adherence to standards",
     ]
   },
   {
-    company: "Cloud Natician",
+    company: "Cloud NC CO., LTD.",
     role: "Software Engineer Intern",
     year: "Sep 2023 - Feb 2024",
     logo: "./logos/cloudnc.webp",
